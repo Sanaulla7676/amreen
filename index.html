@@ -1,0 +1,2153 @@
+
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <!-- Primary Meta Tags & SEO -->
+  <title>Amreen Academy & Makeover Studio | Minimal Luxury Bridal Studio & Makeup School Thanisandra</title>
+  <meta name="description" content="Thanisandra's premier minimal luxury bridal makeover studio & ISO certified beauty academy in Bengaluru. 4.9★ rated on Google. HD bridal makeup, airbrush, keratin, hydrafacial & hands-on beautician diploma courses." />
+  <meta name="keywords" content="Bridal Makeup Bengaluru, Makeup Academy Thanisandra, Airbrush Makeup Artist, Hair Chemist Course, Beautician Diploma Bengaluru, Amreens Studio" />
+
+  <!-- STRICT GOOGLE FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Cinzel:wght@400;500;600;700;800;900&family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Great+Vibes&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              bg: '#F6F3EC',        /* Warm Luxury Silk Pearl Canvas */
+              surface: '#FFFFFF',   /* Crisp Pure White Surface */
+              card: '#F1EBE0',      /* Soft Warm Ivory Card */
+              gold: '#B89047',      /* Antique Champagne Gold */
+              goldLight: '#E2C384',
+              goldHover: '#987333',
+              noir: '#191614',      /* Deep Charcoal Noir */
+              roseGold: '#D99B95',  /* Soft Pearl Rose Accent */
+              silver: '#4B5563',
+              textPrimary: '#231F1C', /* Deep Charcoal Noir */
+              textMuted: '#6B635B',   /* Soft Warm Muted Grey */
+              border: 'rgba(184, 144, 71, 0.22)'
+            }
+          },
+          fontFamily: {
+            serif: ['"Playfair Display"', '"Cormorant Garamond"', 'serif'],
+            display: ['"Cinzel"', '"Cormorant Garamond"', 'serif'],
+            script: ['"Alex Brush"', '"Great Vibes"', 'cursive'],
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Custom Master Styles -->
+  <style>
+    /* Custom Scrollbar */
+    ::-webkit-scrollbar { width: 7px; }
+    ::-webkit-scrollbar-track { background: #F6F3EC; }
+    ::-webkit-scrollbar-thumb { background: #D9CEA8; border-radius: 9999px; }
+    ::-webkit-scrollbar-thumb:hover { background: #B89047; }
+
+    /* Glassmorphism & Utilities */
+    .glass-header {
+      background: rgba(255, 255, 255, 0.88);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+    }
+
+    .glass-panel {
+      background: rgba(255, 255, 255, 0.92);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid rgba(184, 144, 71, 0.24);
+      box-shadow: 0 20px 40px -15px rgba(25, 22, 20, 0.05);
+    }
+
+    .glass-card {
+      background: rgba(241, 235, 224, 0.70);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(184, 144, 71, 0.15);
+      box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.02);
+    }
+
+    /* Advanced Hover Underline Link Animation */
+    .nav-link {
+      position: relative;
+    }
+    .nav-link::after {
+      content: '';
+      position: absolute;
+      bottom: -6px;
+      left: 50%;
+      width: 0;
+      height: 2px;
+      background: #B89047;
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+      transform: translateX(-50%);
+      border-radius: 99px;
+    }
+    .nav-link:hover::after, .nav-link.active::after {
+      width: 100%;
+    }
+
+    .gold-glow { box-shadow: 0 10px 25px -5px rgba(184, 144, 71, 0.35); }
+    .rose-glow { box-shadow: 0 10px 25px -5px rgba(217, 155, 149, 0.35); }
+
+    /* Page Tab Switch Animations */
+    .page-tab {
+      display: none;
+      animation: tabFadeIn 0.45s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    }
+    .page-tab.active { display: block; }
+
+    @keyframes tabFadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .pulse-dot { animation: pulseGlow 2s infinite; }
+    @keyframes pulseGlow {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.5; transform: scale(1.3); }
+    }
+  </style>
+
+  <!-- Structured Data (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BeautySalon",
+    "name": "Amreen Academy & Makeover Studio",
+    "image": "https://images.unsplash.com/photo-1595777457583-95e059d581b8?auto=format&fit=crop&w=1200&q=80",
+    "telephone": "+919876543210",
+    "priceRange": "₹₹₹",
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "reviewCount": "342"
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Main Road, Fathima Layout, Bharath Nagar, Thanisandra",
+      "addressLocality": "Bengaluru",
+      "addressRegion": "Karnataka",
+      "postalCode": "560077",
+      "addressCountry": "IN"
+    }
+  }
+  </script>
+</head>
+
+<body class="bg-brand-bg text-brand-textPrimary font-sans antialiased min-h-screen flex flex-col selection:bg-brand-gold selection:text-white">
+
+  <!-- ========================================== -->
+  <!-- TOP ANNOUNCEMENT & COUNTDOWN BANNER        -->
+  <!-- ========================================== -->
+  <div class="bg-brand-card border-b border-brand-border/60 py-2 px-4 text-xs">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-2 text-center md:text-left">
+      
+      <div class="flex items-center gap-2">
+        <span class="w-2 h-2 rounded-full bg-emerald-500 pulse-dot inline-block"></span>
+        <span class="text-brand-textMuted text-[11px] font-medium">
+          <strong class="text-brand-textPrimary">Studio Open 24/7</strong> for Scheduled Bridal Slots | 
+          <span class="text-brand-gold font-bold">Next Academy Batch Seats Closing Soon!</span>
+        </span>
+      </div>
+
+      <!-- Live Batch Countdown Timer -->
+      <div class="flex items-center gap-2 bg-white px-3 py-0.5 rounded-full border border-black/5 text-[11px] font-semibold text-brand-textPrimary shadow-sm">
+        <i data-lucide="clock" class="w-3.5 h-3.5 text-brand-gold"></i>
+        <span>Batch Starts In:</span>
+        <span id="batch-timer" class="font-serif font-bold text-brand-gold">06d : 14h : 22m : 45s</span>
+      </div>
+
+      <div class="hidden lg:flex items-center gap-4 text-[11px] font-semibold text-brand-gold">
+        <a href="tel:+919876543210" class="hover:underline flex items-center gap-1"><i data-lucide="phone" class="w-3 h-3"></i> +91 98765 43210</a>
+        <span class="text-black/10">|</span>
+        <span class="text-brand-textMuted"><i data-lucide="map-pin" class="w-3 h-3 inline text-brand-gold"></i> Thanisandra, Bengaluru</span>
+      </div>
+
+    </div>
+  </div>
+
+
+  <!-- ========================================== -->
+  <!-- ADVANCED COMPACT HEADER & NAVIGATION      -->
+  <!-- ========================================== -->
+  <header class="sticky top-0 z-50 glass-header border-b border-brand-border/60 shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+      
+      <!-- Brand Logo Emblem -->
+      <a href="javascript:void(0)" onclick="switchTab('home')" class="flex items-center gap-2.5 group">
+        <div class="relative w-10 h-10 rounded-full border border-brand-gold/80 flex items-center justify-center bg-white shadow-sm group-hover:border-brand-gold transition-colors">
+          <svg class="absolute inset-0 w-full h-full text-brand-gold/30 p-0.5" viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="1.8">
+            <path d="M 25 50 C 25 30, 40 20, 50 20 C 60 20, 75 30, 75 50 C 75 70, 60 80, 50 80 C 40 80, 25 70, 25 50" stroke-dasharray="3 3"/>
+          </svg>
+          <span class="font-display text-base font-bold text-brand-gold tracking-widest">AS</span>
+        </div>
+        <div class="flex flex-col">
+          <span class="font-display text-base sm:text-lg font-bold tracking-tight text-brand-textPrimary group-hover:text-brand-gold transition-colors leading-none">AMREEN</span>
+          <span class="text-[8px] uppercase tracking-[0.25em] text-brand-gold font-semibold mt-0.5">Academy & Studio</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <nav class="hidden md:flex items-center gap-7">
+        <button onclick="switchTab('home')" id="nav-home" class="nav-link text-[11px] uppercase tracking-[0.2em] font-semibold text-brand-gold">HOME</button>
+        <button onclick="switchTab('studio')" id="nav-studio" class="nav-link text-[11px] uppercase tracking-[0.2em] font-semibold text-brand-textMuted hover:text-brand-gold transition-colors">SERVICES</button>
+        <button onclick="switchTab('academy')" id="nav-academy" class="nav-link text-[11px] uppercase tracking-[0.2em] font-semibold text-brand-textMuted hover:text-brand-gold transition-colors">ACADEMY</button>
+        <button onclick="switchTab('lookbook')" id="nav-lookbook" class="nav-link text-[11px] uppercase tracking-[0.2em] font-semibold text-brand-textMuted hover:text-brand-gold transition-colors">GALLERY</button>
+        <button onclick="switchTab('reviews')" id="nav-reviews" class="nav-link text-[11px] uppercase tracking-[0.2em] font-semibold text-brand-textMuted hover:text-brand-gold transition-colors">REVIEWS</button>
+        <button onclick="switchTab('contact')" id="nav-contact" class="nav-link text-[11px] uppercase tracking-[0.2em] font-semibold text-brand-textMuted hover:text-brand-gold transition-colors">CONTACT</button>
+      </nav>
+
+      <!-- Google Rating Badge + Compact CTA -->
+      <div class="hidden lg:flex items-center gap-3">
+        <button onclick="switchTab('reviews')" class="flex items-center gap-1.5 px-3 py-1 rounded-full bg-white border border-black/5 shadow-sm hover:border-brand-gold transition-colors">
+          <svg class="w-3.5 h-3.5" viewBox="0 0 24 24"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22.81-.63z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z"/></svg>
+          <span class="text-[11px] font-bold text-brand-textPrimary">4.9 ★</span>
+        </button>
+
+        <button onclick="openModal('dateModal')" class="flex items-center gap-1.5 px-5 py-2 rounded-full text-[11px] font-bold tracking-widest uppercase border border-brand-gold text-brand-textPrimary hover:bg-brand-gold hover:text-white transition-all duration-300 shadow-sm">
+          <i data-lucide="calendar" class="w-3.5 h-3.5 text-brand-gold"></i>
+          Book Appointment
+        </button>
+      </div>
+
+      <!-- Mobile Menu Hamburger -->
+      <button onclick="toggleMobileMenu()" class="md:hidden p-2 rounded-full text-brand-gold hover:bg-brand-card">
+        <i data-lucide="menu" class="w-6 h-6"></i>
+      </button>
+
+    </div>
+
+    <!-- Mobile Drawer Nav -->
+    <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-brand-border px-6 py-6 space-y-4">
+      <div class="flex flex-col space-y-3">
+        <button onclick="switchTab('home'); toggleMobileMenu();" class="text-left font-serif text-lg text-brand-textPrimary hover:text-brand-gold">Home</button>
+        <button onclick="switchTab('studio'); toggleMobileMenu();" class="text-left font-serif text-lg text-brand-textPrimary hover:text-brand-gold">Studio Services</button>
+        <button onclick="switchTab('academy'); toggleMobileMenu();" class="text-left font-serif text-lg text-brand-textPrimary hover:text-brand-gold">Academy Courses</button>
+        <button onclick="switchTab('lookbook'); toggleMobileMenu();" class="text-left font-serif text-lg text-brand-textPrimary hover:text-brand-gold">Gallery & Lookbook</button>
+        <button onclick="switchTab('reviews'); toggleMobileMenu();" class="text-left font-serif text-lg text-brand-textPrimary hover:text-brand-gold">Google Reviews Wall</button>
+        <button onclick="switchTab('contact'); toggleMobileMenu();" class="text-left font-serif text-lg text-brand-textPrimary hover:text-brand-gold">Contact & Location</button>
+      </div>
+      <div class="pt-4 border-t border-black/5 flex flex-col gap-3">
+        <button onclick="openModal('dateModal'); toggleMobileMenu();" class="w-full py-2.5 rounded-full text-center text-xs font-bold uppercase border border-brand-gold text-brand-gold">
+          Book Studio Appointment
+        </button>
+        <button onclick="openModal('enrollModal'); toggleMobileMenu();" class="w-full py-2.5 rounded-full text-center text-xs font-bold uppercase bg-brand-gold text-white">
+          Enroll in Academy
+        </button>
+      </div>
+    </div>
+  </header>
+
+
+  <!-- ========================================== -->
+  <!-- MAIN ROUTED PAGE CONTAINER                 -->
+  <!-- ========================================== -->
+  <main class="flex-grow">
+
+    <!-- -------------------------------------- -->
+    <!-- PAGE 1: MASTER HOME VIEW               -->
+    <!-- -------------------------------------- -->
+    <section id="page-home" class="page-tab active">
+      
+      <!-- FULL-SCREEN HERO CANVAS WITH VIDEO (NO WHITE OVERLAY) -->
+      <div class="relative w-full min-h-[calc(100vh-4rem)] flex items-center justify-start overflow-hidden border-b border-brand-border bg-[#F6F3EC]">
+        
+        <!-- Hero Background Video -->
+        <video id="hero-video" autoplay loop muted playsinline class="absolute inset-0 w-full h-full object-cover object-right sm:object-center select-none pointer-events-none z-0">
+          <source src="bg.mp4" type="video/mp4">
+          <source src="video.mp4" type="video/mp4">
+          <source src="Woman_posing_against_neutral_bac_202608051219_gwr_video_mvp.mp4" type="video/mp4">
+          <img src="https://images.unsplash.com/photo-1595777457583-95e059d581b8?auto=format&fit=crop&w=2000&q=80" alt="Amreen Studio Hero Background" class="w-full h-full object-cover">
+        </video>
+
+        <!-- Minimal Subtle Dark Gradient Vignette for Text Contrast -->
+        <div class="absolute inset-0 bg-gradient-to-r from-black/45 via-black/20 to-transparent z-5 pointer-events-none"></div>
+
+        <!-- Hero Content Overlay - Strictly Left Aligned -->
+        <div class="relative z-10 max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-12 py-12">
+          <div class="max-w-xl space-y-5 text-left items-start flex flex-col">
+            
+            <div class="inline-block text-[10px] font-bold uppercase tracking-[0.3em] text-brand-goldLight bg-black/40 backdrop-blur-md px-3 py-1 rounded-full border border-white/10">
+              Amreen Academy & Makeover Studio
+            </div>
+
+            <div class="space-y-0.5 text-left">
+              <h1 class="font-serif text-5xl sm:text-7xl lg:text-8xl font-extrabold text-white tracking-tight leading-none uppercase drop-shadow-md">
+                WHERE BEAUTY
+              </h1>
+              <div class="font-script text-5xl sm:text-7xl lg:text-8xl text-brand-goldLight -mt-2 sm:-mt-4 leading-none font-normal italic drop-shadow-md">
+                Becomes Confidence
+              </div>
+            </div>
+
+            <!-- Leaf Ornament Accent Line -->
+            <div class="flex items-center gap-3 py-0.5">
+              <span class="w-12 h-[1px] bg-brand-goldLight/70"></span>
+              <svg class="w-4 h-4 text-brand-goldLight" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12,2C12,2 9,7 9,11C9,14 11,16 12,16C13,16 15,14 15,11C15,7 12,2 12,2M12,14C11.4,14 11,13.1 11,12C11,10.5 11.6,8.4 12,6.7C12.4,8.4 13,10.5 13,12C13,13.1 12.6,14 12,14Z"/>
+              </svg>
+              <span class="w-12 h-[1px] bg-brand-goldLight/70"></span>
+            </div>
+
+            <p class="text-stone-200 text-xs sm:text-sm max-w-lg leading-relaxed font-light drop-shadow-sm">
+              From flawless makeovers to professional training, we bring out the best in you with passion, perfection & purpose.
+            </p>
+
+            <!-- Minimal Compact Dual Cards -->
+            <div class="grid sm:grid-cols-2 gap-3 pt-2 w-full max-w-lg">
+              
+              <!-- Card 1: Studio Card -->
+              <div onclick="switchTab('studio')" class="group p-3.5 rounded-xl bg-brand-noir/90 backdrop-blur-md text-white flex items-center justify-between cursor-pointer border border-white/10 hover:border-brand-gold transition-all shadow-lg">
+                <div class="flex items-center gap-3">
+                  <div class="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center text-brand-goldLight group-hover:bg-brand-gold group-hover:text-white transition-colors">
+                    <i data-lucide="sparkles" class="w-4 h-4"></i>
+                  </div>
+                  <div class="text-left">
+                    <h3 class="font-serif text-xs font-bold tracking-wider uppercase text-white">MAKEOVER STUDIO</h3>
+                    <p class="text-[10px] text-stone-300 font-light">Look Beautiful. Feel Confident.</p>
+                  </div>
+                </div>
+                <i data-lucide="arrow-right" class="w-3.5 h-3.5 text-brand-goldLight group-hover:translate-x-1 transition-transform"></i>
+              </div>
+
+              <!-- Card 2: Academy Card -->
+              <div onclick="switchTab('academy')" class="group p-3.5 rounded-xl bg-white/90 backdrop-blur-md border border-brand-gold/40 flex items-center justify-between cursor-pointer hover:border-brand-gold hover:bg-white transition-all shadow-md">
+                <div class="flex items-center gap-3">
+                  <div class="w-8 h-8 rounded-full bg-brand-card flex items-center justify-center text-brand-gold group-hover:bg-brand-gold group-hover:text-white transition-colors">
+                    <i data-lucide="graduation-cap" class="w-4 h-4"></i>
+                  </div>
+                  <div class="text-left">
+                    <h3 class="font-serif text-xs font-bold tracking-wider uppercase text-brand-textPrimary">AMREEN ACADEMY</h3>
+                    <p class="text-[10px] text-brand-textMuted font-light">Learn. Grow. Succeed.</p>
+                  </div>
+                </div>
+                <i data-lucide="arrow-right" class="w-3.5 h-3.5 text-brand-gold group-hover:translate-x-1 transition-transform"></i>
+              </div>
+
+            </div>
+
+            <!-- Minimal Reduced-Height Buttons -->
+            <div class="pt-1 flex flex-wrap gap-2.5">
+              <button onclick="openModal('quizModal')" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-[11px] font-bold uppercase tracking-wider bg-white/90 border border-white text-brand-textPrimary hover:bg-brand-textPrimary hover:text-white transition-all duration-300 shadow-sm">
+                ✨ Find Your Look Quiz
+              </button>
+              <button onclick="openModal('dateModal')" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-[11px] font-bold uppercase tracking-wider bg-brand-gold text-white hover:bg-brand-goldHover gold-glow transition-all duration-300">
+                📅 Check Date Availability
+              </button>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+      <!-- METRICS TRUST BAR -->
+      <div class="border-y border-brand-border bg-[#F2EDE4] py-7 px-4 shadow-sm">
+        <div class="max-w-7xl mx-auto grid grid-cols-2 lg:grid-cols-4 gap-6 items-center">
+          
+          <div class="flex items-center justify-center gap-3 text-left">
+            <i data-lucide="crown" class="w-8 h-8 text-brand-gold flex-shrink-0 stroke-[1.5]"></i>
+            <div>
+              <div class="text-2xl sm:text-3xl font-serif font-bold text-brand-textPrimary">5000+</div>
+              <p class="text-[10px] text-brand-textMuted font-medium uppercase tracking-wider">Happy Clients</p>
+            </div>
+          </div>
+
+          <div class="flex items-center justify-center gap-3 text-left border-l border-black/5 pl-4">
+            <i data-lucide="users" class="w-8 h-8 text-brand-gold flex-shrink-0 stroke-[1.5]"></i>
+            <div>
+              <div class="text-2xl sm:text-3xl font-serif font-bold text-brand-textPrimary">1500+</div>
+              <p class="text-[10px] text-brand-textMuted font-medium uppercase tracking-wider">Students Trained</p>
+            </div>
+          </div>
+
+          <div class="flex items-center justify-center gap-3 text-left border-l border-black/5 pl-4">
+            <i data-lucide="award" class="w-8 h-8 text-brand-gold flex-shrink-0 stroke-[1.5]"></i>
+            <div>
+              <div class="text-2xl sm:text-3xl font-serif font-bold text-brand-textPrimary">ISO</div>
+              <p class="text-[10px] text-brand-textMuted font-medium uppercase tracking-wider">Certified Academy</p>
+            </div>
+          </div>
+
+          <div class="flex items-center justify-center gap-3 text-left border-l border-black/5 pl-4">
+            <i data-lucide="star" class="w-8 h-8 text-brand-gold flex-shrink-0 stroke-[1.5]"></i>
+            <div>
+              <div class="text-2xl sm:text-3xl font-serif font-bold text-brand-textPrimary">10+</div>
+              <p class="text-[10px] text-brand-textMuted font-medium uppercase tracking-wider">Years of Excellence</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- INTERACTIVE BEFORE & AFTER MAKEOVER SLIDER -->
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 border-b border-brand-border">
+        <div class="text-center max-w-2xl mx-auto space-y-3 mb-8">
+          <span class="text-xs font-bold text-brand-gold uppercase tracking-widest">Real Transformations</span>
+          <h2 class="font-serif text-3xl sm:text-4xl font-bold text-brand-textPrimary">Interactive Before & After Glamour</h2>
+          <p class="text-brand-textMuted text-xs sm:text-sm">Drag the slider below to reveal our signature HD Airbrush finish on real brides.</p>
+        </div>
+
+        <!-- Look Switcher Buttons -->
+        <div class="flex justify-center gap-3 mb-8">
+          <button id="look-btn-traditional" onclick="changeBeforeAfterLook('traditional')" class="px-5 py-2 rounded-full text-xs font-bold uppercase tracking-wider bg-brand-gold text-white">
+            👑 Traditional South Indian Silk
+          </button>
+          <button id="look-btn-reception" onclick="changeBeforeAfterLook('reception')" class="px-5 py-2 rounded-full text-xs font-bold uppercase tracking-wider bg-white text-brand-textMuted border border-black/10 hover:text-brand-textPrimary">
+            ✨ Contemporary Reception Airbrush
+          </button>
+        </div>
+
+        <div class="relative max-w-3xl mx-auto h-[450px] sm:h-[550px] rounded-3xl overflow-hidden shadow-2xl border-2 border-brand-gold/30 select-none">
+          <!-- After Image (Base) -->
+          <img id="after-image-src" src="https://images.unsplash.com/photo-1595777457583-95e059d581b8?auto=format&fit=crop&w=1200&q=80" alt="After Makeover" class="absolute inset-0 w-full h-full object-cover">
+          <div class="absolute top-4 right-4 bg-brand-noir/80 text-white text-[10px] uppercase font-bold tracking-widest px-4 py-1.5 rounded-full backdrop-blur-md">
+            ✨ After: HD Royal Glam
+          </div>
+
+          <!-- Before Image (Overlay) -->
+          <div id="before-layer" class="absolute inset-y-0 left-0 overflow-hidden" style="width: 50%;">
+            <img id="before-image-src" src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=1200&q=80" alt="Before Makeover" class="absolute inset-0 w-full h-full object-cover max-w-none" style="width: 100%; height: 100%;">
+            <div class="absolute top-4 left-4 bg-white/90 text-brand-textPrimary text-[10px] uppercase font-bold tracking-widest px-4 py-1.5 rounded-full backdrop-blur-md border border-black/5">
+              Before Transformation
+            </div>
+          </div>
+
+          <!-- Range Input Control Slider -->
+          <input type="range" min="0" max="100" value="50" oninput="updateBeforeAfter(this.value)" class="absolute inset-0 w-full h-full opacity-0 cursor-ew-resize z-30">
+
+          <!-- Visible Divider Line -->
+          <div class="absolute inset-y-0 z-20 pointer-events-none" style="left: 50%; transform: translateX(-50%);">
+            <div class="w-1 h-full bg-brand-gold shadow-lg"></div>
+            <div class="w-10 h-10 -ml-4.5 rounded-full bg-white text-brand-gold border-2 border-brand-gold flex items-center justify-center shadow-lg absolute top-1/2 -translate-y-1/2">
+              <i data-lucide="chevrons-left-right" class="w-5 h-5"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- VIRTUAL LIVE MAKEUP SHADE SELECTOR -->
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+        <div class="glass-panel p-6 sm:p-10 rounded-3xl border border-brand-gold/30 grid lg:grid-cols-2 gap-8 items-center">
+          
+          <div class="space-y-4">
+            <span class="text-xs font-bold text-brand-gold uppercase tracking-widest">Interactive Glam Preview</span>
+            <h2 class="font-serif text-3xl font-bold text-brand-textPrimary">Virtual Makeup Shade Selector</h2>
+            <p class="text-xs text-brand-textMuted leading-relaxed">
+              Experience how our signature HD Lip Velvet and Highlighter palettes harmonize with different bridal saree and lehenga color schemes.
+            </p>
+
+            <div class="space-y-3 pt-2">
+              <span class="text-xs font-bold uppercase text-brand-textPrimary block">Select Lip Shade Palette:</span>
+              <div class="flex items-center gap-3">
+                <button onclick="updateMakeupShade('#8B0000', 'Ruby Royal Velvet')" class="w-9 h-9 rounded-full bg-[#8B0000] border-2 border-white shadow-md hover:scale-110 transition-transform" title="Ruby Royal Velvet"></button>
+                <button onclick="updateMakeupShade('#C71585', 'Antique Nude Rose')" class="w-9 h-9 rounded-full bg-[#C71585] border-2 border-white shadow-md hover:scale-110 transition-transform" title="Antique Nude Rose"></button>
+                <button onclick="updateMakeupShade('#E9967A', 'Champagne Coral')" class="w-9 h-9 rounded-full bg-[#E9967A] border-2 border-white shadow-md hover:scale-110 transition-transform" title="Champagne Coral"></button>
+                <button onclick="updateMakeupShade('#4A0E17', 'Deep Wine Nikah Special')" class="w-9 h-9 rounded-full bg-[#4A0E17] border-2 border-white shadow-md hover:scale-110 transition-transform" title="Deep Wine Nikah"></button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Color Swatch Display Card -->
+          <div class="glass-card p-6 rounded-3xl text-center space-y-4 bg-white border border-brand-border">
+            <div id="shade-preview-box" class="w-full h-32 rounded-2xl transition-all duration-500 flex items-center justify-center text-white font-serif text-lg font-bold shadow-inner" style="background-color: #8B0000;">
+              Ruby Royal Velvet Finish
+            </div>
+            <div class="flex justify-between items-center text-xs font-medium text-brand-textMuted">
+              <span>Shade Code: <strong id="shade-code-text" class="text-brand-textPrimary">#8B0000</strong></span>
+              <span>HD Finish: <strong>Waterproof Matte</strong></span>
+            </div>
+            <button onclick="openModal('dateModal')" class="w-full py-3 rounded-full text-xs font-bold uppercase tracking-wider bg-brand-gold text-white gold-glow">
+              Book Bridal Consultation For This Shade
+            </button>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- INTERACTIVE BRIDAL PACKAGE ESTIMATOR TOOL -->
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-20 space-y-12">
+        <div class="text-center max-w-2xl mx-auto space-y-3">
+          <span class="text-xs font-bold text-brand-gold uppercase tracking-widest">Interactive Calculator</span>
+          <h2 class="font-serif text-3xl sm:text-4xl font-bold text-brand-textPrimary">Custom Bridal Package Estimator</h2>
+          <p class="text-brand-textMuted text-xs sm:text-sm">Select your events and guest add-ons to build a personalized bridal quote in real-time.</p>
+        </div>
+
+        <div class="glass-panel p-6 sm:p-10 rounded-3xl grid lg:grid-cols-3 gap-8">
+          
+          <!-- Event Selection -->
+          <div class="space-y-4">
+            <h3 class="font-serif text-lg font-bold text-brand-textPrimary flex items-center gap-2">
+              <i data-lucide="sparkles" class="w-4 h-4 text-brand-gold"></i> 1. Select Bridal Events
+            </h3>
+            <div class="space-y-2">
+              <label class="glass-card p-3.5 rounded-2xl flex items-center justify-between cursor-pointer border border-black/5 hover:border-brand-gold/50">
+                <span class="text-xs text-brand-textPrimary font-medium">Main Wedding HD Makeup</span>
+                <input type="checkbox" checked value="14999" onchange="calculateBridalQuote()" class="bridal-calc-item accent-brand-gold w-4 h-4">
+              </label>
+              <label class="glass-card p-3.5 rounded-2xl flex items-center justify-between cursor-pointer border border-black/5 hover:border-brand-gold/50">
+                <span class="text-xs text-brand-textPrimary font-medium">Reception / Sangeet Glam</span>
+                <input type="checkbox" value="9999" onchange="calculateBridalQuote()" class="bridal-calc-item accent-brand-gold w-4 h-4">
+              </label>
+              <label class="glass-card p-3.5 rounded-2xl flex items-center justify-between cursor-pointer border border-black/5 hover:border-brand-gold/50">
+                <span class="text-xs text-brand-textPrimary font-medium">Engagement / Mehendi Look</span>
+                <input type="checkbox" value="7999" onchange="calculateBridalQuote()" class="bridal-calc-item accent-brand-gold w-4 h-4">
+              </label>
+            </div>
+          </div>
+
+          <!-- Add-ons Column -->
+          <div class="space-y-4">
+            <h3 class="font-serif text-lg font-bold text-brand-textPrimary flex items-center gap-2">
+              <i data-lucide="users" class="w-4 h-4 text-brand-gold"></i> 2. Guest Add-Ons & Skincare
+            </h3>
+            <div class="space-y-2">
+              <label class="glass-card p-3.5 rounded-2xl flex items-center justify-between cursor-pointer border border-black/5 hover:border-brand-gold/50">
+                <span class="text-xs text-brand-textPrimary font-medium">Mother/Sister Party Makeup (1 Guest)</span>
+                <input type="checkbox" value="3500" onchange="calculateBridalQuote()" class="bridal-calc-item accent-brand-gold w-4 h-4">
+              </label>
+              <label class="glass-card p-3.5 rounded-2xl flex items-center justify-between cursor-pointer border border-black/5 hover:border-brand-gold/50">
+                <span class="text-xs text-brand-textPrimary font-medium">Pre-Bridal HydraFacial Glow</span>
+                <input type="checkbox" value="2999" onchange="calculateBridalQuote()" class="bridal-calc-item accent-brand-gold w-4 h-4">
+              </label>
+              <label class="glass-card p-3.5 rounded-2xl flex items-center justify-between cursor-pointer border border-black/5 hover:border-brand-gold/50">
+                <span class="text-xs text-brand-textPrimary font-medium">Keratin Hair Therapy</span>
+                <input type="checkbox" value="4999" onchange="calculateBridalQuote()" class="bridal-calc-item accent-brand-gold w-4 h-4">
+              </label>
+            </div>
+          </div>
+
+          <!-- Total Display Box -->
+          <div class="glass-card p-6 rounded-3xl flex flex-col justify-between border border-brand-gold/30 bg-white">
+            <div class="space-y-3">
+              <span class="text-xs font-bold text-brand-gold uppercase tracking-wider">Estimated Package Value</span>
+              <div id="calc-total-display" class="text-4xl font-serif font-extrabold text-brand-textPrimary">₹14,999</div>
+              <p class="text-[11px] text-brand-textMuted">Includes mink lashes, dupatta draping, and luxury hair styling in Thanisandra.</p>
+            </div>
+
+            <div class="pt-6 space-y-3">
+              <button onclick="sendCalculatedQuote()" class="w-full py-3.5 rounded-full text-xs font-bold uppercase tracking-wider bg-brand-gold text-white hover:bg-brand-goldHover gold-glow transition-all">
+                Book Package via WhatsApp
+              </button>
+              <p class="text-[10px] text-center text-brand-textMuted">No advance required for date availability check.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Spotlight Cards with Links to Detailed Service & Course Sub-Pages -->
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-20 grid lg:grid-cols-2 gap-8">
+        <!-- Studio Feature -->
+        <div class="glass-panel p-8 sm:p-10 rounded-3xl border border-brand-gold/30 flex flex-col justify-between space-y-6 hover:border-brand-gold transition-colors">
+          <div class="space-y-4">
+            <span class="text-xs font-bold text-brand-gold uppercase tracking-wider">Signature Bridal Spotlight</span>
+            <h3 class="font-serif text-2xl sm:text-3xl text-brand-textPrimary font-semibold">HD Airbrush Bridal Glamour</h3>
+            <p class="text-brand-textMuted text-sm leading-relaxed">
+              Includes waterproof HD airbrush makeup, luxury customized hairstyle, saree/dupatta draping, mink lashes, and pre-bridal skin hydration infusion.
+            </p>
+            <ul class="space-y-2 text-xs text-brand-textPrimary font-medium">
+              <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-brand-gold"></i> Sweatproof 18-Hour Long Stay Finish</li>
+              <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-brand-gold"></i> Premium Brands (MAC, NARS, Huda Beauty, Charlotte Tilbury)</li>
+            </ul>
+          </div>
+          <div class="pt-4 border-t border-black/5 flex items-center justify-between gap-2">
+            <button onclick="switchTab('service-airbrush')" class="px-5 py-3 rounded-full text-xs font-bold uppercase tracking-wider border border-brand-gold text-brand-gold hover:bg-brand-gold hover:text-white transition-colors">
+              Full In-Depth Details
+            </button>
+            <button onclick="openModal('dateModal')" class="px-6 py-3 rounded-full text-xs font-bold uppercase tracking-wider bg-brand-gold text-white gold-glow">
+              Book Slot
+            </button>
+          </div>
+        </div>
+
+        <!-- Academy Feature -->
+        <div class="glass-panel p-8 sm:p-10 rounded-3xl border border-brand-roseGold/40 flex flex-col justify-between space-y-6 hover:border-brand-roseGold transition-colors">
+          <div class="space-y-4">
+            <span class="text-xs font-bold text-brand-roseGold uppercase tracking-wider">Academy Flagship Course</span>
+            <h3 class="font-serif text-2xl sm:text-3xl text-brand-textPrimary font-semibold">Master Diploma in Professional Makeup</h3>
+            <p class="text-brand-textMuted text-sm leading-relaxed">
+              A 3-Month comprehensive masterclass covering skin prep, color theory, airbrush, bridal hair artistry, client management, and social media branding.
+            </p>
+            <ul class="space-y-2 text-brand-textPrimary font-medium text-xs">
+              <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-brand-roseGold"></i> Free Complete Professional Starter Kit Included</li>
+              <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-brand-roseGold"></i> ISO Recognized Certificate & Model Portfolio Shoot</li>
+            </ul>
+          </div>
+          <div class="pt-4 border-t border-black/5 flex items-center justify-between gap-2">
+            <button onclick="switchTab('course-makeup-master')" class="px-5 py-3 rounded-full text-xs font-bold uppercase tracking-wider border border-brand-roseGold text-brand-roseGold hover:bg-brand-roseGold hover:text-white transition-colors">
+              Full Course Page
+            </button>
+            <button onclick="openModal('enrollModal')" class="px-6 py-3 rounded-full text-xs font-bold uppercase tracking-wider bg-brand-roseGold text-white transition-colors">
+              Enroll Now
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- GOOGLE BUSINESS PROFILE REVIEWS SHOWCASE -->
+      <div class="bg-white py-20 border-t border-brand-border">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+          
+          <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+            <div>
+              <div class="flex items-center gap-2 text-xs font-bold text-brand-gold uppercase tracking-widest mb-1">
+                Verified Google Business Reviews
+              </div>
+              <h2 class="font-serif text-3xl sm:text-4xl font-bold text-brand-textPrimary">Loved By Brides & Students</h2>
+            </div>
+
+            <!-- Review Filter Pills -->
+            <div class="flex flex-wrap items-center gap-2">
+              <button onclick="filterReviews('all')" class="google-rev-btn px-5 py-2 rounded-full text-xs font-bold bg-brand-gold text-white">All Reviews</button>
+              <button onclick="filterReviews('bridal')" class="google-rev-btn px-5 py-2 rounded-full text-xs font-bold bg-brand-card text-brand-textMuted hover:text-brand-textPrimary">Bridal Clients</button>
+              <button onclick="filterReviews('student')" class="google-rev-btn px-5 py-2 rounded-full text-xs font-bold bg-brand-card text-brand-textMuted hover:text-brand-textPrimary">Academy Students</button>
+            </div>
+          </div>
+
+          <!-- Google Reviews Grid -->
+          <div id="google-reviews-grid" class="grid md:grid-cols-3 gap-6">
+            <!-- Rendered via JS -->
+          </div>
+
+          <div class="text-center pt-4">
+            <a href="https://maps.google.com/?q=Thanisandra+Bengaluru+Karnataka+560077" target="_blank" class="inline-flex items-center gap-2 px-8 py-3.5 rounded-full text-xs font-bold uppercase tracking-wider border border-brand-gold text-brand-gold hover:bg-brand-gold hover:text-white transition-all">
+              <i data-lucide="external-link" class="w-4 h-4"></i> Read All 340+ Reviews on Google Maps
+            </a>
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+
+
+    <!-- -------------------------------------- -->
+    <!-- PAGE 2: MAKEOVER STUDIO OVERVIEW       -->
+    <!-- -------------------------------------- -->
+    <section id="page-studio" class="page-tab">
+      
+      <div class="relative py-20 bg-white border-b border-brand-border text-center px-4">
+        <div class="max-w-3xl mx-auto space-y-4">
+          <span class="text-xs font-bold text-brand-gold uppercase tracking-widest">Boutique Salon & Bridal Suite</span>
+          <h1 class="font-serif text-4xl sm:text-5xl font-bold text-brand-textPrimary">Studio Service Catalog</h1>
+          <p class="text-brand-textMuted text-sm sm:text-base">
+            Click on any service card below to open its dedicated in-depth information sub-page!
+          </p>
+        </div>
+      </div>
+
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 space-y-8">
+        
+        <!-- Live Search Bar & Price Sorter Bar -->
+        <div class="glass-panel p-4 rounded-full flex flex-col md:flex-row items-center justify-between gap-4">
+          
+          <div class="relative w-full md:w-96">
+            <i data-lucide="search" class="w-4 h-4 text-brand-textMuted absolute left-4 top-3.5"></i>
+            <input type="text" id="studio-search-input" onkeyup="searchStudioServices()" placeholder="Search services (e.g. Airbrush, Keratin, HydraFacial)..." class="w-full bg-brand-bg pl-11 pr-4 py-2.5 rounded-full text-xs text-brand-textPrimary focus:outline-none focus:border-brand-gold border border-black/5">
+          </div>
+
+          <div class="flex items-center gap-3 w-full md:w-auto justify-end">
+            <span class="text-xs font-bold text-brand-textMuted uppercase">Sort By Price:</span>
+            <select id="price-sort-select" onchange="sortStudioServices()" class="bg-brand-bg px-4 py-2 rounded-full text-xs text-brand-textPrimary font-semibold border border-black/5 focus:outline-none">
+              <option value="default">Featured First</option>
+              <option value="low-high">Price: Low to High</option>
+              <option value="high-low">Price: High to Low</option>
+            </select>
+          </div>
+
+        </div>
+
+        <!-- Services Grid -->
+        <div id="services-grid" class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 pt-4">
+          <!-- Rendered via JS -->
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ---------------------------------------------------- -->
+    <!-- SUB-PAGE 1: HD ROYAL BRIDAL MAKEOVER IN-DEPTH PAGE   -->
+    <!-- ---------------------------------------------------- -->
+    <section id="page-service-hd-bridal" class="page-tab">
+      <div class="bg-white py-12 border-b border-brand-border px-4">
+        <div class="max-w-7xl mx-auto space-y-3">
+          <div class="text-xs font-bold text-brand-gold uppercase tracking-wider">
+            <a href="javascript:void(0)" onclick="switchTab('studio')" class="hover:underline">Studio Catalog</a> &gt; HD Royal Bridal
+          </div>
+          <h1 class="font-serif text-4xl sm:text-5xl font-bold text-brand-textPrimary">HD Royal Bridal Makeover</h1>
+          <p class="text-brand-textMuted text-sm max-w-2xl">
+            In-depth breakdown of our signature 5-stage high-definition bridal ritual designed for long camera exposure under Thanisandra venue lighting.
+          </p>
+        </div>
+      </div>
+
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 space-y-12">
+        <div class="grid lg:grid-cols-3 gap-8">
+          <div class="lg:col-span-2 space-y-8">
+            <div class="glass-panel p-8 rounded-3xl space-y-6">
+              <h3 class="font-serif text-2xl font-bold text-brand-textPrimary">The 5-Stage Royal Ritual</h3>
+              <ol class="space-y-4 text-xs text-brand-textPrimary leading-relaxed">
+                <li class="p-4 rounded-2xl bg-brand-bg border border-black/5">
+                  <strong class="text-brand-gold block text-sm">Stage 1: Hydration Infusion & Skin Prep</strong>
+                  Deep cleansing with hyaluronic acid serums to create a smooth, plump canvas for 18-hour makeup adherence.
+                </li>
+                <li class="p-4 rounded-2xl bg-brand-bg border border-black/5">
+                  <strong class="text-brand-gold block text-sm">Stage 2: Color Correction & HD Base</strong>
+                  Neutralizing dark circles, hyperpigmentation, and redness using micro-pigmented HD concealers and light-reflecting liquid foundations.
+                </li>
+                <li class="p-4 rounded-2xl bg-brand-bg border border-black/5">
+                  <strong class="text-brand-gold block text-sm">Stage 3: 3D Eye Contouring & Lash Customization</strong>
+                  Custom glitter/matte eyeshadow gradients tailored to your saree/lehenga, finished with lightweight 3D mink lashes.
+                </li>
+                <li class="p-4 rounded-2xl bg-brand-bg border border-black/5">
+                  <strong class="text-brand-gold block text-sm">Stage 4: Royal Hairstyling & Jewelry Pinning</strong>
+                  Traditional South Indian braid with fresh jasmine/roses or contemporary textured bridal bun with maang tikka fixing.
+                </li>
+                <li class="p-4 rounded-2xl bg-brand-bg border border-black/5">
+                  <strong class="text-brand-gold block text-sm">Stage 5: Dupatta / Saree Draping & Lock-In Setting Spray</strong>
+                  Precise saree pleating or heavy bridal dupatta draping sealed with waterproof transfer-proof setting mist.
+                </li>
+              </ol>
+            </div>
+
+            <div class="glass-panel p-8 rounded-3xl space-y-4">
+              <h3 class="font-serif text-xl font-bold text-brand-textPrimary">Luxury Products & International Brands Used</h3>
+              <div class="flex flex-wrap gap-2 text-xs font-semibold">
+                <span class="px-4 py-2 rounded-full bg-brand-card text-brand-gold">Estée Lauder Double Wear</span>
+                <span class="px-4 py-2 rounded-full bg-brand-card text-brand-gold">MAC Cosmetics Studio Fix</span>
+                <span class="px-4 py-2 rounded-full bg-brand-card text-brand-gold">Huda Beauty Empowered Palette</span>
+                <span class="px-4 py-2 rounded-full bg-brand-card text-brand-gold">NARS Radiant Concealer</span>
+                <span class="px-4 py-2 rounded-full bg-brand-card text-brand-gold">Charlotte Tilbury Flawless Filter</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="glass-panel p-6 rounded-3xl h-fit space-y-6 sticky top-28 bg-white border border-brand-gold/40">
+            <div>
+              <span class="text-xs text-brand-textMuted uppercase font-bold block">Fixed Package Price</span>
+              <span class="text-3xl font-serif font-bold text-brand-gold">₹14,999</span>
+              <span class="text-[10px] text-brand-textMuted block mt-1">Estimated Duration: 3.5 Hours</span>
+            </div>
+            <button onclick="openModal('dateModal')" class="w-full py-3.5 rounded-full text-xs font-bold uppercase tracking-wider bg-brand-gold text-white gold-glow">
+              Check Date & Time Slot
+            </button>
+            <a href="https://wa.me/919876543210?text=Hi%20Amreens%20Studio,%20I%20want%20to%20inquire%20about%20HD%20Royal%20Bridal%20Makeover" target="_blank" class="block text-center w-full py-3 rounded-full text-xs font-bold uppercase tracking-wider border border-green-600 text-green-700 hover:bg-green-600 hover:text-white transition-colors">
+              Chat on WhatsApp
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ---------------------------------------------------- -->
+    <!-- SUB-PAGE 2: AIRBRUSH PERFECTION GLAM IN-DEPTH PAGE   -->
+    <!-- ---------------------------------------------------- -->
+    <section id="page-service-airbrush" class="page-tab">
+      <div class="bg-white py-12 border-b border-brand-border px-4">
+        <div class="max-w-7xl mx-auto space-y-3">
+          <div class="text-xs font-bold text-brand-gold uppercase tracking-wider">
+            <a href="javascript:void(0)" onclick="switchTab('studio')" class="hover:underline">Studio Catalog</a> &gt; Airbrush Glam
+          </div>
+          <h1 class="font-serif text-4xl sm:text-5xl font-bold text-brand-textPrimary">Airbrush Perfection Glam</h1>
+          <p class="text-brand-textMuted text-sm max-w-2xl">
+            Silicone-based micro-atomized airbrush technology for sweatproof, high-humidity durability and porcelain camera finish.
+          </p>
+        </div>
+      </div>
+
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 space-y-8">
+        <div class="grid lg:grid-cols-3 gap-8">
+          <div class="lg:col-span-2 space-y-6">
+            <div class="glass-panel p-8 rounded-3xl space-y-4">
+              <h3 class="font-serif text-2xl font-bold text-brand-textPrimary">Why Choose Airbrush Over Traditional Makeup?</h3>
+              <p class="text-xs text-brand-textMuted leading-relaxed">
+                Airbrush makeup uses compressed air to spray a fine mist of silicone pigment onto the skin, creating an even, weightless barrier that doesn’t clog pores or melt under hot venue lights.
+              </p>
+              <ul class="space-y-2 text-xs text-brand-textPrimary font-medium pt-2">
+                <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-brand-gold"></i> 100% Sweatproof & Tearproof for Emotional Wedding Ceremonies</li>
+                <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-brand-gold"></i> Zero Cakey Texture – Looks Natural Even Up Close</li>
+                <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-brand-gold"></i> Ultra-Long 18+ Hour Stay Without Touch-Ups</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="glass-panel p-6 rounded-3xl h-fit space-y-6 bg-white border border-brand-gold/40">
+            <div>
+              <span class="text-xs text-brand-textMuted uppercase font-bold block">Package Price</span>
+              <span class="text-3xl font-serif font-bold text-brand-gold">₹18,500</span>
+            </div>
+            <button onclick="openModal('dateModal')" class="w-full py-3.5 rounded-full text-xs font-bold uppercase tracking-wider bg-brand-gold text-white gold-glow">
+              Reserve Airbrush Slot
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ---------------------------------------------------- -->
+    <!-- SUB-PAGE 3: KERATIN HAIR SMOOTHING IN-DEPTH PAGE    -->
+    <!-- ---------------------------------------------------- -->
+    <section id="page-service-keratin" class="page-tab">
+      <div class="bg-white py-12 border-b border-brand-border px-4">
+        <div class="max-w-7xl mx-auto space-y-3">
+          <div class="text-xs font-bold text-brand-gold uppercase tracking-wider">
+            <a href="javascript:void(0)" onclick="switchTab('studio')" class="hover:underline">Studio Catalog</a> &gt; Hair Care
+          </div>
+          <h1 class="font-serif text-4xl sm:text-5xl font-bold text-brand-textPrimary">Keratin Hair Smoothing Treatment</h1>
+          <p class="text-brand-textMuted text-sm max-w-2xl">
+            Deep protein reconstruction therapy eliminating frizz, restoring elasticity, and delivering mirror shine for up to 5 months.
+          </p>
+        </div>
+      </div>
+
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 grid lg:grid-cols-3 gap-8">
+        <div class="lg:col-span-2 glass-panel p-8 rounded-3xl space-y-4">
+          <h3 class="font-serif text-2xl font-bold text-brand-textPrimary">4-Step Hair Reconstruction Process</h3>
+          <p class="text-xs text-brand-textMuted leading-relaxed">
+            1. Clarifying Wash -&gt; 2. Keratin Complex Application -&gt; 3. Blow-Dry Heat Sealing -&gt; 4. Flat-Iron Bond Lock. Formaldehyde-free and safe for color-treated hair.
+          </p>
+        </div>
+        <div class="glass-panel p-6 rounded-3xl h-fit space-y-4 bg-white border border-brand-gold/40">
+          <span class="text-2xl font-serif font-bold text-brand-gold">₹5,999</span>
+          <button onclick="openModal('dateModal')" class="w-full py-3 rounded-full text-xs font-bold uppercase bg-brand-gold text-white gold-glow">
+            Book Appointment
+          </button>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ---------------------------------------------------- -->
+    <!-- SUB-PAGE 4: GLOBAL COLOR & BALAYAGE IN-DEPTH PAGE   -->
+    <!-- ---------------------------------------------------- -->
+    <section id="page-service-global-color" class="page-tab">
+      <div class="bg-white py-12 border-b border-brand-border px-4">
+        <div class="max-w-7xl mx-auto space-y-3">
+          <div class="text-xs font-bold text-brand-gold uppercase tracking-wider">
+            <a href="javascript:void(0)" onclick="switchTab('studio')" class="hover:underline">Studio Catalog</a> &gt; Hair Color
+          </div>
+          <h1 class="font-serif text-4xl sm:text-5xl font-bold text-brand-textPrimary">Global Color & Balayage Highlights</h1>
+          <p class="text-brand-textMuted text-sm max-w-2xl">
+            Ammonia-free dimensional hair coloring infused with Olaplex bond repair. Customized to match Indian undertones.
+          </p>
+        </div>
+      </div>
+
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 grid lg:grid-cols-3 gap-8">
+        <div class="lg:col-span-2 glass-panel p-8 rounded-3xl space-y-4">
+          <h3 class="font-serif text-2xl font-bold text-brand-textPrimary">Custom Shade Matching</h3>
+          <p class="text-xs text-brand-textMuted leading-relaxed">
+            Choose from Honey Caramel, Mocha Brown, Rose Gold, or Ash Platinum streaks handcrafted by senior stylists.
+          </p>
+        </div>
+        <div class="glass-panel p-6 rounded-3xl h-fit space-y-4 bg-white border border-brand-gold/40">
+          <span class="text-2xl font-serif font-bold text-brand-gold">₹4,499</span>
+          <button onclick="openModal('dateModal')" class="w-full py-3 rounded-full text-xs font-bold uppercase bg-brand-gold text-white gold-glow">
+            Book Appointment
+          </button>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ---------------------------------------------------- -->
+    <!-- SUB-PAGE 5: EUROPEAN HYDRAFACIAL LUXE IN-DEPTH PAGE  -->
+    <!-- ---------------------------------------------------- -->
+    <section id="page-service-hydrafacial" class="page-tab">
+      <div class="bg-white py-12 border-b border-brand-border px-4">
+        <div class="max-w-7xl mx-auto space-y-3">
+          <div class="text-xs font-bold text-brand-gold uppercase tracking-wider">
+            <a href="javascript:void(0)" onclick="switchTab('studio')" class="hover:underline">Studio Catalog</a> &gt; Aesthetic Skincare
+          </div>
+          <h1 class="font-serif text-4xl sm:text-5xl font-bold text-brand-textPrimary">European HydraFacial Luxe</h1>
+          <p class="text-brand-textMuted text-sm max-w-2xl">
+            Advanced hydro-dermabrasion protocol combining vortex extraction, salicylic acid peel, and LED light therapy.
+          </p>
+        </div>
+      </div>
+
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 grid lg:grid-cols-3 gap-8">
+        <div class="lg:col-span-2 glass-panel p-8 rounded-3xl space-y-4">
+          <h3 class="font-serif text-2xl font-bold text-brand-textPrimary">7-Step Facial Protocol</h3>
+          <p class="text-xs text-brand-textMuted leading-relaxed">
+            Lymphatic Drainage -&gt; Cleansing -&gt; GlySal Peel -&gt; Vortex Extraction -&gt; Hyaluronic Infusion -&gt; Cold Hammer Sealing -&gt; Red LED Collagen Therapy.
+          </p>
+        </div>
+        <div class="glass-panel p-6 rounded-3xl h-fit space-y-4 bg-white border border-brand-gold/40">
+          <span class="text-2xl font-serif font-bold text-brand-gold">₹2,999</span>
+          <button onclick="openModal('dateModal')" class="w-full py-3 rounded-full text-xs font-bold uppercase bg-brand-gold text-white gold-glow">
+            Book Appointment
+          </button>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ---------------------------------------------------- -->
+    <!-- SUB-PAGE 6: BRIDAL GEL EXTENSIONS IN-DEPTH PAGE      -->
+    <!-- ---------------------------------------------------- -->
+    <section id="page-service-nail-art" class="page-tab">
+      <div class="bg-white py-12 border-b border-brand-border px-4">
+        <div class="max-w-7xl mx-auto space-y-3">
+          <div class="text-xs font-bold text-brand-gold uppercase tracking-wider">
+            <a href="javascript:void(0)" onclick="switchTab('studio')" class="hover:underline">Studio Catalog</a> &gt; Nail Artistry
+          </div>
+          <h1 class="font-serif text-4xl sm:text-5xl font-bold text-brand-textPrimary">Bridal Gel Extensions & Swarovski Art</h1>
+          <p class="text-brand-textMuted text-sm max-w-2xl">
+            Long-lasting gel nail enhancements adorned with real Swarovski crystals and custom French ombre gradients.
+          </p>
+        </div>
+      </div>
+
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 grid lg:grid-cols-3 gap-8">
+        <div class="lg:col-span-2 glass-panel p-8 rounded-3xl space-y-4">
+          <h3 class="font-serif text-2xl font-bold text-brand-textPrimary">Nail Care & Extensions</h3>
+          <p class="text-xs text-brand-textMuted leading-relaxed">
+            Uses non-damaging gel overlays cured under UV LED lamps. Lasts 4-6 weeks without chipping.
+          </p>
+        </div>
+        <div class="glass-panel p-6 rounded-3xl h-fit space-y-4 bg-white border border-brand-gold/40">
+          <span class="text-2xl font-serif font-bold text-brand-gold">₹2,199</span>
+          <button onclick="openModal('dateModal')" class="w-full py-3 rounded-full text-xs font-bold uppercase bg-brand-gold text-white gold-glow">
+            Book Appointment
+          </button>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- -------------------------------------- -->
+    <!-- PAGE 3: BEAUTY ACADEMY OVERVIEW        -->
+    <!-- -------------------------------------- -->
+    <section id="page-academy" class="page-tab">
+      
+      <div class="bg-white py-16 border-b border-brand-border">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
+          <div class="text-center max-w-3xl mx-auto space-y-3">
+            <span class="text-xs font-bold text-brand-roseGold uppercase tracking-widest">Start Your Beauty Empire</span>
+            <h1 class="font-serif text-4xl sm:text-5xl font-bold text-brand-textPrimary">Beautician & Makeup Academy</h1>
+            <p class="text-brand-textMuted text-sm">Empowering future beauty entrepreneurs with practical skill development in Thanisandra, Bengaluru.</p>
+          </div>
+
+          <div class="grid grid-cols-2 md:grid-cols-4 gap-4 pt-6">
+            <div class="glass-panel p-4 rounded-2xl flex items-center gap-3 border border-brand-roseGold/30">
+              <i data-lucide="briefcase" class="w-8 h-8 text-brand-roseGold flex-shrink-0"></i>
+              <div>
+                <h4 class="text-xs font-bold text-brand-textPrimary">Free Starter Kit</h4>
+                <p class="text-[10px] text-brand-textMuted">Branded tools included</p>
+              </div>
+            </div>
+            <div class="glass-panel p-4 rounded-2xl flex items-center gap-3 border border-brand-roseGold/30">
+              <i data-lucide="credit-card" class="w-8 h-8 text-brand-roseGold flex-shrink-0"></i>
+              <div>
+                <h4 class="text-xs font-bold text-brand-textPrimary">Flexible EMI</h4>
+                <p class="text-[10px] text-brand-textMuted">0% Interest monthly plans</p>
+              </div>
+            </div>
+            <div class="glass-panel p-4 rounded-2xl flex items-center gap-3 border border-brand-roseGold/30">
+              <i data-lucide="award" class="w-8 h-8 text-brand-roseGold flex-shrink-0"></i>
+              <div>
+                <h4 class="text-xs font-bold text-brand-textPrimary">ISO Certified</h4>
+                <p class="text-[10px] text-brand-textMuted">Globally valid certificate</p>
+              </div>
+            </div>
+            <div class="glass-panel p-4 rounded-2xl flex items-center gap-3 border border-brand-roseGold/30">
+              <i data-lucide="camera" class="w-8 h-8 text-brand-roseGold flex-shrink-0"></i>
+              <div>
+                <h4 class="text-xs font-bold text-brand-textPrimary">Portfolio Shoot</h4>
+                <p class="text-[10px] text-brand-textMuted">Model shoot for marketing</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- STUDENT EMI FEE CALCULATOR WIDGET -->
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div class="glass-panel p-6 sm:p-10 rounded-3xl border border-brand-roseGold/40 bg-white grid lg:grid-cols-2 gap-8 items-center">
+          <div class="space-y-3">
+            <span class="text-xs font-bold text-brand-roseGold uppercase tracking-widest">Financial Aid Calculator</span>
+            <h3 class="font-serif text-2xl sm:text-3xl font-bold text-brand-textPrimary">Student Monthly EMI Calculator</h3>
+            <p class="text-xs text-brand-textMuted leading-relaxed">
+              We offer 0% interest monthly installment plans for all students so you can focus on building your skill without financial strain.
+            </p>
+          </div>
+
+          <div class="glass-card p-6 rounded-2xl space-y-4 border border-brand-roseGold/30">
+            <div>
+              <label class="text-xs font-bold uppercase text-brand-textMuted block mb-1">Select Course For EMI Plan:</label>
+              <select id="emi-course-select" onchange="updateEmiCalculation()" class="w-full bg-white border border-black/10 rounded-xl px-4 py-3 text-xs font-bold text-brand-textPrimary focus:outline-none focus:border-brand-roseGold">
+                <option value="35000">Master Diploma in Makeup Artistry (₹35,000)</option>
+                <option value="22000">Beautician & Skincare Diploma (₹22,000)</option>
+                <option value="18000">Hair Chemical Specialist Course (₹18,000)</option>
+                <option value="15000">Nail Art & Extensions Masterclass (₹15,000)</option>
+              </select>
+            </div>
+
+            <div class="flex items-center justify-between pt-2 border-t border-black/5">
+              <span class="text-xs text-brand-textMuted font-medium">3-Month Installment:</span>
+              <span id="emi-amount-display" class="text-2xl font-serif font-bold text-brand-roseGold">₹11,667 / mo</span>
+            </div>
+
+            <button onclick="openModal('enrollModal')" class="w-full py-3 rounded-full text-xs font-bold uppercase tracking-wider bg-brand-roseGold text-white rose-glow">
+              Apply For EMI Admission
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- CLASSROOM SEAT RESERVATION WIDGET -->
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-16">
+        <div class="glass-panel p-6 sm:p-10 rounded-3xl border border-brand-gold/30 space-y-6">
+          <div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
+            <div>
+              <span class="text-xs font-bold text-brand-gold uppercase tracking-widest">Batch Seat Reservation</span>
+              <h3 class="font-serif text-2xl font-bold text-brand-textPrimary">Thanisandra Batch Classroom Seat Layout</h3>
+              <p class="text-xs text-brand-textMuted">Maximum 10 students per batch for individual focus. Click an available seat to lock your desk!</p>
+            </div>
+            <div class="flex items-center gap-4 text-xs font-bold">
+              <span class="flex items-center gap-1.5"><span class="w-3 h-3 rounded-full bg-emerald-500"></span> Available</span>
+              <span class="flex items-center gap-1.5"><span class="w-3 h-3 rounded-full bg-red-400"></span> Reserved</span>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-2 sm:grid-cols-5 gap-4 pt-2" id="seat-layout-grid">
+            <!-- Rendered via JS -->
+          </div>
+        </div>
+      </div>
+
+      <!-- Course Catalog -->
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-20 space-y-12">
+        <div class="flex flex-col sm:flex-row items-start sm:items-end justify-between gap-4">
+          <div>
+            <span class="text-xs font-bold text-brand-gold uppercase tracking-widest">Industry Oriented Curriculums</span>
+            <h2 class="font-serif text-3xl font-bold text-brand-textPrimary">Available Diploma Courses</h2>
+          </div>
+          <button onclick="openModal('enrollModal')" class="px-6 py-3 rounded-full text-xs font-bold uppercase tracking-wider bg-brand-gold text-white hover:bg-brand-goldHover gold-glow transition-all">
+            Apply For Admissions
+          </button>
+        </div>
+
+        <div id="course-list" class="space-y-6">
+          <!-- Dynamic Course Accordions Rendered via JS -->
+        </div>
+      </div>
+
+    </section>
+
+
+    <!-- ---------------------------------------------------- -->
+    <!-- SUB-PAGE 7: MASTER MAKEUP DIPLOMA IN-DEPTH PAGE      -->
+    <!-- ---------------------------------------------------- -->
+    <section id="page-course-makeup-master" class="page-tab">
+      <div class="bg-white py-12 border-b border-brand-border px-4">
+        <div class="max-w-7xl mx-auto space-y-3">
+          <div class="text-xs font-bold text-brand-roseGold uppercase tracking-wider">
+            <a href="javascript:void(0)" onclick="switchTab('academy')" class="hover:underline">Academy Courses</a> &gt; Master Diploma
+          </div>
+          <h1 class="font-serif text-4xl sm:text-5xl font-bold text-brand-textPrimary">Master Diploma in Professional Makeup Artistry</h1>
+          <p class="text-brand-textMuted text-sm max-w-2xl">
+            Complete 90-day hands-on syllabus, 25-piece vanity kit inventory, model portfolio shoot, and ISO certification.
+          </p>
+        </div>
+      </div>
+
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 space-y-12">
+        <div class="grid lg:grid-cols-3 gap-8">
+          <div class="lg:col-span-2 space-y-8">
+            <div class="glass-panel p-8 rounded-3xl space-y-4">
+              <h3 class="font-serif text-2xl font-bold text-brand-textPrimary">Free 25-Piece Vanity Kit Inventory Included</h3>
+              <div class="grid sm:grid-cols-2 gap-2 text-xs text-brand-textPrimary font-medium">
+                <span class="p-2.5 rounded-xl bg-brand-bg border border-black/5">✓ 15-Piece Professional Brush Set</span>
+                <span class="p-2.5 rounded-xl bg-brand-bg border border-black/5">✓ HD Mixing Palette & Spatula</span>
+                <span class="p-2.5 rounded-xl bg-brand-bg border border-black/5">✓ Airbrush Gun & Compressor Unit</span>
+                <span class="p-2.5 rounded-xl bg-brand-bg border border-black/5">✓ 35-Color Eyeshadow Palette</span>
+                <span class="p-2.5 rounded-xl bg-brand-bg border border-black/5">✓ Saree Draping Safety Pin Set</span>
+                <span class="p-2.5 rounded-xl bg-brand-bg border border-black/5">✓ Ring Light Tripod for Social Media</span>
+              </div>
+            </div>
+
+            <div class="glass-panel p-8 rounded-3xl space-y-4">
+              <h3 class="font-serif text-2xl font-bold text-brand-textPrimary">Student Career & Salary Earnings Path</h3>
+              <div class="space-y-3 text-xs">
+                <div class="p-4 rounded-2xl bg-brand-card">
+                  <strong class="text-brand-gold block text-sm">Month 1-3: Academy Practicals</strong>
+                  Work on live models under Amreen's guidance in Thanisandra studio.
+                </div>
+                <div class="p-4 rounded-2xl bg-brand-card">
+                  <strong class="text-brand-gold block text-sm">Month 4-6: Freelance Bridal Projects (Avg ₹40k - ₹75k / month)</strong>
+                  Start booking independent bridal clients with the free portfolio shoot provided.
+                </div>
+                <div class="p-4 rounded-2xl bg-brand-card">
+                  <strong class="text-brand-gold block text-sm">Year 1+: Studio Owner / Lead Artist (Avg ₹1.5L+ / month)</strong>
+                  Establish your own boutique beauty space or work with film/fashion production teams.
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="glass-panel p-6 rounded-3xl h-fit space-y-6 bg-white border border-brand-roseGold/40 sticky top-28">
+            <div>
+              <span class="text-xs text-brand-textMuted font-bold block uppercase">Course Fee</span>
+              <span class="text-3xl font-serif font-bold text-brand-roseGold">₹35,000</span>
+              <span class="text-xs text-brand-textMuted block mt-1">Installment: ₹11,666 / month</span>
+            </div>
+            <button onclick="openModal('enrollModal')" class="w-full py-3.5 rounded-full text-xs font-bold uppercase bg-brand-roseGold text-white rose-glow">
+              Apply For Admission
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ---------------------------------------------------- -->
+    <!-- SUB-PAGE 8: HAIR CHEMICAL CERTIFICATION IN-DEPTH    -->
+    <!-- ---------------------------------------------------- -->
+    <section id="page-course-hair-chemist" class="page-tab">
+      <div class="bg-white py-12 border-b border-brand-border px-4">
+        <div class="max-w-7xl mx-auto space-y-3">
+          <div class="text-xs font-bold text-brand-roseGold uppercase tracking-wider">
+            <a href="javascript:void(0)" onclick="switchTab('academy')" class="hover:underline">Academy Courses</a> &gt; Hair Chemical
+          </div>
+          <h1 class="font-serif text-4xl sm:text-5xl font-bold text-brand-textPrimary">Advanced Hair Chemical & Treatments Certification</h1>
+          <p class="text-brand-textMuted text-sm max-w-2xl">
+            1-Month intensive certification covering trichology, bond repair chemistry, keratin, cysteine, and balayage highlighting.
+          </p>
+        </div>
+      </div>
+
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 grid lg:grid-cols-3 gap-8">
+        <div class="lg:col-span-2 glass-panel p-8 rounded-3xl space-y-4">
+          <h3 class="font-serif text-2xl font-bold text-brand-textPrimary">50+ Hours Practice Dummy & Live Client Practicals</h3>
+          <p class="text-xs text-brand-textMuted leading-relaxed">
+            Learn cortex bond manipulation, pH balancing, bleach developer volumes, and neutralizer formulas hands-on.
+          </p>
+        </div>
+        <div class="glass-panel p-6 rounded-3xl h-fit space-y-4 bg-white border border-brand-roseGold/40">
+          <span class="text-2xl font-serif font-bold text-brand-roseGold">₹18,000</span>
+          <button onclick="openModal('enrollModal')" class="w-full py-3 rounded-full text-xs font-bold uppercase bg-brand-roseGold text-white">
+            Apply Now
+          </button>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ---------------------------------------------------- -->
+    <!-- SUB-PAGE 9: BEAUTICIAN & SKINCARE DIPLOMA IN-DEPTH   -->
+    <!-- ---------------------------------------------------- -->
+    <section id="page-course-beautician" class="page-tab">
+      <div class="bg-white py-12 border-b border-brand-border px-4">
+        <div class="max-w-7xl mx-auto space-y-3">
+          <div class="text-xs font-bold text-brand-roseGold uppercase tracking-wider">
+            <a href="javascript:void(0)" onclick="switchTab('academy')" class="hover:underline">Academy Courses</a> &gt; Beautician Diploma
+          </div>
+          <h1 class="font-serif text-4xl sm:text-5xl font-bold text-brand-textPrimary">Basic-to-Advanced Beautician Course</h1>
+          <p class="text-brand-textMuted text-sm max-w-2xl">
+            2-Month comprehensive beautician training covering skin anatomy, threading, waxing, facial cleanups, and head spa.
+          </p>
+        </div>
+      </div>
+
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 grid lg:grid-cols-3 gap-8">
+        <div class="lg:col-span-2 glass-panel p-8 rounded-3xl space-y-4">
+          <h3 class="font-serif text-2xl font-bold text-brand-textPrimary">Skin Anatomy & Facial Pressure Points</h3>
+          <p class="text-xs text-brand-textMuted leading-relaxed">
+            Includes facial massage routines, pimple extraction hygiene, Rica waxing technique, and herbal cleanup protocols.
+          </p>
+        </div>
+        <div class="glass-panel p-6 rounded-3xl h-fit space-y-4 bg-white border border-brand-roseGold/40">
+          <span class="text-2xl font-serif font-bold text-brand-roseGold">₹22,000</span>
+          <button onclick="openModal('enrollModal')" class="w-full py-3 rounded-full text-xs font-bold uppercase bg-brand-roseGold text-white">
+            Apply Now
+          </button>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ---------------------------------------------------- -->
+    <!-- SUB-PAGE 10: NAIL ART MASTERCLASS IN-DEPTH           -->
+    <!-- ---------------------------------------------------- -->
+    <section id="page-course-nail-masterclass" class="page-tab">
+      <div class="bg-white py-12 border-b border-brand-border px-4">
+        <div class="max-w-7xl mx-auto space-y-3">
+          <div class="text-xs font-bold text-brand-roseGold uppercase tracking-wider">
+            <a href="javascript:void(0)" onclick="switchTab('academy')" class="hover:underline">Academy Courses</a> &gt; Nail Masterclass
+          </div>
+          <h1 class="font-serif text-4xl sm:text-5xl font-bold text-brand-textPrimary">Specialized Nail Art & Extensions Masterclass</h1>
+          <p class="text-brand-textMuted text-sm max-w-2xl">
+            Intensive masterclass on acrylic extensions, gel overlays, electric nail drill operation, and 3D crystal embellishments.
+          </p>
+        </div>
+      </div>
+
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 grid lg:grid-cols-3 gap-8">
+        <div class="lg:col-span-2 glass-panel p-8 rounded-3xl space-y-4">
+          <h3 class="font-serif text-2xl font-bold text-brand-textPrimary">UV Gel & Dual-Form Sculpting</h3>
+          <p class="text-xs text-brand-textMuted leading-relaxed">
+            Master nail apex building, filing techniques, chrome powders, cat-eye effects, and nail extension refills.
+          </p>
+        </div>
+        <div class="glass-panel p-6 rounded-3xl h-fit space-y-4 bg-white border border-brand-roseGold/40">
+          <span class="text-2xl font-serif font-bold text-brand-roseGold">₹15,000</span>
+          <button onclick="openModal('enrollModal')" class="w-full py-3 rounded-full text-xs font-bold uppercase bg-brand-roseGold text-white">
+            Apply Now
+          </button>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ---------------------------------------------------- -->
+    <!-- SUB-PAGE 14: FULL GOOGLE REVIEWS WALL PAGE           -->
+    <!-- ---------------------------------------------------- -->
+    <section id="page-reviews" class="page-tab">
+      <div class="bg-white py-16 border-b border-brand-border text-center px-4">
+        <div class="max-w-3xl mx-auto space-y-3">
+          <div class="flex items-center justify-center gap-2 text-xs font-bold text-brand-gold uppercase tracking-widest">
+            Thanisandra, Bengaluru Business Profile
+          </div>
+          <h1 class="font-serif text-4xl sm:text-5xl font-bold text-brand-textPrimary">Google Reviews & Feedback Wall</h1>
+          <p class="text-brand-textMuted text-sm">4.9 ★ Average Rating based on 340+ verified client & student reviews.</p>
+        </div>
+      </div>
+
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 space-y-12">
+        <div class="glass-panel p-8 rounded-3xl grid md:grid-cols-3 gap-8 items-center">
+          <div class="text-center md:text-left space-y-2">
+            <span class="text-5xl font-serif font-extrabold text-brand-textPrimary">4.9</span>
+            <div class="text-amber-500 font-bold text-lg">★★★★★</div>
+            <p class="text-xs text-brand-textMuted">Based on 342 verified Google Reviews in Thanisandra</p>
+          </div>
+
+          <div class="space-y-2 text-xs">
+            <div class="flex items-center gap-2"><span>5 Stars</span><div class="flex-1 h-2 bg-brand-card rounded-full overflow-hidden"><div class="w-[94%] h-full bg-brand-gold"></div></div><span>94%</span></div>
+            <div class="flex items-center gap-2"><span>4 Stars</span><div class="flex-1 h-2 bg-brand-card rounded-full overflow-hidden"><div class="w-[5%] h-full bg-brand-gold"></div></div><span>5%</span></div>
+            <div class="flex items-center gap-2"><span>3 Stars</span><div class="flex-1 h-2 bg-brand-card rounded-full overflow-hidden"><div class="w-[1%] h-full bg-brand-gold"></div></div><span>1%</span></div>
+          </div>
+
+          <div class="text-center">
+            <a href="https://maps.google.com/?q=Thanisandra+Bengaluru+Karnataka+560077" target="_blank" class="px-6 py-3 rounded-full text-xs font-bold uppercase bg-brand-gold text-white gold-glow inline-block">
+              Write a Review on Google
+            </a>
+          </div>
+        </div>
+
+        <div id="google-reviews-wall-grid" class="grid md:grid-cols-3 gap-6">
+          <!-- Rendered via JS -->
+        </div>
+      </div>
+    </section>
+
+
+    <!-- -------------------------------------- -->
+    <!-- PAGE 15: LOOKBOOK & PORTFOLIO          -->
+    <!-- -------------------------------------- -->
+    <section id="page-lookbook" class="page-tab">
+      <div class="bg-white py-16 border-b border-brand-border text-center px-4">
+        <div class="max-w-3xl mx-auto space-y-3">
+          <span class="text-xs font-bold text-brand-gold uppercase tracking-widest">Our Work Speaks</span>
+          <h1 class="font-serif text-4xl sm:text-5xl font-bold text-brand-textPrimary">Visual Lookbook</h1>
+          <p class="text-brand-textMuted text-sm">Filter through real bridal makeovers and authentic student classroom creations.</p>
+        </div>
+      </div>
+
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 space-y-8">
+        <div class="flex flex-wrap justify-center gap-3">
+          <button onclick="filterGallery('all')" class="gallery-filter-btn px-6 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider bg-brand-gold text-white">All Works</button>
+          <button onclick="filterGallery('bridal')" class="gallery-filter-btn px-6 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider bg-white text-brand-textMuted border border-black/5 hover:text-brand-textPrimary">Bridal Transformations</button>
+          <button onclick="filterGallery('party')" class="gallery-filter-btn px-6 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider bg-white text-brand-textMuted border border-black/5 hover:text-brand-textPrimary">Party & Event Glam</button>
+          <button onclick="filterGallery('student')" class="gallery-filter-btn px-6 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider bg-white text-brand-textMuted border border-black/5 hover:text-brand-textPrimary">Student Classroom Work</button>
+        </div>
+
+        <div id="gallery-grid" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <!-- Rendered via JS -->
+        </div>
+      </div>
+    </section>
+
+
+    <!-- -------------------------------------- -->
+    <!-- PAGE 16: CONTACT & LOCATION            -->
+    <!-- -------------------------------------- -->
+    <section id="page-contact" class="page-tab">
+      
+      <div class="bg-white py-16 border-b border-brand-border text-center px-4">
+        <div class="max-w-3xl mx-auto space-y-3">
+          <span class="text-xs font-bold text-brand-gold uppercase tracking-widest">Thanisandra, Bengaluru</span>
+          <h1 class="font-serif text-4xl sm:text-5xl font-bold text-brand-textPrimary">Contact & Location</h1>
+          <p class="text-brand-textMuted text-sm">Open 24 hours daily for early morning bridal schedules & inquiries.</p>
+        </div>
+      </div>
+
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 grid lg:grid-cols-2 gap-12">
+        
+        <div class="space-y-8">
+          <div class="space-y-4">
+            <h2 class="font-serif text-3xl font-bold text-brand-textPrimary">Visit Our Studio & Academy</h2>
+            <p class="text-brand-textMuted text-sm leading-relaxed">
+              Conveniently located on Main Road, Fathima Layout in Thanisandra, Bengaluru. Equipped with state-of-the-art makeup vanity stations, bridal suite, and practical training facilities.
+            </p>
+          </div>
+
+          <div class="space-y-4">
+            <div class="glass-panel p-5 rounded-2xl flex items-start gap-4">
+              <i data-lucide="map-pin" class="w-6 h-6 text-brand-gold flex-shrink-0 mt-1"></i>
+              <div>
+                <h4 class="text-xs font-bold text-brand-textPrimary uppercase tracking-wider mb-1">Address</h4>
+                <p class="text-sm text-brand-textMuted leading-snug">
+                  Main Road, Fathima Layout, Bharath Nagar, Thanisandra, Bengaluru, Karnataka 560077
+                </p>
+              </div>
+            </div>
+
+            <div class="glass-panel p-5 rounded-2xl flex items-start gap-4">
+              <i data-lucide="clock" class="w-6 h-6 text-brand-gold flex-shrink-0 mt-1"></i>
+              <div>
+                <h4 class="text-xs font-bold text-brand-textPrimary uppercase tracking-wider mb-1">Operating Hours</h4>
+                <p class="text-sm text-brand-textMuted">Open 24 Hours Daily for Bridal Schedules & Inquiries</p>
+              </div>
+            </div>
+
+            <div class="glass-panel p-5 rounded-2xl flex items-start gap-4">
+              <i data-lucide="phone" class="w-6 h-6 text-brand-gold flex-shrink-0 mt-1"></i>
+              <div>
+                <h4 class="text-xs font-bold text-brand-textPrimary uppercase tracking-wider mb-1">Direct Hotline</h4>
+                <p class="text-sm text-brand-textMuted">+91 98765 43210 / +91 80 2345 6789</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex flex-wrap gap-4 pt-2">
+            <a href="https://maps.google.com/?q=Thanisandra+Bengaluru+Karnataka+560077" target="_blank" class="px-6 py-3.5 rounded-full text-xs font-bold uppercase tracking-wider bg-brand-gold text-white hover:bg-brand-goldHover transition-colors flex items-center gap-2">
+              <i data-lucide="navigation" class="w-4 h-4"></i> Get Directions
+            </a>
+            <a href="https://wa.me/919876543210?text=Hi%20Amreens%20Studio,%20I%20have%20an%20inquiry" target="_blank" class="px-6 py-3.5 rounded-full text-xs font-bold uppercase tracking-wider border border-green-600 text-green-700 hover:bg-green-600 hover:text-white transition-colors flex items-center gap-2">
+              <i data-lucide="message-circle" class="w-4 h-4"></i> WhatsApp Admissions
+            </a>
+          </div>
+        </div>
+
+        <div class="glass-panel p-4 rounded-3xl flex flex-col h-[450px]">
+          <div class="w-full h-full rounded-2xl overflow-hidden relative bg-white border border-black/5">
+            <iframe 
+              title="Amreens Academy Location Map"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.634032139151!2d77.6228!3d13.0581!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTPCsDAzJzI5LjIiTiA3N8KwMzcnMjIuMSJF!5e0!3m2!1sen!2sin!4v1650000000000!5m2!1sen!2sin" 
+              class="w-full h-full border-0 transition-all duration-500" 
+              allowfullscreen="" 
+              loading="lazy">
+            </iframe>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- FAQ ACCORDION -->
+      <div class="bg-white py-16 border-t border-brand-border">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
+          <div class="text-center space-y-2">
+            <span class="text-xs font-bold text-brand-gold uppercase tracking-widest">Common Questions</span>
+            <h2 class="font-serif text-3xl font-bold text-brand-textPrimary">Frequently Asked Questions</h2>
+          </div>
+
+          <div class="space-y-4">
+            <div class="glass-card p-5 rounded-2xl border border-black/5 space-y-2">
+              <h4 class="text-sm font-bold text-brand-textPrimary flex items-center justify-between cursor-pointer" onclick="this.nextElementSibling.classList.toggle('hidden')">
+                <span>Do you travel to venues for outstation/Bengaluru weddings?</span>
+                <i data-lucide="chevron-down" class="w-4 h-4 text-brand-gold"></i>
+              </h4>
+              <p class="text-xs text-brand-textMuted leading-relaxed pt-2 border-t border-black/5">
+                Yes! Amreen and her senior bridal team travel to wedding venues across Bengaluru (Thanisandra, Whitefield, Indiranagar, Yelahanka, etc.) and outstation destination weddings.
+              </p>
+            </div>
+
+            <div class="glass-card p-5 rounded-2xl border border-black/5 space-y-2">
+              <h4 class="text-sm font-bold text-brand-textPrimary flex items-center justify-between cursor-pointer" onclick="this.nextElementSibling.classList.toggle('hidden')">
+                <span>Is the Academy Diploma ISO recognized for job applications?</span>
+                <i data-lucide="chevron-down" class="w-4 h-4 text-brand-gold"></i>
+              </h4>
+              <p class="text-xs text-brand-textMuted leading-relaxed pt-2 border-t border-black/5">
+                Absolutely. Our certifications are ISO recognized, enabling graduates to work at luxury salons, start freelance bridal practice, or launch their own beauty studios globally.
+              </p>
+            </div>
+
+            <div class="glass-card p-5 rounded-2xl border border-black/5 space-y-2">
+              <h4 class="text-sm font-bold text-brand-textPrimary flex items-center justify-between cursor-pointer" onclick="this.nextElementSibling.classList.toggle('hidden')">
+                <span>Are tools and products provided during academy training?</span>
+                <i data-lucide="chevron-down" class="w-4 h-4 text-brand-gold"></i>
+              </h4>
+              <p class="text-xs text-brand-textMuted leading-relaxed pt-2 border-t border-black/5">
+                Yes, students receive a complimentary professional starter kit including branded brushes, practice palettes, and hair tools to keep.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- ========================================== -->
+  <!-- ADVANCED MULTI-COLUMN LUXURY FOOTER        -->
+  <!-- ========================================== -->
+  <footer class="bg-brand-noir text-stone-300 border-t border-brand-gold/30 pt-16 pb-8 px-4 sm:px-6 lg:px-8">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-white/10">
+      
+      <!-- Col 1: Brand Info -->
+      <div class="lg:col-span-2 space-y-4">
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-full border border-brand-gold flex items-center justify-center font-display text-brand-goldLight font-bold">AS</div>
+          <div>
+            <h3 class="font-serif text-lg font-bold text-white leading-tight">Amreen Academy & Makeover Studio</h3>
+            <p class="text-[10px] uppercase tracking-widest text-brand-goldLight">Minimal Luxury Bridal Suite & Beauty School</p>
+          </div>
+        </div>
+        <p class="text-xs text-stone-400 font-light leading-relaxed max-w-sm">
+          Bengaluru’s premier boutique suite providing haute couture bridal makeovers, airbrush artistry, and hands-on ISO-certified diploma courses in Thanisandra.
+        </p>
+        <div class="flex items-center gap-3 pt-2">
+          <a href="#" class="w-9 h-9 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-brand-goldLight hover:bg-brand-gold hover:text-white transition-colors"><i data-lucide="instagram" class="w-4 h-4"></i></a>
+          <a href="#" class="w-9 h-9 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-brand-goldLight hover:bg-brand-gold hover:text-white transition-colors"><i data-lucide="facebook" class="w-4 h-4"></i></a>
+          <a href="https://wa.me/919876543210" class="w-9 h-9 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-brand-goldLight hover:bg-brand-gold hover:text-white transition-colors"><i data-lucide="message-circle" class="w-4 h-4"></i></a>
+        </div>
+      </div>
+
+      <!-- Col 2: Studio Services -->
+      <div class="space-y-3">
+        <h4 class="text-xs font-bold uppercase tracking-widest text-brand-goldLight">Studio Services</h4>
+        <ul class="space-y-2 text-xs text-stone-400 font-medium">
+          <li><a href="javascript:void(0)" onclick="switchTab('service-hd-bridal')" class="hover:text-white transition-colors">HD Royal Bridal Makeover</a></li>
+          <li><a href="javascript:void(0)" onclick="switchTab('service-airbrush')" class="hover:text-white transition-colors">Airbrush Perfection Glam</a></li>
+          <li><a href="javascript:void(0)" onclick="switchTab('service-keratin')" class="hover:text-white transition-colors">Keratin Hair Smoothing</a></li>
+          <li><a href="javascript:void(0)" onclick="switchTab('service-global-color')" class="hover:text-white transition-colors">Global Color & Balayage</a></li>
+          <li><a href="javascript:void(0)" onclick="switchTab('service-hydrafacial')" class="hover:text-white transition-colors">European HydraFacial Luxe</a></li>
+          <li><a href="javascript:void(0)" onclick="switchTab('service-nail-art')" class="hover:text-white transition-colors">Bridal Swarovski Nail Art</a></li>
+        </ul>
+      </div>
+
+      <!-- Col 3: Academy Courses -->
+      <div class="space-y-3">
+        <h4 class="text-xs font-bold uppercase tracking-widest text-brand-goldLight">Academy Courses</h4>
+        <ul class="space-y-2 text-xs text-stone-400 font-medium">
+          <li><a href="javascript:void(0)" onclick="switchTab('course-makeup-master')" class="hover:text-white transition-colors">Master Makeup Artistry Diploma</a></li>
+          <li><a href="javascript:void(0)" onclick="switchTab('course-hair-chemist')" class="hover:text-white transition-colors">Hair Chemical & Treatments</a></li>
+          <li><a href="javascript:void(0)" onclick="switchTab('course-beautician')" class="hover:text-white transition-colors">Basic-to-Advanced Beautician</a></li>
+          <li><a href="javascript:void(0)" onclick="switchTab('course-nail-masterclass')" class="hover:text-white transition-colors">Nail Art & Gel Masterclass</a></li>
+        </ul>
+      </div>
+
+      <!-- Col 4: Quick Contact -->
+      <div class="space-y-3">
+        <h4 class="text-xs font-bold uppercase tracking-widest text-brand-goldLight">Visit Studio</h4>
+        <p class="text-xs text-stone-400 leading-snug">Main Road, Fathima Layout, Bharath Nagar, Thanisandra, Bengaluru 560077</p>
+        <p class="text-xs text-stone-300 font-bold">+91 98765 43210</p>
+        <button onclick="openModal('dateModal')" class="mt-2 w-full py-2 rounded-full text-[10px] font-bold uppercase tracking-wider bg-brand-gold text-white hover:bg-brand-goldHover">
+          Book Appointment
+        </button>
+      </div>
+
+    </div>
+
+    <!-- Bottom Copyright & Back-to-Top Bar -->
+    <div class="max-w-7xl mx-auto pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-stone-400 text-xs">
+      <p>© 2026 Amreen Studio & Academy. All Rights Reserved. Thanisandra, Bengaluru.</p>
+      <button onclick="window.scrollTo({top:0, behavior:'smooth'})" class="flex items-center gap-1 hover:text-brand-goldLight transition-colors text-[11px] font-semibold uppercase tracking-wider">
+        <span>Back To Top</span>
+        <i data-lucide="arrow-up" class="w-3.5 h-3.5"></i>
+      </button>
+    </div>
+  </footer>
+
+
+  <!-- ========================================== -->
+  <!-- MOBILE FIXED BOTTOM QUICK-BAR               -->
+  <!-- ========================================== -->
+  <div class="md:hidden fixed bottom-0 inset-x-0 z-40 bg-white/95 backdrop-blur-md border-t border-brand-border p-3 flex items-center justify-between gap-3 shadow-lg">
+    <a href="https://wa.me/919876543210?text=Hi%20Amreens%20Studio,%20I%20would%20like%20to%20inquire" target="_blank" class="flex-1 py-3 px-4 rounded-full bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs uppercase tracking-wider text-center flex items-center justify-center gap-2">
+      <i data-lucide="message-square" class="w-4 h-4"></i> WhatsApp Studio
+    </a>
+    <button onclick="openModal('enrollModal')" class="flex-1 py-3 px-4 rounded-full bg-brand-gold hover:bg-brand-goldHover text-white font-bold text-xs uppercase tracking-wider text-center flex items-center justify-center gap-2 gold-glow">
+      <i data-lucide="graduation-cap" class="w-4 h-4"></i> Academy Inquiry
+    </button>
+  </div>
+
+
+  <!-- ========================================== -->
+  <!-- TOAST NOTIFICATION CONTAINER               -->
+  <!-- ========================================== -->
+  <div id="toast-container" class="fixed top-24 right-4 z-50 flex flex-col gap-2 pointer-events-none"></div>
+
+
+  <!-- ========================================== -->
+  <!-- MODALS                                     -->
+  <!-- ========================================== -->
+
+  <!-- Modal 1: Date & Time-Slot Picker Modal -->
+  <div id="dateModal" class="fixed inset-0 z-50 hidden bg-black/60 backdrop-blur-sm flex items-center justify-center p-4">
+    <div class="glass-panel max-w-md w-full p-6 sm:p-8 rounded-3xl relative border border-brand-gold/40 bg-white">
+      <button onclick="closeModal('dateModal')" class="absolute top-4 right-4 text-brand-textMuted hover:text-brand-textPrimary">
+        <i data-lucide="x" class="w-6 h-6"></i>
+      </button>
+
+      <h3 class="font-serif text-2xl font-bold text-brand-textPrimary mb-1">Check Availability & Slot</h3>
+      <p class="text-xs text-brand-textMuted mb-6">Pick your event date and preferred time slot for Thanisandra Studio.</p>
+
+      <form onsubmit="handleDateCheck(event)" class="space-y-4">
+        <div>
+          <label class="text-xs uppercase text-brand-textMuted font-bold">Select Event Date</label>
+          <input type="date" required class="w-full mt-1 bg-brand-bg border border-black/10 rounded-2xl px-4 py-3 text-sm text-brand-textPrimary focus:outline-none focus:border-brand-gold">
+        </div>
+
+        <div>
+          <label class="text-xs uppercase text-brand-textMuted font-bold">Preferred Time Slot</label>
+          <select class="w-full mt-1 bg-brand-bg border border-black/10 rounded-2xl px-4 py-3 text-sm text-brand-textPrimary focus:outline-none focus:border-brand-gold">
+            <option>Early Morning Muhurt Slot (4:00 AM - 7:00 AM)</option>
+            <option>Morning Slot (9:00 AM - 12:00 PM)</option>
+            <option>Afternoon Slot (1:00 PM - 4:00 PM)</option>
+            <option>Evening Reception Slot (5:00 PM - 9:00 PM)</option>
+          </select>
+        </div>
+
+        <div>
+          <label class="text-xs uppercase text-brand-textMuted font-bold">Service Required</label>
+          <select class="w-full mt-1 bg-brand-bg border border-black/10 rounded-2xl px-4 py-3 text-sm text-brand-textPrimary focus:outline-none focus:border-brand-gold">
+            <option>HD Bridal Makeover</option>
+            <option>Airbrush Bridal Glam</option>
+            <option>Engagement / Reception Look</option>
+            <option>Pre-Bridal Skincare Package</option>
+          </select>
+        </div>
+
+        <div>
+          <label class="text-xs uppercase text-brand-textMuted font-bold">Phone Number</label>
+          <input type="tel" required placeholder="+91 98765 43210" class="w-full mt-1 bg-brand-bg border border-black/10 rounded-2xl px-4 py-3 text-sm text-brand-textPrimary focus:outline-none focus:border-brand-gold">
+        </div>
+
+        <button type="submit" class="w-full py-3.5 rounded-full text-xs font-bold uppercase tracking-wider bg-brand-gold text-white hover:bg-brand-goldHover gold-glow mt-2">
+          Verify Slot Availability
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Modal 2: Enrollment Modal -->
+  <div id="enrollModal" class="fixed inset-0 z-50 hidden bg-black/60 backdrop-blur-sm flex items-center justify-center p-4">
+    <div class="glass-panel max-w-md w-full p-6 sm:p-8 rounded-3xl relative border border-brand-roseGold/40 bg-white">
+      <button onclick="closeModal('enrollModal')" class="absolute top-4 right-4 text-brand-textMuted hover:text-brand-textPrimary">
+        <i data-lucide="x" class="w-6 h-6"></i>
+      </button>
+
+      <h3 class="font-serif text-2xl font-bold text-brand-textPrimary mb-2">Enrollment Quick Application</h3>
+      <p class="text-xs text-brand-textMuted mb-6">Join Thanisandra's most recognized ISO beauty training academy.</p>
+
+      <form onsubmit="handleInquirySubmit(event)" class="space-y-4">
+        <div>
+          <label class="text-xs uppercase text-brand-textMuted font-bold">Full Name</label>
+          <input type="text" required placeholder="Enter name" class="w-full mt-1 bg-brand-bg border border-black/10 rounded-2xl px-4 py-3 text-sm text-brand-textPrimary focus:outline-none focus:border-brand-roseGold">
+        </div>
+
+        <div>
+          <label class="text-xs uppercase text-brand-textMuted font-bold">WhatsApp Number</label>
+          <input type="tel" required placeholder="+91 98765 43210" class="w-full mt-1 bg-brand-bg border border-black/10 rounded-2xl px-4 py-3 text-sm text-brand-textPrimary focus:outline-none focus:border-brand-roseGold">
+        </div>
+
+        <div>
+          <label class="text-xs uppercase text-brand-textMuted font-bold">Select Course</label>
+          <select class="w-full mt-1 bg-brand-bg border border-black/10 rounded-2xl px-4 py-3 text-sm text-brand-textPrimary focus:outline-none focus:border-brand-roseGold">
+            <option>Master Diploma in Professional Makeup Artistry</option>
+            <option>Advanced Hair Chemical & Treatments Certification</option>
+            <option>Basic-to-Advanced Beautician Course</option>
+            <option>Nail Art & Gel Extensions Masterclass</option>
+          </select>
+        </div>
+
+        <button type="submit" class="w-full py-3.5 rounded-full text-xs font-bold uppercase tracking-wider bg-brand-roseGold text-white hover:bg-brand-textPrimary transition-colors mt-2">
+          Submit Application
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Modal 3: Syllabus Modal -->
+  <div id="syllabusModal" class="fixed inset-0 z-50 hidden bg-black/60 backdrop-blur-sm flex items-center justify-center p-4">
+    <div class="glass-panel max-w-sm w-full p-6 rounded-3xl relative text-center space-y-4 bg-white">
+      <button onclick="closeModal('syllabusModal')" class="absolute top-4 right-4 text-brand-textMuted hover:text-brand-textPrimary">
+        <i data-lucide="x" class="w-6 h-6"></i>
+      </button>
+
+      <i data-lucide="file-text" class="w-12 h-12 text-brand-gold mx-auto"></i>
+      <h3 class="font-serif text-xl font-bold text-brand-textPrimary">Course Syllabus Ready</h3>
+      <p class="text-xs text-brand-textMuted">Download the detailed PDF brochure and kit breakdown.</p>
+      
+      <button onclick="triggerSyllabusDownload()" class="w-full py-3 rounded-full text-xs font-bold uppercase tracking-wider bg-brand-gold text-white hover:bg-brand-goldHover gold-glow">
+        Download PDF Now
+      </button>
+    </div>
+  </div>
+
+  <!-- Modal 4: Interactive Bridal Style Quiz Modal -->
+  <div id="quizModal" class="fixed inset-0 z-50 hidden bg-black/60 backdrop-blur-sm flex items-center justify-center p-4">
+    <div class="glass-panel max-w-md w-full p-6 sm:p-8 rounded-3xl relative bg-white border border-brand-gold/40 space-y-6">
+      <button onclick="closeModal('quizModal')" class="absolute top-4 right-4 text-brand-textMuted hover:text-brand-textPrimary">
+        <i data-lucide="x" class="w-6 h-6"></i>
+      </button>
+
+      <div class="text-center space-y-2">
+        <span class="text-xs font-bold text-brand-gold uppercase tracking-widest">Find Your Perfect Match</span>
+        <h3 class="font-serif text-2xl font-bold text-brand-textPrimary">Bridal Style Finder Quiz</h3>
+      </div>
+
+      <div id="quiz-step-container" class="space-y-4">
+        <p class="text-xs font-bold text-brand-textPrimary uppercase">Q1: What is your preferred wedding aesthetic?</p>
+        <div class="space-y-2">
+          <button onclick="quizSelectOption('Royal HD South Indian')" class="w-full text-left p-3 rounded-2xl border border-black/10 text-xs font-semibold hover:border-brand-gold hover:bg-brand-bg transition-all">
+            👑 Traditional Royal South Indian (Heavy Saree, Temple Jewelry)
+          </button>
+          <button onclick="quizSelectOption('Contemporary Airbrush')" class="w-full text-left p-3 rounded-2xl border border-black/10 text-xs font-semibold hover:border-brand-gold hover:bg-brand-bg transition-all">
+            ✨ Contemporary Airbrush Glam (Porcelain Finish, Soft Pastel Tones)
+          </button>
+          <button onclick="quizSelectOption('Dewy Minimalist')" class="w-full text-left p-3 rounded-2xl border border-black/10 text-xs font-semibold hover:border-brand-gold hover:bg-brand-bg transition-all">
+            🌸 Dewy Glass Skin Look (Nude Lips, Natural Lashes)
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 5: Gallery Lightbox -->
+  <div id="lightboxModal" class="fixed inset-0 z-50 hidden bg-black/90 backdrop-blur-md flex items-center justify-center p-4" onclick="closeModal('lightboxModal')">
+    <div class="relative max-w-3xl w-full" onclick="event.stopPropagation()">
+      <button onclick="closeModal('lightboxModal')" class="absolute -top-10 right-0 text-white">
+        <i data-lucide="x" class="w-8 h-8"></i>
+      </button>
+      <img id="lightbox-img" src="" alt="Full view" class="w-full h-auto max-h-[80vh] object-contain rounded-2xl border border-brand-gold/40">
+      <p id="lightbox-caption" class="text-center text-xs font-semibold text-brand-gold mt-3"></p>
+    </div>
+  </div>
+
+
+  <!-- ========================================== -->
+  <!-- MASTER JAVASCRIPT LOGIC                    -->
+  <!-- ========================================== -->
+  <script>
+    // Initialize Lucide Icons
+    lucide.createIcons();
+
+    // Force Video Autoplay on Load
+    window.addEventListener('load', function() {
+      const v = document.getElementById('hero-video');
+      if (v) {
+        v.muted = true;
+        v.play().catch(function(e) {
+          console.log('Video Autoplay prevented:', e);
+        });
+      }
+    });
+
+    // Live Batch Countdown Timer
+    function startBatchCountdown() {
+      let days = 6, hours = 14, minutes = 22, seconds = 45;
+      const timerElem = document.getElementById('batch-timer');
+      setInterval(() => {
+        if (seconds > 0) seconds--;
+        else {
+          seconds = 59;
+          if (minutes > 0) minutes--;
+          else {
+            minutes = 59;
+            if (hours > 0) hours--;
+            else {
+              hours = 23;
+              if (days > 0) days--;
+            }
+          }
+        }
+        if (timerElem) {
+          timerElem.innerText = `${String(days).padStart(2,'0')}d : ${String(hours).padStart(2,'0')}h : ${String(minutes).padStart(2,'0')}m : ${String(seconds).padStart(2,'0')}s`;
+        }
+      }, 1000);
+    }
+    startBatchCountdown();
+
+    // Virtual Shade Selector
+    function updateMakeupShade(hexCode, shadeName) {
+      const box = document.getElementById('shade-preview-box');
+      const text = document.getElementById('shade-code-text');
+      if (box && text) {
+        box.style.backgroundColor = hexCode;
+        box.innerText = `${shadeName} Finish`;
+        text.innerText = hexCode;
+      }
+      showToast(`Shade Selected: ${shadeName}`);
+    }
+
+    // Interactive Before / After Slider
+    function updateBeforeAfter(val) {
+      document.getElementById('before-layer').style.width = `${val}%`;
+    }
+
+    function changeBeforeAfterLook(look) {
+      const btnTrad = document.getElementById('look-btn-traditional');
+      const btnRecep = document.getElementById('look-btn-reception');
+      const beforeImg = document.getElementById('before-image-src');
+      const afterImg = document.getElementById('after-image-src');
+
+      if (look === 'traditional') {
+        btnTrad.className = "px-5 py-2 rounded-full text-xs font-bold uppercase tracking-wider bg-brand-gold text-white";
+        btnRecep.className = "px-5 py-2 rounded-full text-xs font-bold uppercase tracking-wider bg-white text-brand-textMuted border border-black/10 hover:text-brand-textPrimary";
+        beforeImg.src = "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=1200&q=80";
+        afterImg.src = "https://images.unsplash.com/photo-1595777457583-95e059d581b8?auto=format&fit=crop&w=1200&q=80";
+      } else {
+        btnRecep.className = "px-5 py-2 rounded-full text-xs font-bold uppercase tracking-wider bg-brand-gold text-white";
+        btnTrad.className = "px-5 py-2 rounded-full text-xs font-bold uppercase tracking-wider bg-white text-brand-textMuted border border-black/10 hover:text-brand-textPrimary";
+        beforeImg.src = "https://images.unsplash.com/photo-1512496015851-a90fb38ba796?auto=format&fit=crop&w=1200&q=80";
+        afterImg.src = "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=1200&q=80";
+      }
+    }
+
+    // Student EMI Calculator
+    function updateEmiCalculation() {
+      const val = parseInt(document.getElementById('emi-course-select').value);
+      const monthly = Math.round(val / 3);
+      document.getElementById('emi-amount-display').innerText = `₹${monthly.toLocaleString('en-IN')} / mo`;
+    }
+
+    // Classroom Seat Reservation Matrix
+    function renderClassroomSeats() {
+      const grid = document.getElementById('seat-layout-grid');
+      if (!grid) return;
+      const seats = [
+        { id: 1, taken: true },
+        { id: 2, taken: true },
+        { id: 3, taken: false },
+        { id: 4, taken: true },
+        { id: 5, taken: false },
+        { id: 6, taken: true },
+        { id: 7, taken: false },
+        { id: 8, taken: true },
+        { id: 9, taken: false },
+        { id: 10, taken: true }
+      ];
+
+      grid.innerHTML = seats.map(s => `
+        <button onclick="${s.taken ? "showToast('Desk " + s.id + " is already reserved!', 'error')" : "reserveDesk(" + s.id + ")"}" 
+                class="p-4 rounded-2xl border text-center transition-all ${
+                  s.taken 
+                  ? 'bg-red-50 border-red-200 text-red-500 cursor-not-allowed' 
+                  : 'bg-emerald-50 border-emerald-200 text-emerald-700 hover:border-emerald-500 hover:scale-105 cursor-pointer shadow-sm'
+                }">
+          <i data-lucide="user" class="w-5 h-5 mx-auto mb-1"></i>
+          <span class="text-xs font-bold block">Desk #${s.id}</span>
+          <span class="text-[9px] uppercase font-semibold">${s.taken ? 'Taken' : 'Reserve'}</span>
+        </button>
+      `).join('');
+      lucide.createIcons();
+    }
+    renderClassroomSeats();
+
+    function reserveDesk(deskId) {
+      showToast(`Desk #${deskId} reserved! Proceeding to application form...`);
+      setTimeout(() => openModal('enrollModal'), 600);
+    }
+
+    // Toast Notification System
+    function showToast(message, type = 'success') {
+      const container = document.getElementById('toast-container');
+      const toast = document.createElement('div');
+      toast.className = `glass-panel px-5 py-3 rounded-full text-xs font-bold flex items-center gap-2 border text-brand-textPrimary bg-white shadow-md pointer-events-auto transition-all transform translate-y-2 opacity-0 ${
+        type === 'success' ? 'border-brand-gold text-brand-gold' : 'border-brand-roseGold text-brand-roseGold'
+      }`;
+      toast.innerHTML = `<i data-lucide="check-circle" class="w-4 h-4"></i> ${message}`;
+      
+      container.appendChild(toast);
+      lucide.createIcons();
+
+      setTimeout(() => {
+        toast.classList.remove('translate-y-2', 'opacity-0');
+      }, 50);
+
+      setTimeout(() => {
+        toast.classList.add('opacity-0', 'translate-y-2');
+        setTimeout(() => toast.remove(), 300);
+      }, 3500);
+    }
+
+    // Tab Navigation System
+    function switchTab(pageId) {
+      const tabs = document.querySelectorAll('.page-tab');
+      tabs.forEach(tab => tab.classList.remove('active'));
+
+      const target = document.getElementById(`page-${pageId}`);
+      if (target) {
+        target.classList.add('active');
+      }
+
+      const navBtns = document.querySelectorAll('.nav-link');
+      navBtns.forEach(btn => {
+        btn.classList.remove('text-brand-gold', 'active');
+        btn.classList.add('text-brand-textMuted');
+      });
+
+      const activeBtn = document.getElementById(`nav-${pageId}`);
+      if (activeBtn) {
+        activeBtn.classList.remove('text-brand-textMuted');
+        activeBtn.classList.add('text-brand-gold', 'active');
+      }
+
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    function toggleMobileMenu() {
+      document.getElementById('mobile-menu').classList.toggle('hidden');
+    }
+
+    // Google Reviews Data
+    const googleReviewsData = [
+      {
+        type: 'bridal',
+        name: 'Swati Hegde',
+        date: '2 weeks ago',
+        rating: 5,
+        review: 'Amreen did my HD bridal makeup for my wedding in Thanisandra. The airbrush finish was weightless and lasted through my morning Muhurtham and evening reception!',
+        ownerReply: 'Response: Thank you Swati! Wishing you endless joy and love in your married life! ❤️'
+      },
+      {
+        type: 'student',
+        name: 'Nida Khan',
+        date: '1 month ago',
+        rating: 5,
+        review: 'Graduated from the 3-Month Master Makeup Diploma. Amreen ma\'am gives 100% individual practical guidance. The free vanity tool kit was super useful!',
+        ownerReply: 'Response: So proud of your career growth, Nida! All the best with your new salon setup!'
+      },
+      {
+        type: 'bridal',
+        name: 'Ramya Krishnan',
+        date: '2 months ago',
+        rating: 5,
+        review: 'Best bridal artist in North Bengaluru! She arrived at our venue at 4:00 AM sharp for my early morning Muhurtham. Saree draping and mink lashes were on point.',
+        ownerReply: 'Response: Thank you Ramya! Early morning slots are always our specialty.'
+      }
+    ];
+
+    function renderGoogleReviews(items) {
+      const grid = document.getElementById('google-reviews-grid');
+      const wallGrid = document.getElementById('google-reviews-wall-grid');
+      
+      const content = items.map(r => `
+        <div class="glass-panel p-6 rounded-3xl border border-black/5 bg-white space-y-3">
+          <div class="flex items-center justify-between">
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 rounded-full bg-brand-gold text-white font-bold flex items-center justify-center text-sm">
+                ${r.name.charAt(0)}
+              </div>
+              <div>
+                <h4 class="text-xs font-bold text-brand-textPrimary flex items-center gap-1">
+                  ${r.name} <i data-lucide="check-circle" class="w-3.5 h-3.5 text-blue-500 inline"></i>
+                </h4>
+                <span class="text-[10px] text-brand-textMuted">${r.date}</span>
+              </div>
+            </div>
+            <span class="text-xs font-bold text-amber-500">★★★★★</span>
+          </div>
+          <p class="text-xs text-brand-textMuted leading-relaxed">${r.review}</p>
+          <div class="p-3 bg-brand-card rounded-2xl text-[11px] italic text-brand-textPrimary font-medium">
+            ${r.ownerReply}
+          </div>
+        </div>
+      `).join('');
+
+      if (grid) grid.innerHTML = content;
+      if (wallGrid) wallGrid.innerHTML = content;
+      lucide.createIcons();
+    }
+
+    function filterReviews(type) {
+      const btns = document.querySelectorAll('.google-rev-btn');
+      btns.forEach(b => {
+        b.classList.remove('bg-brand-gold', 'text-white');
+        b.classList.add('bg-brand-card', 'text-brand-textMuted');
+      });
+      event.target.classList.remove('bg-brand-card', 'text-brand-textMuted');
+      event.target.classList.add('bg-brand-gold', 'text-white');
+
+      if (type === 'all') renderGoogleReviews(googleReviewsData);
+      else renderGoogleReviews(googleReviewsData.filter(r => r.type === type));
+    }
+
+    renderGoogleReviews(googleReviewsData);
+
+    // Bridal Package Estimator
+    function calculateBridalQuote() {
+      const items = document.querySelectorAll('.bridal-calc-item');
+      let total = 0;
+      items.forEach(item => {
+        if (item.checked) total += parseInt(item.value);
+      });
+      document.getElementById('calc-total-display').innerText = `₹${total.toLocaleString('en-IN')}`;
+    }
+
+    function sendCalculatedQuote() {
+      const total = document.getElementById('calc-total-display').innerText;
+      const url = `https://wa.me/919876543210?text=Hi%20Amreens%20Studio,%20I%20used%20your%20Bridal%20Calculator%20and%20got%20an%20estimate%20of%20${encodeURIComponent(total)}.%20Please%20check%20my%20date%20availability.`;
+      window.open(url, '_blank');
+      showToast('Redirecting to WhatsApp with your estimated quote!');
+    }
+
+    // Studio Service Catalog, Search & Sort
+    let currentServices = [
+      { cat: 'bridal', targetTab: 'service-hd-bridal', title: 'HD Royal Bridal Makeover', desc: 'High Definition waterproof makeup, intricate hairstyle, saree draping & mink lashes.', duration: '3.5 Hours', rawPrice: 14999, price: '₹14,999' },
+      { cat: 'bridal', targetTab: 'service-airbrush', title: 'Airbrush Perfection Glam', desc: 'Weightless airbrush silicone finish for flawless porcelain skin under venue lighting.', duration: '4 Hours', rawPrice: 18500, price: '₹18,500' },
+      { cat: 'hair', targetTab: 'service-keratin', title: 'Keratin Hair Smoothing', desc: 'Deep protein reconstruction treatment eliminating frizz and delivering silky mirror shine.', duration: '2.5 Hours', rawPrice: 5999, price: '₹5,999' },
+      { cat: 'hair', targetTab: 'service-global-color', title: 'Global Color & Highlights', desc: 'Ammonia-free premium hair coloring with customized balayage or ombre highlights.', duration: '3 Hours', rawPrice: 4499, price: '₹4,499' },
+      { cat: 'skin', targetTab: 'service-hydrafacial', title: 'European HydraFacial Luxe', desc: 'Deep pore vacuum extraction, antioxidant serum infusion, and LED phototherapy glow.', duration: '75 Mins', rawPrice: 2999, price: '₹2,999' },
+      { cat: 'nails', targetTab: 'service-nail-art', title: 'Bridal Gel Extensions', desc: 'Custom length acrylic/gel extensions with Swarovski crystal nail art.', duration: '2 Hours', rawPrice: 2199, price: '₹2,199' }
+    ];
+
+    function renderServices(items) {
+      const grid = document.getElementById('services-grid');
+      if (!grid) return;
+      grid.innerHTML = items.map(s => `
+        <div class="glass-panel p-6 rounded-3xl space-y-4 border border-brand-border hover:border-brand-gold/60 transition-all bg-white flex flex-col justify-between">
+          <div class="space-y-3">
+            <div class="flex items-center justify-between">
+              <span class="px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider bg-brand-card text-brand-gold">${s.duration}</span>
+              <span class="text-lg font-serif font-bold text-brand-gold">${s.price}</span>
+            </div>
+            <h3 class="font-serif text-xl font-bold text-brand-textPrimary">${s.title}</h3>
+            <p class="text-xs text-brand-textMuted leading-relaxed">${s.desc}</p>
+          </div>
+          <div class="pt-2 space-y-2">
+            <button onclick="switchTab('${s.targetTab}')" class="w-full py-2.5 rounded-full text-xs font-bold uppercase tracking-wider bg-brand-gold text-white gold-glow">
+              View In-Depth Sub-Page
+            </button>
+            <a href="https://wa.me/919876543210?text=Hi%20Amreens%20Studio,%20I%20want%20to%20book:${encodeURIComponent(s.title)}" target="_blank" class="block text-center py-2 rounded-full text-xs font-bold uppercase tracking-wider border border-brand-gold text-brand-gold hover:bg-brand-gold hover:text-white transition-colors">
+              Book via WhatsApp
+            </a>
+          </div>
+        </div>
+      `).join('');
+    }
+
+    function searchStudioServices() {
+      const query = document.getElementById('studio-search-input').value.toLowerCase();
+      const filtered = currentServices.filter(s => s.title.toLowerCase().includes(query) || s.desc.toLowerCase().includes(query));
+      renderServices(filtered);
+    }
+
+    function sortStudioServices() {
+      const val = document.getElementById('price-sort-select').value;
+      let sorted = [...currentServices];
+      if (val === 'low-high') sorted.sort((a, b) => a.rawPrice - b.rawPrice);
+      else if (val === 'high-low') sorted.sort((a, b) => b.rawPrice - a.rawPrice);
+      renderServices(sorted);
+    }
+
+    renderServices(currentServices);
+
+    // Academy Courses Accordion Logic
+    const academyCourses = [
+      {
+        id: 'c1',
+        targetTab: 'course-makeup-master',
+        title: 'Master Diploma in Professional Makeup Artistry & Hair Styling',
+        duration: '3 Months (Weekday/Weekend)',
+        tools: 'Full Professional Kit Included',
+        cert: 'ISO Recognized Master Diploma',
+        modules: [
+          'Skin Prep, Undertone Analysis & Contour Sculpting',
+          'Bridal HD, Airbrush & Sangeet Glamour Looks',
+          'Advanced Hair Styling, Saree Draping & Veil Setting',
+          'Client Portfolio Shoot & Social Media Branding'
+        ]
+      },
+      {
+        id: 'c2',
+        targetTab: 'course-hair-chemist',
+        title: 'Advanced Hair Chemical & Treatments Certification',
+        duration: '1 Month Intensive',
+        tools: 'Hair Dummy & Chemical Practice Kit',
+        cert: 'Hair Chemist Specialist Certificate',
+        modules: [
+          'Hair Structure, Scalp Analysis & Trichology',
+          'Keratin, Smoothening, Botox & Cysteine Treatments',
+          'Global Coloring, Balayage Highlights & Toning'
+        ]
+      },
+      {
+        id: 'c3',
+        targetTab: 'course-beautician',
+        title: 'Basic-to-Advanced Beautician & Skincare Course',
+        duration: '2 Months',
+        tools: 'Facial Kits & Practice Tools Included',
+        cert: 'Certified Beautician Diploma',
+        modules: [
+          'Threading, Waxing & Facial Cleanup Routines',
+          'Aesthetic HydraFacials & Skin Glow Treatments',
+          'Head Spa, Hair Spa & Body Polishing'
+        ]
+      },
+      {
+        id: 'c4',
+        targetTab: 'course-nail-masterclass',
+        title: 'Specialized Nail Art & Gel Extension Masterclass',
+        duration: '1 Month Express',
+        tools: 'UV LED Lamp & Gel Nails Set',
+        cert: 'Nail Technician Specialist Certificate',
+        modules: [
+          'Acrylic & UV Gel Extensions Application',
+          '3D Swarovski Crystal Setting & French Ombre',
+          'Electric Nail Drill File Operation & Removal'
+        ]
+      }
+    ];
+
+    function renderCourses() {
+      const list = document.getElementById('course-list');
+      if (!list) return;
+      list.innerHTML = academyCourses.map(c => `
+        <div class="glass-panel p-6 sm:p-8 rounded-3xl border border-brand-roseGold/30 space-y-4 bg-white">
+          <div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
+            <div>
+              <span class="text-[10px] font-bold uppercase tracking-wider text-brand-roseGold">Certified Diploma</span>
+              <h3 class="font-serif text-2xl font-bold text-brand-textPrimary mt-1">${c.title}</h3>
+            </div>
+            <div class="flex flex-wrap items-center gap-2">
+              <button onclick="switchTab('${c.targetTab}')" class="px-5 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider bg-brand-roseGold text-white rose-glow">
+                Full Course Sub-Page
+              </button>
+              <button onclick="toggleAccordion('${c.id}')" class="px-5 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider border border-brand-roseGold text-brand-roseGold hover:bg-brand-roseGold hover:text-white transition-colors">
+                Quick Syllabus
+              </button>
+            </div>
+          </div>
+
+          <div class="flex flex-wrap gap-4 text-xs text-brand-textMuted border-t border-black/5 pt-3">
+            <span><strong>Duration:</strong> ${c.duration}</span> | 
+            <span><strong>Kit:</strong> ${c.tools}</span> | 
+            <span><strong>Certification:</strong> ${c.cert}</span>
+          </div>
+
+          <div id="accordion-${c.id}" class="hidden pt-4 border-t border-black/5 space-y-3">
+            <h4 class="text-xs font-bold text-brand-textPrimary uppercase tracking-wider">Module Breakdown:</h4>
+            <ul class="grid sm:grid-cols-2 gap-2 text-xs text-brand-textPrimary">
+              ${c.modules.map(m => `<li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-brand-roseGold"></i> ${m}</li>`).join('')}
+            </ul>
+          </div>
+        </div>
+      `).join('');
+      lucide.createIcons();
+    }
+
+    function toggleAccordion(id) {
+      document.getElementById(`accordion-${id}`).classList.toggle('hidden');
+    }
+
+    renderCourses();
+
+    // Lookbook Gallery
+    const galleryItems = [
+      { type: 'bridal', img: 'https://images.unsplash.com/photo-1595777457583-95e059d581b8?auto=format&fit=crop&w=800&q=80', title: 'Royal HD South Indian Bride' },
+      { type: 'bridal', img: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=800&q=80', title: 'Airbrush Reception Glam' },
+      { type: 'party', img: 'https://images.unsplash.com/photo-1512496015851-a90fb38ba796?auto=format&fit=crop&w=800&q=80', title: 'Soft Glam Party Look' },
+      { type: 'student', img: 'https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=800&q=80', title: 'Academy Practical Session' },
+      { type: 'student', img: 'https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&w=800&q=80', title: 'Student Hair Styling Assessment' },
+      { type: 'party', img: 'https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=800&q=80', title: 'Studio Suite' }
+    ];
+
+    function renderGallery(items) {
+      const grid = document.getElementById('gallery-grid');
+      if (!grid) return;
+      grid.innerHTML = items.map(g => `
+        <div onclick="openLightbox('${g.img}', '${g.title}')" class="group relative h-80 rounded-3xl overflow-hidden cursor-pointer border border-brand-border bg-white shadow-sm">
+          <img src="${g.img}" alt="${g.title}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity p-6 flex flex-col justify-end">
+            <p class="text-xs font-bold text-brand-gold uppercase tracking-wider">${g.type}</p>
+            <h4 class="font-serif text-lg font-bold text-white">${g.title}</h4>
+          </div>
+        </div>
+      `).join('');
+    }
+
+    function filterGallery(cat) {
+      const btns = document.querySelectorAll('.gallery-filter-btn');
+      btns.forEach(b => {
+        b.classList.remove('bg-brand-gold', 'text-white');
+        b.classList.add('bg-white', 'text-brand-textMuted');
+      });
+      event.target.classList.remove('bg-white', 'text-brand-textMuted');
+      event.target.classList.add('bg-brand-gold', 'text-white');
+
+      if (cat === 'all') renderGallery(galleryItems);
+      else renderGallery(galleryItems.filter(g => g.type === cat));
+    }
+
+    renderGallery(galleryItems);
+
+    function openLightbox(src, caption) {
+      document.getElementById('lightbox-img').src = src;
+      document.getElementById('lightbox-caption').innerText = caption;
+      openModal('lightboxModal');
+    }
+
+    // Bridal Quiz Logic
+    function quizSelectOption(lookName) {
+      closeModal('quizModal');
+      showToast(`Recommended Package: ${lookName} Bridal Makeup! Redirecting...`);
+      setTimeout(() => switchTab('studio'), 1000);
+    }
+
+    // Modal Helpers & Handlers
+    function openModal(id) {
+      document.getElementById(id).classList.remove('hidden');
+    }
+
+    function closeModal(id) {
+      document.getElementById(id).classList.add('hidden');
+    }
+
+    function handleDateCheck(e) {
+      e.preventDefault();
+      showToast('Date slot available! Our Thanisandra coordinator will contact you.');
+      closeModal('dateModal');
+    }
+
+    function handleInquirySubmit(e) {
+      e.preventDefault();
+      showToast('Admissions inquiry received! We will send you fee details.');
+      closeModal('enrollModal');
+    }
+
+    function triggerSyllabusDownload() {
+      showToast('Syllabus PDF downloaded successfully.');
+      closeModal('syllabusModal');
+    }
+  </script>
+
+</body>
+</html>
