@@ -1,0 +1,4 @@
+{
+  "buildCommand": "python3 -c \"import gzip,pathlib,subprocess; r=pathlib.Path('.'); (r/'assets').mkdir(exist_ok=True); (r/'assets/style.css').write_bytes(gzip.decompress((r/'.deploy/style.css.gz').read_bytes())); (r/'assets/main.js').write_bytes(gzip.decompress((r/'.deploy/main.js.gz').read_bytes())); (r/'build.py').write_bytes(gzip.decompress((r/'.deploy/build.py.gz').read_bytes())); (r/'public/assets').mkdir(parents=True,exist_ok=True); (r/'public/assets/style.css').write_bytes((r/'assets/style.css').read_bytes()); (r/'public/assets/main.js').write_bytes((r/'assets/main.js').read_bytes()); subprocess.run(['python3','../build.py'],cwd='public',check=True)\"",
+  "outputDirectory": "public"
+}
