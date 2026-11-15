@@ -714,3 +714,37 @@
   #courses .course-card-expanded,
   #courses .course-card-expanded img { transition:none !important; }
 }
+
+
+/* Mobile hero positioning correction: keep the full academy name legible,
+   then bring the supporting copy inward and slightly lower. */
+@media (max-width:650px) {
+  #home .hero h1 {
+    z-index:10 !important;
+  }
+  #home .hero h1 > .hero-title-academy {
+    transform:translateX(-2.5%) !important;
+    text-shadow:0 3px 12px rgba(0,0,0,.48) !important;
+  }
+  #home .hero-copy {
+    top:122px !important;
+    left:60.5% !important;
+    right:4.5% !important;
+    z-index:11 !important;
+  }
+  #home .mobile-hero-quote {
+    top:70% !important;
+    left:62.5% !important;
+  }
+}
+@media (max-width:420px) {
+  #home .hero-copy {
+    top:117px !important;
+    left:58.5% !important;
+    right:4% !important;
+  }
+  #home .mobile-hero-quote {
+    top:70% !important;
+    left:60.5% !important;
+  }
+}
