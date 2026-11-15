@@ -252,3 +252,204 @@
     font-size: 10px !important;
   }
 }
+
+
+/* Refined phone hero: title → full portrait → supporting copy.
+   Scoped to phones; desktop composition remains untouched. */
+@media (max-width: 650px) {
+  .hero,
+  .hero-inner {
+    height: clamp(740px, 180vw, 790px) !important;
+    min-height: clamp(740px, 180vw, 790px) !important;
+  }
+
+  .hero .hero-kicker {
+    display: block !important;
+    top: 10px !important;
+    left: 0 !important;
+    right: 0 !important;
+    width: 100% !important;
+    text-align: center !important;
+    font-size: 7px !important;
+    line-height: 1.2 !important;
+    letter-spacing: 2px !important;
+    opacity: .78;
+  }
+
+  .hero h1 {
+    display: flex !important;
+    position: absolute !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+    top: 30px !important;
+    left: 0 !important;
+    right: 0 !important;
+    width: 100% !important;
+    margin: 0 !important;
+    z-index: 3 !important;
+    gap: 0 !important;
+    text-align: center !important;
+    white-space: normal !important;
+  }
+
+  .hero h1 .hero-title-mask {
+    display: block !important;
+    padding: 0 0 .035em !important;
+    overflow: hidden !important;
+    line-height: .9 !important;
+  }
+
+  .hero h1 .hero-title-word {
+    font-size: clamp(40px, 11.5vw, 47px) !important;
+    line-height: .9 !important;
+    letter-spacing: -.085em !important;
+    white-space: nowrap !important;
+  }
+
+  .hero h1 > .hero-title-academy {
+    display: block !important;
+    align-self: center !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    font-family: var(--heading) !important;
+    font-size: clamp(36px, 10vw, 41px) !important;
+    font-weight: 900 !important;
+    line-height: .94 !important;
+    letter-spacing: -.075em !important;
+    white-space: nowrap !important;
+  }
+
+  .hero .hero-figure {
+    display: block !important;
+    position: absolute !important;
+    z-index: 2 !important;
+    top: auto !important;
+    bottom: 184px !important;
+    left: 0 !important;
+    right: 0 !important;
+    width: auto !important;
+    height: 430px !important;
+    max-width: 94vw !important;
+    max-height: none !important;
+    margin: 0 auto !important;
+    object-fit: contain !important;
+    object-position: center bottom !important;
+  }
+
+  .hero .hero-copy {
+    position: absolute !important;
+    z-index: 4 !important;
+    top: auto !important;
+    left: 5% !important;
+    right: 5% !important;
+    bottom: 13px !important;
+    width: auto !important;
+    max-width: none !important;
+    box-sizing: border-box !important;
+    margin: 0 !important;
+    padding: 13px 15px 12px !important;
+    border: 1px solid rgba(255,255,255,.17) !important;
+    border-radius: 15px !important;
+    background: linear-gradient(112deg, rgba(4,17,38,.94), rgba(12,37,70,.89)) !important;
+    box-shadow: 0 12px 32px rgba(0,0,0,.19) !important;
+    backdrop-filter: blur(9px) !important;
+    text-align: left !important;
+  }
+
+  .hero .hero-copy .copy-rule {
+    display: block !important;
+    width: 34px !important;
+    height: 2px !important;
+    margin: 0 0 8px !important;
+  }
+
+  .hero .hero-copy h2 {
+    margin: 0 0 6px !important;
+    max-width: 100% !important;
+    font-size: clamp(13px, 3.7vw, 15px) !important;
+    line-height: 1.18 !important;
+    letter-spacing: .25px !important;
+    text-align: left !important;
+  }
+
+  .hero .hero-copy > p:not(.hero-signoff) {
+    display: block !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    font-size: clamp(10.5px, 2.85vw, 11.5px) !important;
+    line-height: 1.38 !important;
+    text-align: left !important;
+    overflow-wrap: break-word !important;
+  }
+
+  .hero .hero-stats {
+    display: grid !important;
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+    align-items: start !important;
+    justify-content: stretch !important;
+    gap: 8px !important;
+    max-width: 100% !important;
+    margin: 11px 0 0 !important;
+  }
+
+  .hero .hero-stats div {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    justify-content: flex-start !important;
+    min-width: 0 !important;
+    gap: 2px !important;
+  }
+
+  .hero .hero-stats i {
+    display: none !important;
+  }
+
+  .hero .hero-stats strong {
+    font-size: clamp(9px, 2.6vw, 10px) !important;
+    line-height: 1.15 !important;
+    white-space: normal !important;
+  }
+
+  .hero .hero-stats span {
+    margin: 0 !important;
+    font-size: clamp(8px, 2.2vw, 9px) !important;
+    line-height: 1.2 !important;
+    white-space: normal !important;
+  }
+
+  .hero .hero-bottom-swoosh {
+    bottom: -16px !important;
+  }
+}
+
+@media (max-width: 420px) {
+  .hero,
+  .hero-inner {
+    height: 740px !important;
+    min-height: 740px !important;
+  }
+
+  .hero h1 .hero-title-word {
+    font-size: clamp(39px, 11.5vw, 45px) !important;
+  }
+
+  .hero h1 > .hero-title-academy {
+    font-size: clamp(35px, 10vw, 39px) !important;
+  }
+
+  .hero .hero-figure {
+    height: 405px !important;
+    max-width: 94vw !important;
+    bottom: 185px !important;
+  }
+
+  .hero .hero-copy {
+    left: 4.5% !important;
+    right: 4.5% !important;
+    bottom: 12px !important;
+    padding: 12px 13px 11px !important;
+  }
+}
