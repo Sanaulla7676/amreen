@@ -748,3 +748,39 @@
     left:60.5% !important;
   }
 }
+
+
+/* Verified mobile hero selectors: #home is itself .hero, not a wrapper.
+   Move ACADEMY clear of the portrait and anchor the supporting copy at the right. */
+@media (max-width:650px) {
+  #home h1 {
+    z-index:12 !important;
+    overflow:visible !important;
+  }
+  #home h1 > .hero-title-academy {
+    position:relative !important;
+    left:clamp(26px,7vw,45px) !important;
+    transform:none !important;
+    z-index:13 !important;
+  }
+  #home .hero-figure {
+    z-index:8 !important;
+  }
+  #home .hero-copy {
+    top:128px !important;
+    left:63% !important;
+    right:2.5% !important;
+    width:auto !important;
+    z-index:14 !important;
+  }
+}
+@media (max-width:420px) {
+  #home h1 > .hero-title-academy {
+    left:clamp(26px,7vw,32px) !important;
+  }
+  #home .hero-copy {
+    top:122px !important;
+    left:63% !important;
+    right:2.5% !important;
+  }
+}
