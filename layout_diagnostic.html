@@ -1,0 +1,8 @@
+<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><style>html,body{margin:0}iframe{width:100vw;height:6000px;border:0;display:block}</style></head><body><iframe id="page" src="http://127.0.0.1:8000/index.html?layout-diagnostic=mobile2"></iframe><pre id="report">Waiting</pre><script>
+const f=document.getElementById('page');
+f.addEventListener('load',()=>setTimeout(()=>{
+ const w=f.contentWindow,d=w.document,W=w.innerWidth;
+ const bad=[...d.querySelectorAll('body *')].map(e=>{const r=e.getBoundingClientRect(),cs=w.getComputedStyle(e);return {tag:e.tagName,cls:typeof e.className==='string'?e.className:'',id:e.id,left:+r.left.toFixed(1),right:+r.right.toFixed(1),width:+r.width.toFixed(1),scroll:e.scrollWidth,client:e.clientWidth,white:cs.whiteSpace,overflow:cs.overflowX}}).filter(x=>x.right>W+1||x.left< -1||x.scroll>x.client+2).sort((a,b)=>b.right-a.right).slice(0,45);
+ document.getElementById('report').textContent=JSON.stringify({viewport:W,dpr:w.devicePixelRatio,docWidth:d.documentElement.scrollWidth,bodyWidth:d.body.scrollWidth,bad},null,2);
+},500));
+</script></body></html>

@@ -1,803 +1,630 @@
-<!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<!doctype html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Amreen Academy | Salon, Makeup & Beautician Training in Thanisandra, Bengaluru</title>
-  <meta name="description" content="Amreen Academy & Makeover Studio in Thanisandra, Bengaluru. Hands-on training in makeup, hair, skin, nails, waxing and saree draping, with a free starter kit, portfolio shoot and monthly fee plans." />
-  <meta name="keywords" content="beautician course Thanisandra, makeup academy Bengaluru, hair chemical course, nail art course, bridal makeup training, salon training Bangalore, Amreen Academy" />
-  <meta property="og:title" content="Amreen Academy | Learn every salon craft" />
-  <meta property="og:description" content="Hands-on makeup, hair, skin, nail and beautician training in Thanisandra, Bengaluru." />
-  <meta property="og:type" content="website" />
-  <meta name="theme-color" content="#191614" />
-
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#07182f">
+  <meta name="description" content="Amreen's Academy â€” professional beauty and makeup education. Explore beauty courses, student work and practical training.">
+  <title>Amreen's Academy | Professional Beauty &amp; Makeup Education</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Playfair+Display:ital,wght@0,400..800;1,400..800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            brand: {
-              bg: '#F6F3EC', surface: '#FFFFFF', card: '#F1EBE0',
-              gold: '#B89047', goldLight: '#E2C384', goldText: '#7A5B22',
-              noir: '#191614', rose: '#D99B95', roseText: '#8F4F49',
-              text: '#231F1C', muted: '#5F574F',
-              line: 'rgba(184,144,71,0.28)'
-            }
-          },
-          fontFamily: {
-            serif: ['"Playfair Display"', 'serif'],
-            script: ['"Alex Brush"', 'cursive'],
-            sans: ['"Plus Jakarta Sans"', 'sans-serif']
-          }
-        }
-      }
-    }
-  </script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
-  <script src="https://unpkg.com/lucide@latest" defer></script>
-
-  <style>
-    html { scroll-padding-top: 84px; }
-    ::selection { background: #B89047; color: #191614; }
-    :focus-visible { outline: 2px solid #7A5B22; outline-offset: 3px; border-radius: 6px; }
-    .on-dark :focus-visible { outline-color: #E2C384; }
-
-    .word { display: inline-block; overflow: hidden; vertical-align: top; padding-bottom: .12em; margin-bottom: -.12em; }
-    .word > span { display: inline-block; will-change: transform; }
-
-    .glass { background: rgba(255,255,255,.86); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); }
-    .hairline { background: linear-gradient(90deg, transparent, #B89047, transparent); height: 1px; }
-
-    .marquee { display: flex; width: max-content; animation: marquee 38s linear infinite; }
-    .marquee:hover { animation-play-state: paused; }
-    @keyframes marquee { to { transform: translateX(-50%); } }
-
-    .scroll-cue span { animation: cue 1.8s ease-in-out infinite; }
-    @keyframes cue { 0%,100% { transform: translateY(0); opacity: .4; } 50% { transform: translateY(8px); opacity: 1; } }
-
-    .track-card { transition: transform .35s cubic-bezier(.16,1,.3,1), box-shadow .35s ease, border-color .35s ease; }
-    .track-card:hover { transform: translateY(-6px); box-shadow: 0 24px 40px -22px rgba(25,22,20,.35); border-color: #B89047; }
-
-    details > summary { list-style: none; cursor: pointer; }
-    details > summary::-webkit-details-marker { display: none; }
-    details[open] .chev { transform: rotate(180deg); }
-    .chev { transition: transform .3s ease; }
-
-    .nav-link { position: relative; }
-    .nav-link::after { content: ''; position: absolute; left: 0; bottom: -6px; height: 2px; width: 100%; background: #B89047; transform: scaleX(0); transform-origin: left; transition: transform .35s cubic-bezier(.16,1,.3,1); }
-    .nav-link:hover::after, .nav-link.is-active::after { transform: scaleX(1); }
-
-    @media (prefers-reduced-motion: reduce) {
-      html { scroll-behavior: auto; }
-      .marquee, .scroll-cue span { animation: none; }
-      * { transition-duration: .01ms !important; }
-    }
-  </style>
-
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": ["EducationalOrganization", "BeautySalon"],
-    "name": "Amreen Academy & Makeover Studio",
-    "description": "Hands-on salon, makeup, hair, skin and nail training plus a bridal makeover studio in Thanisandra, Bengaluru.",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "Main Road, Fathima Layout, Bharath Nagar, Thanisandra",
-      "addressLocality": "Bengaluru",
-      "addressRegion": "Karnataka",
-      "postalCode": "560077",
-      "addressCountry": "IN"
-    }
-  }
-  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Allura&family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/motion.css">
+  <link rel="stylesheet" href="css/campaign-enhancements.css">
+  <link rel="stylesheet" href="css/upgrade.css?v=amreen-production-20261115-1">
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BeautySalon", "name": "Amreens Academy & Makeover Studio", "telephone": "+91 81234 10118", "address": {"@type": "PostalAddress", "streetAddress": "#23, Bharath Nagar, Ashwath Nagar, 2nd Stage, Thanisandra Main Road", "addressLocality": "Bengaluru", "addressRegion": "Karnataka", "postalCode": "560077", "addressCountry": "IN"}, "sameAs": ["https://www.instagram.com/amreenkhanum60/"]}</script>
 </head>
+<body>
+  <div class="scroll-progress" aria-hidden="true"><span></span></div>
+  <a class="skip-link" href="#main">Skip to content</a>
 
-<body class="bg-brand-bg text-brand-text font-sans antialiased">
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="#home" aria-label="Amreen's Academy home">
+        <span class="brand-word">AMREEN<span class="brand-plus">+</span></span>
+        <span class="brand-sub">A C A D E M Y</span>
+      </a>
+      <span class="brand-divider" aria-hidden="true"></span>
+      <p class="brand-tagline">PROFESSIONAL<br>BEAUTY &amp; MAKEUP<br>EDUCATION</p>
 
-  <!-- Scroll progress -->
-  <div class="fixed top-0 inset-x-0 h-[3px] z-[60] bg-transparent" aria-hidden="true">
-    <div id="progress" class="h-full bg-brand-gold origin-left scale-x-0"></div>
-  </div>
+      <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="primary-nav">
+        <span></span><span></span><span></span>
+      </button>
 
-  <a href="#main" class="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:left-3 focus:z-[70] focus:bg-white focus:px-4 focus:py-2 focus:rounded-lg">Skip to content</a>
-
-  <!-- ============ HEADER ============ -->
-  <header id="header" class="fixed top-0 inset-x-0 z-50 transition-transform duration-500">
-    <div class="glass border-b border-brand-line">
-      <div class="max-w-7xl mx-auto px-5 h-16 flex items-center justify-between">
-        <a href="#top" class="flex items-center gap-3" aria-label="Amreen Academy home">
-          <span class="w-9 h-9 rounded-full bg-brand-noir text-brand-goldLight font-serif font-bold grid place-items-center text-sm">A</span>
-          <span class="leading-tight">
-            <span class="block font-serif font-bold text-[15px]">Amreen Academy</span>
-            <span class="block text-[10px] tracking-[.22em] uppercase text-brand-muted">Makeover Studio</span>
-          </span>
-        </a>
-        <nav class="hidden lg:flex items-center gap-8 text-[11px] uppercase tracking-[.2em] font-semibold" aria-label="Primary">
-          <a class="nav-link py-2" href="#story">Story</a>
-          <a class="nav-link py-2" href="#training">Training</a>
-          <a class="nav-link py-2" href="#courses">Courses</a>
-          <a class="nav-link py-2" href="#fees">Fees</a>
-          <a class="nav-link py-2" href="#studio">Studio</a>
-          <a class="nav-link py-2" href="#visit">Visit</a>
-        </nav>
-        <div class="flex items-center gap-3">
-          <a href="#enquire" class="hidden sm:inline-flex items-center gap-2 bg-brand-noir text-white px-5 py-2.5 rounded-full text-xs font-bold tracking-wide hover:bg-brand-gold hover:text-brand-noir transition-colors">Enquire for next batch</a>
-          <button id="menuBtn" class="lg:hidden w-11 h-11 grid place-items-center rounded-full border border-brand-line" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
-            <i data-lucide="menu" class="w-5 h-5"></i>
-          </button>
-        </div>
+      <nav class="primary-nav" id="primary-nav" aria-label="Main navigation">
+        <a class="active" href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="courses.html">Courses</a>
+        <a href="faculty.html">Faculty</a>
+        <a href="student-success.html">Student Success</a>
+        <a href="blog.html">Blog</a>
+        <a href="faqs.html">FAQs</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="header-socials" aria-label="Social links">
+        <a href="https://www.instagram.com/amreenkhanum60/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".8" class="solid"/></svg></a>
+        <a href="https://wa.me/918123410118" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.2 11.7a8.2 8.2 0 0 1-12.1 7.2L3 20l1.2-4.9a8.2 8.2 0 1 1 16-3.4Z"/><path d="M8.1 7.9c.2-.5.5-.5.8-.5h.5c.2 0 .4.1.5.4l.7 1.7c.1.2.1.4 0 .6l-.5.6c-.2.2-.2.4 0 .6.4.7 1 1.3 1.7 1.7.2.1.4.1.6-.1l.7-.8c.2-.2.4-.2.6-.1l1.6.8c.2.1.4.3.4.5 0 .4-.2 1.1-.6 1.4-.4.4-1 .6-1.6.5-1-.1-2.4-.7-3.7-1.9-1.1-1-2-2.3-2.2-3.3-.2-.8.1-1.5.5-2.1Z"/></svg></a>
       </div>
-      <div id="mobileMenu" class="hidden lg:hidden border-t border-brand-line bg-white px-5 py-4">
-        <div class="flex flex-col text-sm font-semibold">
-          <a class="py-3 border-b border-black/5" href="#story">Story</a>
-          <a class="py-3 border-b border-black/5" href="#training">Training</a>
-          <a class="py-3 border-b border-black/5" href="#courses">Courses</a>
-          <a class="py-3 border-b border-black/5" href="#fees">Fees</a>
-          <a class="py-3 border-b border-black/5" href="#studio">Studio services</a>
-          <a class="py-3 border-b border-black/5" href="#visit">Visit</a>
-          <a class="mt-4 text-center bg-brand-noir text-white py-3 rounded-full" href="#enquire">Enquire for next batch</a>
-        </div>
-      </div>
+      <a class="button button-primary header-cta" href="#contact">Enquire Now <span aria-hidden="true">→</span></a>
     </div>
   </header>
 
   <main id="main">
-
-    <!-- ============ HERO ============ -->
-    <section id="top" class="relative min-h-[100svh] flex items-center overflow-hidden bg-brand-noir on-dark text-white">
-      <video id="heroVideo" class="absolute inset-0 w-full h-[115%] object-cover object-right sm:object-center select-none pointer-events-none" autoplay loop muted playsinline preload="auto" aria-hidden="true">
-        <source src="bg.mp4" type="video/mp4">
-      </video>
-      <div class="absolute inset-0 bg-gradient-to-r from-black/45 via-black/20 to-transparent pointer-events-none" aria-hidden="true"></div>
-
-      <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 w-full pt-28 pb-20">
-        <div class="max-w-xl flex flex-col items-start gap-5">
-          <p class="hero-fade inline-block text-[10px] font-bold uppercase tracking-[.3em] text-brand-goldLight bg-black/40 backdrop-blur-md px-3 py-1 rounded-full border border-white/10">Amreen Academy &amp; Makeover Studio</p>
-
-          <div>
-            <h1 id="heroTitle" class="font-serif font-extrabold text-5xl sm:text-7xl lg:text-8xl tracking-tight leading-none uppercase drop-shadow-md">Where beauty</h1>
-            <div id="heroScript" class="font-script text-5xl sm:text-7xl lg:text-8xl text-brand-goldLight -mt-2 sm:-mt-4 leading-none drop-shadow-md">Becomes Confidence</div>
-          </div>
-
-          <div class="hero-fade flex items-center gap-3" aria-hidden="true">
-            <span class="w-12 h-px bg-brand-goldLight/70"></span>
-            <svg class="w-4 h-4 text-brand-goldLight" viewBox="0 0 24 24" fill="currentColor"><path d="M12,2C12,2 9,7 9,11C9,14 11,16 12,16C13,16 15,14 15,11C15,7 12,2 12,2M12,14C11.4,14 11,13.1 11,12C11,10.5 11.6,8.4 12,6.7C12.4,8.4 13,10.5 13,12C13,13.1 12.6,14 12,14Z"/></svg>
-            <span class="w-12 h-px bg-brand-goldLight/70"></span>
-          </div>
-
-          <p class="hero-fade text-stone-100 text-sm sm:text-base max-w-lg leading-relaxed font-light drop-shadow-sm">From flawless makeovers to professional training in every salon craft, we bring out the best in you with passion, perfection &amp; purpose.</p>
-
-          <div class="hero-fade grid sm:grid-cols-2 gap-3 pt-2 w-full max-w-lg">
-            <a href="#studio" class="group p-3.5 rounded-xl bg-brand-noir/90 backdrop-blur-md text-white flex items-center justify-between border border-white/10 hover:border-brand-gold transition-colors shadow-lg">
-              <span class="flex items-center gap-3">
-                <span class="w-8 h-8 rounded-full bg-white/10 grid place-items-center text-brand-goldLight group-hover:bg-brand-gold group-hover:text-brand-noir transition-colors"><i data-lucide="sparkles" class="w-4 h-4"></i></span>
-                <span><span class="block font-serif text-xs font-bold tracking-wider uppercase">Makeover Studio</span><span class="block text-[11px] text-stone-300 font-light">Look Beautiful. Feel Confident.</span></span>
-              </span>
-              <i data-lucide="arrow-right" class="w-4 h-4 text-brand-goldLight group-hover:translate-x-1 transition-transform"></i>
-            </a>
-            <a href="#training" class="group p-3.5 rounded-xl bg-white/90 backdrop-blur-md text-brand-text flex items-center justify-between border border-brand-gold/40 hover:border-brand-gold hover:bg-white transition-colors shadow-md">
-              <span class="flex items-center gap-3">
-                <span class="w-8 h-8 rounded-full bg-brand-noir/10 grid place-items-center text-brand-goldText"><i data-lucide="graduation-cap" class="w-4 h-4"></i></span>
-                <span><span class="block font-serif text-xs font-bold tracking-wider uppercase">Amreen Academy</span><span class="block text-[11px] text-brand-muted">Learn. Grow. Succeed.</span></span>
-              </span>
-              <i data-lucide="arrow-right" class="w-4 h-4 text-brand-goldText group-hover:translate-x-1 transition-transform"></i>
-            </a>
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <div class="hero-glow hero-glow-one" aria-hidden="true"></div>
+      <div class="hero-glow hero-glow-two" aria-hidden="true"></div>
+      <div class="hero-inner">
+        <p class="hero-kicker">PROFESSIONAL BEAUTY EDUCATION</p>
+        <h1 id="hero-title" aria-label="Amreen's Academy"><span class="hero-title-mask"><span class="hero-title-word">AMREEN'S</span></span><span class="hero-title-academy">ACADEMY</span></h1>
+        <img class="hero-figure" src="assets/hero-seated-face-swapped.png" alt="Amreen's Academy hero portrait: a woman seated in a charcoal leather chair" fetchpriority="high">
+        <div class="hero-copy">
+          <span class="copy-rule"></span>
+          <h2>PROFESSIONAL<br>BEAUTY &amp; MAKEUP TRAINING</h2>
+          <p>Industry-focused training designed for aspiring beauty professionals.</p>
+          <div class="hero-stats" aria-label="Academy highlights">
+            <div><strong>Creative</strong><span>Learning</span></div>
+            <i></i>
+            <div><strong>Practical</strong><span>Training</span></div>
+            <i></i>
+            <div><strong>Expert</strong><span>Guidance</span></div>
           </div>
         </div>
       </div>
-
-      <a href="#story" class="scroll-cue hidden md:flex absolute bottom-8 left-1/2 -translate-x-1/2 flex-col items-center gap-2 text-[10px] uppercase tracking-[.3em] text-white/80" aria-label="Scroll to story">
-        Scroll <span><i data-lucide="chevron-down" class="w-4 h-4"></i></span>
-      </a>
+      <div class="hero-bottom-swoosh" aria-hidden="true"></div>
     </section>
 
-    <!-- ============ MARQUEE ============ -->
-    <section class="bg-brand-goldLight text-brand-noir py-4 overflow-hidden border-y border-brand-noir/10" aria-label="What we teach">
-      <div class="marquee font-serif italic text-xl md:text-2xl whitespace-nowrap">
-        <div class="flex items-center shrink-0" aria-hidden="false">
-          <span class="px-6">Bridal makeup</span><span aria-hidden="true">&#10022;</span>
-          <span class="px-6">Airbrush</span><span aria-hidden="true">&#10022;</span>
-          <span class="px-6">Hair styling</span><span aria-hidden="true">&#10022;</span>
-          <span class="px-6">Hair colour and chemical</span><span aria-hidden="true">&#10022;</span>
-          <span class="px-6">Facials and skin</span><span aria-hidden="true">&#10022;</span>
-          <span class="px-6">Nail art</span><span aria-hidden="true">&#10022;</span>
-          <span class="px-6">Waxing and threading</span><span aria-hidden="true">&#10022;</span>
-          <span class="px-6">Saree draping</span><span aria-hidden="true">&#10022;</span>
-        </div>
-        <div class="flex items-center shrink-0" aria-hidden="true">
-          <span class="px-6">Bridal makeup</span><span>&#10022;</span>
-          <span class="px-6">Airbrush</span><span>&#10022;</span>
-          <span class="px-6">Hair styling</span><span>&#10022;</span>
-          <span class="px-6">Hair colour and chemical</span><span>&#10022;</span>
-          <span class="px-6">Facials and skin</span><span>&#10022;</span>
-          <span class="px-6">Nail art</span><span>&#10022;</span>
-          <span class="px-6">Waxing and threading</span><span>&#10022;</span>
-          <span class="px-6">Saree draping</span><span>&#10022;</span>
-        </div>
-      </div>
-    </section>
+  
 
-    <!-- ============ STORY (pinned on desktop) ============ -->
-    <section id="story" class="bg-brand-bg" aria-labelledby="storyTitle">
-      <div class="story-pin relative md:h-screen overflow-hidden">
-        <div class="max-w-7xl mx-auto px-5 h-full flex flex-col justify-center py-20 md:py-0">
 
-          <div class="flex items-center justify-between mb-10 md:mb-14">
-            <h2 id="storyTitle" class="text-[11px] uppercase tracking-[.28em] font-semibold text-brand-goldText">The journey at Amreen Academy</h2>
-            <div class="hidden md:block w-48 h-[2px] bg-brand-line" aria-hidden="true">
-              <div class="story-bar h-full bg-brand-gold origin-left scale-x-0"></div>
-            </div>
-          </div>
-
-          <div class="relative md:h-[52vh]">
-            <article class="story-panel md:absolute md:inset-0 grid md:grid-cols-12 gap-6 md:gap-12 items-center mb-16 md:mb-0">
-              <div class="md:col-span-4 font-serif text-[7rem] md:text-[12rem] leading-none text-brand-gold/40 select-none" aria-hidden="true">01</div>
-              <div class="md:col-span-8">
-                <h3 class="font-serif font-bold text-3xl md:text-5xl leading-tight">First, the foundation.</h3>
-                <p class="mt-5 text-brand-muted text-base md:text-lg max-w-2xl leading-relaxed">Skin anatomy, hygiene, tools and product knowledge. Before you touch a brush or a blade you learn why skin behaves the way it does, so every service you give later is safe and confident.</p>
-                <ul class="mt-6 flex flex-wrap gap-2 text-xs font-semibold">
-                  <li class="px-4 py-2 rounded-full bg-white border border-brand-line">Skin types</li>
-                  <li class="px-4 py-2 rounded-full bg-white border border-brand-line">Hygiene and safety</li>
-                  <li class="px-4 py-2 rounded-full bg-white border border-brand-line">Tools and products</li>
-                </ul>
-              </div>
-            </article>
-
-            <article class="story-panel md:absolute md:inset-0 grid md:grid-cols-12 gap-6 md:gap-12 items-center mb-16 md:mb-0">
-              <div class="md:col-span-4 font-serif text-[7rem] md:text-[12rem] leading-none text-brand-rose/50 select-none" aria-hidden="true">02</div>
-              <div class="md:col-span-8">
-                <h3 class="font-serif font-bold text-3xl md:text-5xl leading-tight">Then, your hands learn.</h3>
-                <p class="mt-5 text-brand-muted text-base md:text-lg max-w-2xl leading-relaxed">Practice on mannequins first, then on live models under Amreen's guidance. Cleanups, threading, waxing, blow-dry and base makeup, repeated until they feel natural.</p>
-                <ul class="mt-6 flex flex-wrap gap-2 text-xs font-semibold">
-                  <li class="px-4 py-2 rounded-full bg-white border border-brand-line">Live-model practicals</li>
-                  <li class="px-4 py-2 rounded-full bg-white border border-brand-line">Small batches</li>
-                  <li class="px-4 py-2 rounded-full bg-white border border-brand-line">Individual feedback</li>
-                </ul>
-              </div>
-            </article>
-
-            <article class="story-panel md:absolute md:inset-0 grid md:grid-cols-12 gap-6 md:gap-12 items-center mb-16 md:mb-0">
-              <div class="md:col-span-4 font-serif text-[7rem] md:text-[12rem] leading-none text-brand-gold/40 select-none" aria-hidden="true">03</div>
-              <div class="md:col-span-8">
-                <h3 class="font-serif font-bold text-3xl md:text-5xl leading-tight">Next, the signature crafts.</h3>
-                <p class="mt-5 text-brand-muted text-base md:text-lg max-w-2xl leading-relaxed">Bridal and airbrush makeup, hair colour and keratin chemistry, gel and acrylic nails, saree draping. The services clients pay a premium for, taught step by step.</p>
-                <ul class="mt-6 flex flex-wrap gap-2 text-xs font-semibold">
-                  <li class="px-4 py-2 rounded-full bg-white border border-brand-line">Bridal and airbrush</li>
-                  <li class="px-4 py-2 rounded-full bg-white border border-brand-line">Colour and keratin</li>
-                  <li class="px-4 py-2 rounded-full bg-white border border-brand-line">Nail extensions</li>
-                </ul>
-              </div>
-            </article>
-
-            <article class="story-panel md:absolute md:inset-0 grid md:grid-cols-12 gap-6 md:gap-12 items-center">
-              <div class="md:col-span-4 font-serif text-[7rem] md:text-[12rem] leading-none text-brand-rose/50 select-none" aria-hidden="true">04</div>
-              <div class="md:col-span-8">
-                <h3 class="font-serif font-bold text-3xl md:text-5xl leading-tight">Finally, your own studio.</h3>
-                <p class="mt-5 text-brand-muted text-base md:text-lg max-w-2xl leading-relaxed">You leave with a certificate, a model portfolio shoot and your own starter kit. Whether you join a salon, freelance for brides or open your own space, you start with proof of your work.</p>
-                <ul class="mt-6 flex flex-wrap gap-2 text-xs font-semibold">
-                  <li class="px-4 py-2 rounded-full bg-white border border-brand-line">Certificate</li>
-                  <li class="px-4 py-2 rounded-full bg-white border border-brand-line">Portfolio shoot</li>
-                  <li class="px-4 py-2 rounded-full bg-white border border-brand-line">Starter kit</li>
-                </ul>
-              </div>
-            </article>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============ TRAINING MAP ============ -->
-    <section id="training" class="py-24 md:py-32 bg-brand-noir on-dark text-white" aria-labelledby="trainingTitle">
-      <div class="max-w-7xl mx-auto px-5">
-        <p class="text-[11px] uppercase tracking-[.28em] text-brand-goldLight font-semibold">Complete salon training</p>
-        <h2 id="trainingTitle" class="split font-serif font-bold text-4xl md:text-6xl leading-tight mt-4 max-w-3xl">Every service a salon offers, you learn here.</h2>
-        <p class="mt-6 text-white/75 max-w-2xl text-base md:text-lg">Pick one craft or build the full skill set. Each track has its own practical sessions on live models.</p>
-
-        <div class="mt-14 grid sm:grid-cols-2 lg:grid-cols-4 gap-5" id="trackGrid">
-          <article class="track-card reveal-card rounded-3xl bg-white/[.06] border border-white/15 p-7">
-            <i data-lucide="palette" class="w-7 h-7 text-brand-goldLight"></i>
-            <h3 class="font-serif text-2xl font-bold mt-5">Makeup artistry</h3>
-            <p class="mt-3 text-sm text-white/75 leading-relaxed">Skin prep, colour theory, HD base, party, bridal and airbrush finishes.</p>
-          </article>
-          <article class="track-card reveal-card rounded-3xl bg-white/[.06] border border-white/15 p-7">
-            <i data-lucide="scissors" class="w-7 h-7 text-brand-goldLight"></i>
-            <h3 class="font-serif text-2xl font-bold mt-5">Hair styling</h3>
-            <p class="mt-3 text-sm text-white/75 leading-relaxed">Blow-dry, braids, buns and bridal hairstyles with accessory pinning.</p>
-          </article>
-          <article class="track-card reveal-card rounded-3xl bg-white/[.06] border border-white/15 p-7">
-            <i data-lucide="flask-conical" class="w-7 h-7 text-brand-goldLight"></i>
-            <h3 class="font-serif text-2xl font-bold mt-5">Hair colour and chemical</h3>
-            <p class="mt-3 text-sm text-white/75 leading-relaxed">Trichology, bond repair, keratin, cysteine, balayage and developer volumes.</p>
-          </article>
-          <article class="track-card reveal-card rounded-3xl bg-white/[.06] border border-white/15 p-7">
-            <i data-lucide="sparkles" class="w-7 h-7 text-brand-goldLight"></i>
-            <h3 class="font-serif text-2xl font-bold mt-5">Skin and facials</h3>
-            <p class="mt-3 text-sm text-white/75 leading-relaxed">Facial massage, cleanups, extraction hygiene and hydra-facial style protocols.</p>
-          </article>
-          <article class="track-card reveal-card rounded-3xl bg-white/[.06] border border-white/15 p-7">
-            <i data-lucide="hand" class="w-7 h-7 text-brand-goldLight"></i>
-            <h3 class="font-serif text-2xl font-bold mt-5">Nail art</h3>
-            <p class="mt-3 text-sm text-white/75 leading-relaxed">Acrylic and gel extensions, e-file technique, chrome, cat-eye and crystal art.</p>
-          </article>
-          <article class="track-card reveal-card rounded-3xl bg-white/[.06] border border-white/15 p-7">
-            <i data-lucide="feather" class="w-7 h-7 text-brand-goldLight"></i>
-            <h3 class="font-serif text-2xl font-bold mt-5">Waxing and threading</h3>
-            <p class="mt-3 text-sm text-white/75 leading-relaxed">Rica waxing technique, threading, hygiene and aftercare for every skin type.</p>
-          </article>
-          <article class="track-card reveal-card rounded-3xl bg-white/[.06] border border-white/15 p-7">
-            <i data-lucide="shirt" class="w-7 h-7 text-brand-goldLight"></i>
-            <h3 class="font-serif text-2xl font-bold mt-5">Saree and dupatta draping</h3>
-            <p class="mt-3 text-sm text-white/75 leading-relaxed">South Indian, north Indian and lehenga draping styles for bridal clients.</p>
-          </article>
-          <article class="track-card reveal-card rounded-3xl bg-white/[.06] border border-white/15 p-7">
-            <i data-lucide="briefcase" class="w-7 h-7 text-brand-goldLight"></i>
-            <h3 class="font-serif text-2xl font-bold mt-5">Client and business skills</h3>
-            <p class="mt-3 text-sm text-white/75 leading-relaxed">Consultations, pricing, social media branding and building your portfolio.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============ COURSES ============ -->
-    <section id="courses" class="py-24 md:py-32" aria-labelledby="coursesTitle">
-      <div class="max-w-7xl mx-auto px-5">
-        <p class="text-[11px] uppercase tracking-[.28em] text-brand-goldText font-semibold">Diploma and certificate courses</p>
-        <h2 id="coursesTitle" class="split font-serif font-bold text-4xl md:text-6xl leading-tight mt-4 max-w-3xl">Choose the course that fits your goal.</h2>
-
-        <div class="mt-16 space-y-24 md:space-y-32">
-
-          <!-- Course 1 -->
-          <article class="course grid md:grid-cols-12 gap-8 md:gap-14 items-center">
-            <div class="md:col-span-6 reveal-img rounded-[2rem] overflow-hidden aspect-[4/5] md:aspect-[5/6] bg-brand-card">
-              <img class="parallax-img w-full h-[115%] object-cover" src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=1200&q=80" alt="Makeup artist working on a bridal look" loading="lazy">
-            </div>
-            <div class="md:col-span-6 course-text">
-              <p class="text-xs font-bold tracking-[.2em] uppercase text-brand-roseText">Flagship, 3 months</p>
-              <h3 class="font-serif font-bold text-3xl md:text-5xl leading-tight mt-3">Master Diploma in Professional Makeup Artistry</h3>
-              <p class="mt-5 text-brand-muted leading-relaxed">Skin prep, colour theory, airbrush, bridal hair artistry, client management and social media branding, taught over 90 days of hands-on practice.</p>
-              <ul class="mt-6 space-y-3 text-sm">
-                <li class="flex gap-3"><i data-lucide="check" class="w-5 h-5 text-brand-goldText shrink-0"></i>Free 25-piece vanity starter kit</li>
-                <li class="flex gap-3"><i data-lucide="check" class="w-5 h-5 text-brand-goldText shrink-0"></i>Model portfolio shoot</li>
-                <li class="flex gap-3"><i data-lucide="check" class="w-5 h-5 text-brand-goldText shrink-0"></i>ISO-recognised certificate</li>
-              </ul>
-              <details class="mt-6 border-t border-brand-line pt-4">
-                <summary class="flex items-center justify-between font-semibold text-sm py-2">What is in the kit <i data-lucide="chevron-down" class="chev w-4 h-4"></i></summary>
-                <p class="text-sm text-brand-muted leading-relaxed pt-2">15-piece professional brush set, HD mixing palette and spatula, airbrush gun and compressor, 35-colour eyeshadow palette, saree draping pin set and a ring light tripod.</p>
-              </details>
-              <div class="mt-6 flex flex-wrap items-center gap-5">
-                <p class="font-serif text-3xl font-bold">&#8377;35,000</p>
-                <a href="#enquire" data-course="Master Diploma in Professional Makeup Artistry" class="pick-course inline-flex items-center gap-2 bg-brand-noir text-white px-6 py-3 rounded-full text-sm font-bold hover:bg-brand-gold hover:text-brand-noir transition-colors">Apply for this course <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
-              </div>
-            </div>
-          </article>
-
-          <!-- Course 2 -->
-          <article class="course grid md:grid-cols-12 gap-8 md:gap-14 items-center">
-            <div class="md:col-span-6 md:order-2 reveal-img rounded-[2rem] overflow-hidden aspect-[4/5] md:aspect-[5/6] bg-brand-card">
-              <img class="parallax-img w-full h-[115%] object-cover" src="https://images.unsplash.com/photo-1595777457583-95e059d581b8?auto=format&fit=crop&w=1200&q=80" alt="Styled hair for a salon service" loading="lazy">
-            </div>
-            <div class="md:col-span-6 md:order-1 course-text">
-              <p class="text-xs font-bold tracking-[.2em] uppercase text-brand-roseText">Intensive, 1 month</p>
-              <h3 class="font-serif font-bold text-3xl md:text-5xl leading-tight mt-3">Advanced Hair Chemical and Treatments</h3>
-              <p class="mt-5 text-brand-muted leading-relaxed">Trichology, bond repair chemistry, keratin, cysteine and balayage highlighting, with pH balancing, bleach developer volumes and neutraliser formulas.</p>
-              <ul class="mt-6 space-y-3 text-sm">
-                <li class="flex gap-3"><i data-lucide="check" class="w-5 h-5 text-brand-goldText shrink-0"></i>50+ hours on practice dummies and live clients</li>
-                <li class="flex gap-3"><i data-lucide="check" class="w-5 h-5 text-brand-goldText shrink-0"></i>Colour, keratin and smoothing services</li>
-              </ul>
-              <div class="mt-8 flex flex-wrap items-center gap-5">
-                <p class="font-serif text-3xl font-bold">&#8377;18,000</p>
-                <a href="#enquire" data-course="Advanced Hair Chemical & Treatments" class="pick-course inline-flex items-center gap-2 bg-brand-noir text-white px-6 py-3 rounded-full text-sm font-bold hover:bg-brand-gold hover:text-brand-noir transition-colors">Apply for this course <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
-              </div>
-            </div>
-          </article>
-
-          <!-- Course 3 -->
-          <article class="course grid md:grid-cols-12 gap-8 md:gap-14 items-center">
-            <div class="md:col-span-6 reveal-img rounded-[2rem] overflow-hidden aspect-[4/5] md:aspect-[5/6] bg-brand-card">
-              <img class="parallax-img w-full h-[115%] object-cover" src="https://images.unsplash.com/photo-1512496015851-a90fb38ba796?auto=format&fit=crop&w=1200&q=80" alt="Skin care treatment in a salon" loading="lazy">
-            </div>
-            <div class="md:col-span-6 course-text">
-              <p class="text-xs font-bold tracking-[.2em] uppercase text-brand-roseText">Complete, 2 months</p>
-              <h3 class="font-serif font-bold text-3xl md:text-5xl leading-tight mt-3">Basic-to-Advanced Beautician Course</h3>
-              <p class="mt-5 text-brand-muted leading-relaxed">Skin anatomy, threading, waxing, facial cleanups, facial massage routines and head spa. The all-round course for working in or opening a parlour.</p>
-              <ul class="mt-6 space-y-3 text-sm">
-                <li class="flex gap-3"><i data-lucide="check" class="w-5 h-5 text-brand-goldText shrink-0"></i>Pressure points and facial massage</li>
-                <li class="flex gap-3"><i data-lucide="check" class="w-5 h-5 text-brand-goldText shrink-0"></i>Rica waxing and hygienic extraction</li>
-              </ul>
-              <div class="mt-8 flex flex-wrap items-center gap-5">
-                <p class="font-serif text-3xl font-bold">&#8377;22,000</p>
-                <a href="#enquire" data-course="Basic-to-Advanced Beautician Course" class="pick-course inline-flex items-center gap-2 bg-brand-noir text-white px-6 py-3 rounded-full text-sm font-bold hover:bg-brand-gold hover:text-brand-noir transition-colors">Apply for this course <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
-              </div>
-            </div>
-          </article>
-
-          <!-- Course 4 -->
-          <article class="course grid md:grid-cols-12 gap-8 md:gap-14 items-center">
-            <div class="md:col-span-6 md:order-2 reveal-img rounded-[2rem] overflow-hidden aspect-[4/5] md:aspect-[5/6] bg-brand-card">
-              <img class="parallax-img w-full h-[115%] object-cover" src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=1200&q=80" alt="Portrait with polished beauty look" loading="lazy">
-            </div>
-            <div class="md:col-span-6 md:order-1 course-text">
-              <p class="text-xs font-bold tracking-[.2em] uppercase text-brand-roseText">Masterclass</p>
-              <h3 class="font-serif font-bold text-3xl md:text-5xl leading-tight mt-3">Nail Art and Extensions Masterclass</h3>
-              <p class="mt-5 text-brand-muted leading-relaxed">Acrylic extensions, gel overlays, electric nail drill operation and 3D crystal embellishments. Learn apex building, filing, chrome powders, cat-eye effects and refills.</p>
-              <div class="mt-8 flex flex-wrap items-center gap-5">
-                <p class="font-serif text-3xl font-bold">&#8377;15,000</p>
-                <a href="#enquire" data-course="Nail Art & Extensions Masterclass" class="pick-course inline-flex items-center gap-2 bg-brand-noir text-white px-6 py-3 rounded-full text-sm font-bold hover:bg-brand-gold hover:text-brand-noir transition-colors">Apply for this course <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
-              </div>
-            </div>
-          </article>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- ============ FEES ============ -->
-    <section id="fees" class="py-24 md:py-28 bg-brand-card" aria-labelledby="feesTitle">
-      <div class="max-w-5xl mx-auto px-5 grid md:grid-cols-2 gap-10 md:gap-16 items-center">
-        <div class="fees-copy">
-          <p class="text-[11px] uppercase tracking-[.28em] text-brand-goldText font-semibold">Fees made simple</p>
-          <h2 id="feesTitle" class="font-serif font-bold text-4xl md:text-5xl leading-tight mt-4">Pay in three monthly instalments.</h2>
-          <p class="mt-5 text-brand-muted leading-relaxed">We offer 0% interest monthly plans so you can focus on learning. Choose a course to see an estimate, then confirm the plan with the academy when you enquire.</p>
-        </div>
-        <div class="fees-card glass rounded-[2rem] border border-brand-line p-7 md:p-9 shadow-[0_30px_50px_-30px_rgba(25,22,20,.35)]">
-          <label for="emiCourse" class="text-xs font-bold uppercase tracking-wider">Course</label>
-          <select id="emiCourse" class="mt-2 w-full bg-white border border-black/15 rounded-xl px-4 py-3 text-sm font-semibold">
-            <option value="35000">Master Diploma in Makeup Artistry (&#8377;35,000)</option>
-            <option value="22000">Beautician Course (&#8377;22,000)</option>
-            <option value="18000">Hair Chemical and Treatments (&#8377;18,000)</option>
-            <option value="15000">Nail Art Masterclass (&#8377;15,000)</option>
-          </select>
-          <div class="mt-8 grid grid-cols-2 gap-4 text-center">
-            <div class="rounded-2xl bg-brand-bg p-5">
-              <p class="text-[11px] uppercase tracking-wider text-brand-muted font-semibold">Total fee</p>
-              <p id="emiTotal" class="font-serif text-2xl font-bold mt-1">&#8377;35,000</p>
-            </div>
-            <div class="rounded-2xl bg-brand-noir text-white p-5">
-              <p class="text-[11px] uppercase tracking-wider text-brand-goldLight font-semibold">Per month x 3</p>
-              <p id="emiMonthly" class="font-serif text-2xl font-bold mt-1" aria-live="polite">&#8377;11,667</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============ STUDIO SERVICES ============ -->
-    <section id="studio" class="py-24 md:py-32" aria-labelledby="studioTitle">
-      <div class="max-w-5xl mx-auto px-5">
-        <p class="text-[11px] uppercase tracking-[.28em] text-brand-goldText font-semibold">Makeover Studio</p>
-        <h2 id="studioTitle" class="split font-serif font-bold text-4xl md:text-6xl leading-tight mt-4">Where students see it done for real.</h2>
-        <p class="mt-6 text-brand-muted max-w-2xl">The academy sits alongside a working bridal and beauty studio, so what you learn in class is what clients book every week.</p>
-
-        <ul class="mt-12 divide-y divide-brand-line border-y border-brand-line" id="serviceList">
-          <li class="service-row py-6 flex items-start justify-between gap-6">
-            <div><h3 class="font-serif text-2xl font-bold">HD Royal Bridal Makeover</h3><p class="text-sm text-brand-muted mt-1">Five-stage ritual with hairstyle, draping and lashes. About 3.5 hours.</p></div>
-            <p class="font-serif text-xl font-bold whitespace-nowrap">&#8377;14,999</p>
-          </li>
-          <li class="service-row py-6 flex items-start justify-between gap-6">
-            <div><h3 class="font-serif text-2xl font-bold">Airbrush Perfection Glam</h3><p class="text-sm text-brand-muted mt-1">Silicone-based airbrush finish for long-wear, camera-ready skin.</p></div>
-            <p class="font-serif text-xl font-bold whitespace-nowrap">&#8377;18,500</p>
-          </li>
-          <li class="service-row py-6 flex items-start justify-between gap-6">
-            <div><h3 class="font-serif text-2xl font-bold">Keratin Hair Smoothing</h3><p class="text-sm text-brand-muted mt-1">Formaldehyde-free smoothing for frizz control and shine.</p></div>
-            <p class="font-serif text-xl font-bold whitespace-nowrap">&#8377;5,999</p>
-          </li>
-          <li class="service-row py-6 flex items-start justify-between gap-6">
-            <div><h3 class="font-serif text-2xl font-bold">Global Colour and Balayage</h3><p class="text-sm text-brand-muted mt-1">Ammonia-free colour with bond repair, matched to Indian undertones.</p></div>
-            <p class="font-serif text-xl font-bold whitespace-nowrap">&#8377;4,499</p>
-          </li>
-          <li class="service-row py-6 flex items-start justify-between gap-6">
-            <div><h3 class="font-serif text-2xl font-bold">HydraFacial Luxe</h3><p class="text-sm text-brand-muted mt-1">Seven-step hydrating facial with extraction and LED finish.</p></div>
-            <p class="font-serif text-xl font-bold whitespace-nowrap">&#8377;2,999</p>
-          </li>
-          <li class="service-row py-6 flex items-start justify-between gap-6">
-            <div><h3 class="font-serif text-2xl font-bold">Gel Extensions and Nail Art</h3><p class="text-sm text-brand-muted mt-1">Gel overlays with custom ombre and crystal detailing.</p></div>
-            <p class="font-serif text-xl font-bold whitespace-nowrap">&#8377;2,199</p>
-          </li>
-        </ul>
-        <p class="mt-4 text-xs text-brand-muted">Prices as listed by the studio. Confirm current rates when you book.</p>
-      </div>
-    </section>
-
-    <!-- ============ INSTAGRAM ============ -->
-    <section id="instagram" class="py-20 bg-brand-noir on-dark text-white text-center" data-ig-section hidden>
-      <div class="max-w-3xl mx-auto px-5">
-        <i data-lucide="instagram" class="w-9 h-9 text-brand-goldLight mx-auto"></i>
-        <h2 class="font-serif font-bold text-3xl md:text-5xl mt-5">See student and studio work as it happens.</h2>
-        <p class="mt-4 text-white/75">Follow us on Instagram for classroom moments, bridal looks and new batch announcements.</p>
-        <a data-ig-link href="#" target="_blank" rel="noopener" class="mt-8 inline-flex items-center gap-2 bg-brand-goldLight text-brand-noir px-7 py-4 rounded-full text-sm font-bold hover:bg-white transition-colors">
-          Follow <span data-ig-handle></span> <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
-        </a>
-      </div>
-    </section>
-
-    <!-- ============ FAQ ============ -->
-    <section class="py-24 md:py-28" aria-labelledby="faqTitle">
-      <div class="max-w-3xl mx-auto px-5">
-        <h2 id="faqTitle" class="font-serif font-bold text-4xl md:text-5xl">Questions, answered.</h2>
-        <div class="mt-10 divide-y divide-brand-line border-y border-brand-line">
-          <details class="py-5"><summary class="flex items-center justify-between gap-4 font-semibold">Do I get tools and products during training?<i data-lucide="chevron-down" class="chev w-5 h-5 shrink-0"></i></summary><p class="mt-3 text-sm text-brand-muted leading-relaxed">Yes. Students receive a professional starter kit to keep, including brushes, practice palettes and tools.</p></details>
-          <details class="py-5"><summary class="flex items-center justify-between gap-4 font-semibold">Can I learn just one skill, like nails or hair colour?<i data-lucide="chevron-down" class="chev w-5 h-5 shrink-0"></i></summary><p class="mt-3 text-sm text-brand-muted leading-relaxed">Yes. Each craft has its own course, or you can combine them for a full salon skill set.</p></details>
-          <details class="py-5"><summary class="flex items-center justify-between gap-4 font-semibold">How big are the batches?<i data-lucide="chevron-down" class="chev w-5 h-5 shrink-0"></i></summary><p class="mt-3 text-sm text-brand-muted leading-relaxed">Batches are kept small, up to ten students, so every learner gets individual attention.</p></details>
-          <details class="py-5"><summary class="flex items-center justify-between gap-4 font-semibold">Is the certificate recognised?<i data-lucide="chevron-down" class="chev w-5 h-5 shrink-0"></i></summary><p class="mt-3 text-sm text-brand-muted leading-relaxed">Graduates receive an ISO-recognised certificate. Ask the academy for the certificate details when you enquire.</p></details>
-          <details class="py-5"><summary class="flex items-center justify-between gap-4 font-semibold">Do you take bridal bookings too?<i data-lucide="chevron-down" class="chev w-5 h-5 shrink-0"></i></summary><p class="mt-3 text-sm text-brand-muted leading-relaxed">Yes. The Makeover Studio handles bridal and event bookings across Bengaluru. Message us with your date.</p></details>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============ ENQUIRE ============ -->
-    <section id="enquire" class="py-24 md:py-32 bg-brand-card" aria-labelledby="enquireTitle">
-      <div class="max-w-5xl mx-auto px-5 grid md:grid-cols-2 gap-12 md:gap-16 items-start">
-        <div>
-          <p class="text-[11px] uppercase tracking-[.28em] text-brand-goldText font-semibold">Next batch</p>
-          <h2 id="enquireTitle" class="font-serif font-bold text-4xl md:text-5xl leading-tight mt-4">Reserve your place.</h2>
-          <p class="mt-5 text-brand-muted leading-relaxed">Tell us which course you are interested in. Your enquiry opens in WhatsApp so the academy can reply with batch dates and seat availability.</p>
-        </div>
-        <form id="enquiryForm" class="glass rounded-[2rem] border border-brand-line p-7 md:p-9 space-y-5" novalidate>
-          <div>
-            <label for="fName" class="text-xs font-bold uppercase tracking-wider">Your name</label>
-            <input id="fName" name="name" type="text" autocomplete="name" required class="mt-2 w-full bg-white border border-black/15 rounded-xl px-4 py-3 text-sm" />
-            <p class="err text-xs text-red-700 mt-1 hidden" data-for="fName">Please enter your name.</p>
-          </div>
-          <div>
-            <label for="fCourse" class="text-xs font-bold uppercase tracking-wider">Course</label>
-            <select id="fCourse" name="course" class="mt-2 w-full bg-white border border-black/15 rounded-xl px-4 py-3 text-sm">
-              <option>Master Diploma in Professional Makeup Artistry</option>
-              <option>Advanced Hair Chemical & Treatments</option>
-              <option>Basic-to-Advanced Beautician Course</option>
-              <option>Nail Art & Extensions Masterclass</option>
-              <option>Not sure yet, please guide me</option>
-            </select>
-          </div>
-          <div>
-            <label for="fNote" class="text-xs font-bold uppercase tracking-wider">Anything we should know (optional)</label>
-            <textarea id="fNote" name="note" rows="3" class="mt-2 w-full bg-white border border-black/15 rounded-xl px-4 py-3 text-sm"></textarea>
-          </div>
-          <button type="submit" class="w-full inline-flex justify-center items-center gap-2 bg-brand-noir text-white px-6 py-4 rounded-full text-sm font-bold hover:bg-brand-gold hover:text-brand-noir transition-colors">
-            <i data-lucide="message-circle" class="w-4 h-4"></i> Send enquiry on WhatsApp
-          </button>
-        </form>
-      </div>
-    </section>
-
-    <!-- ============ VISIT ============ -->
-    <section id="visit" class="py-24 md:py-32" aria-labelledby="visitTitle">
-      <div class="max-w-7xl mx-auto px-5 grid md:grid-cols-2 gap-10 md:gap-16 items-center">
-        <div>
-          <p class="text-[11px] uppercase tracking-[.28em] text-brand-goldText font-semibold">Visit us</p>
-          <h2 id="visitTitle" class="font-serif font-bold text-4xl md:text-5xl leading-tight mt-4">Come see the classroom.</h2>
-          <address class="not-italic mt-8 space-y-5 text-sm">
-            <p class="flex gap-3"><i data-lucide="map-pin" class="w-5 h-5 text-brand-goldText shrink-0"></i><span>Main Road, Fathima Layout, Bharath Nagar,<br>Thanisandra, Bengaluru, Karnataka 560077</span></p>
-            <p class="flex gap-3"><i data-lucide="phone" class="w-5 h-5 text-brand-goldText shrink-0"></i><a data-phone-link class="underline underline-offset-4" href="#"><span data-phone-text></span></a></p>
-          </address>
-          <div class="mt-8 flex flex-wrap gap-3">
-            <a data-wa href="#" target="_blank" rel="noopener" class="inline-flex items-center gap-2 bg-brand-noir text-white px-6 py-3 rounded-full text-sm font-bold hover:bg-brand-gold hover:text-brand-noir transition-colors"><i data-lucide="message-circle" class="w-4 h-4"></i> WhatsApp admissions</a>
-            <a href="https://maps.google.com/?q=Thanisandra+Bengaluru+Karnataka+560077" target="_blank" rel="noopener" class="inline-flex items-center gap-2 border border-brand-noir/30 px-6 py-3 rounded-full text-sm font-semibold hover:bg-brand-noir hover:text-white transition-colors"><i data-lucide="navigation" class="w-4 h-4"></i> Get directions</a>
-          </div>
-        </div>
-        <div class="rounded-[2rem] overflow-hidden border border-brand-line aspect-[4/3] bg-brand-card">
-          <iframe title="Map of Thanisandra, Bengaluru" class="w-full h-full" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Thanisandra+Bengaluru+560077&output=embed"></iframe>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="bg-brand-noir on-dark text-white/80 py-12">
-    <div class="max-w-7xl mx-auto px-5 flex flex-col md:flex-row justify-between gap-8 text-sm">
+  <section class="courses-section light-section" id="courses" aria-labelledby="courses-title">
+  <div class="section-container">
+    <div class="section-heading courses-heading" data-reveal="up">
       <div>
-        <p class="font-serif text-2xl font-bold text-white">Amreen Academy &amp; Makeover Studio</p>
-        <p class="mt-2 max-w-sm">Salon, makeup and beautician training in Thanisandra, Bengaluru.</p>
+        <p class="eyebrow">THE 45-DAY INTEGRATED PROGRAM <span></span></p>
+        <h2 id="courses-title">Explore Our <em>Beauty Courses</em></h2>
+        <p class="courses-intro">Four connected learning areas, brought together in one Beauty &amp; Makeup program. Explore what each pathway focuses on.</p>
       </div>
-      <div class="flex flex-wrap gap-x-8 gap-y-3 items-start">
-        <a class="hover:text-brand-goldLight" href="#training">Training</a>
-        <a class="hover:text-brand-goldLight" href="#courses">Courses</a>
-        <a class="hover:text-brand-goldLight" href="#fees">Fees</a>
-        <a class="hover:text-brand-goldLight" href="#enquire">Enquire</a>
-        <a data-ig-link hidden class="hover:text-brand-goldLight" href="#" target="_blank" rel="noopener">Instagram</a>
+      <a class="courses-heading-link" href="45-day-course.html">View the 45-day program <span aria-hidden="true">↗</span></a>
+    </div>
+
+    <div class="course-grid course-grid-expanded" id="course-grid">
+      <a class="course-card course-card-expanded" href="professional-makeup.html" aria-label="Explore Professional Makeup Artistry, one learning area in the 45-day program">
+        <div class="course-card-media course-card-photo course-art-makeup">
+          <img src="assets/course-makeup.jpg" alt="Professional Makeup Artistry training with an academy makeup artist working on a client" loading="lazy" decoding="async">
+          <span class="course-card-index">01</span>
+          <span class="course-card-media-caption">MAKEUP ARTISTRY</span>
+        </div>
+        <div class="course-card-body">
+          <span class="course-card-kicker">LEARNING AREA 01</span>
+          <h3>Professional Makeup Artistry</h3>
+          <p>Explore the craft of makeup from preparation through the finished look, with learning themes that include:</p>
+          <ul>
+            <li>Skin preparation and finish</li>
+            <li>Colour and product choices</li>
+            <li>Application and blending</li>
+            <li>Looks for different occasions</li>
+          </ul>
+          <span class="course-card-link">Explore learning themes <b aria-hidden="true">↗</b></span>
+        </div>
+      </a>
+
+      <a class="course-card course-card-expanded" href="skin-aesthetics.html" aria-label="Explore Skin and Aesthetics, one learning area in the 45-day program">
+        <div class="course-card-media course-card-photo course-art-skin">
+          <img src="assets/course-skin.jpg" alt="Skin and Aesthetics facial treatment training at Amreen’s Academy" loading="lazy" decoding="async">
+          <span class="course-card-index">02</span>
+          <span class="course-card-media-caption">SKIN &amp; AESTHETICS</span>
+        </div>
+        <div class="course-card-body">
+          <span class="course-card-kicker">LEARNING AREA 02</span>
+          <h3>Skin &amp; Aesthetics</h3>
+          <p>Build awareness of skin-focused beauty learning and thoughtful client care through themes such as:</p>
+          <ul>
+            <li>Skin types and preparation</li>
+            <li>Product and tool awareness</li>
+            <li>Treatment-room hygiene</li>
+            <li>Client care fundamentals</li>
+          </ul>
+          <span class="course-card-link">Explore learning themes <b aria-hidden="true">↗</b></span>
+        </div>
+      </a>
+
+      <a class="course-card course-card-expanded" href="hair-styling.html" aria-label="Explore Hair Styling, one learning area in the 45-day program">
+        <div class="course-card-media course-card-photo course-art-hair">
+          <img src="assets/course-hair.jpg" alt="Hair styling training with an academy stylist working on a client" loading="lazy" decoding="async">
+          <span class="course-card-index">03</span>
+          <span class="course-card-media-caption">HAIR STYLING</span>
+        </div>
+        <div class="course-card-body">
+          <span class="course-card-kicker">LEARNING AREA 03</span>
+          <h3>Hair Styling</h3>
+          <p>Explore the foundations of hairstyling for everyday, occasion and bridal looks, including:</p>
+          <ul>
+            <li>Hair preparation and sectioning</li>
+            <li>Shape and structure</li>
+            <li>Styling and finishing</li>
+            <li>Occasion and bridal styling</li>
+          </ul>
+          <span class="course-card-link">Explore learning themes <b aria-hidden="true">↗</b></span>
+        </div>
+      </a>
+
+      <a class="course-card course-card-expanded" href="bridal-artistry.html" aria-label="Explore Bridal Artistry, one learning area in the 45-day program">
+        <div class="course-card-media course-card-photo course-art-bridal">
+          <img src="assets/course-bridal.jpg" alt="Bridal artistry look with makeup and jewellery details" loading="lazy" decoding="async">
+          <span class="course-card-index">04</span>
+          <span class="course-card-media-caption">BRIDAL ARTISTRY</span>
+        </div>
+        <div class="course-card-body">
+          <span class="course-card-kicker">LEARNING AREA 04</span>
+          <h3>Bridal Artistry</h3>
+          <p>Bring makeup, hair and occasion details together with intention, with learning themes around:</p>
+          <ul>
+            <li>Bridal look planning</li>
+            <li>Complexion and eye details</li>
+            <li>Hair and overall coordination</li>
+            <li>Finishing and presentation</li>
+          </ul>
+          <span class="course-card-link">Explore learning themes <b aria-hidden="true">↗</b></span>
+        </div>
+      </a>
+    </div>
+
+    <div class="course-program-note" data-reveal="scale">
+      <div class="course-program-note-copy">
+        <span class="course-program-note-kicker">ONE INTEGRATED COURSE</span>
+        <h3>Four learning areas. One 45-day journey.</h3>
+        <p>These are included learning areas within the same Beauty &amp; Makeup program, not four separate paid enrolments. The academy certificate is provided on successful completion.</p>
+      </div>
+      <div class="course-program-note-metrics">
+        <div><strong>45</strong><span>DAYS</span></div>
+        <div><strong>₹25,000</strong><span>FULL PROGRAM FEE</span></div>
+        <div><strong>3</strong><span>INSTALMENTS AVAILABLE</span></div>
+      </div>
+      <a class="button button-primary course-program-note-cta" href="45-day-course.html">Explore the full program <span aria-hidden="true">→</span></a>
+    </div>
+  </div>
+  <div class="fine-wave" aria-hidden="true"></div>
+</section>
+
+    <section class="career-section" id="career" aria-labelledby="career-title">
+      <div class="career-inner">
+        <div class="career-heading">
+          <p>Turn Your Passion for<br>Beauty into a</p>
+          <h2 id="career-title">PROFESSIONAL<br>CAREER</h2>
+          <span class="pink-swipe" aria-hidden="true"></span>
+        </div>
+        <div class="career-description">
+          <span class="vertical-rule" aria-hidden="true"></span>
+          <p>Industry-focused training that builds real skills, confidence and a successful career in the beauty &amp; makeup industry.</p>
+        </div>
+        <div class="benefit-list">
+          <div class="benefit-item"><span class="benefit-icon">âœ‚</span><div><strong>Hands-on Practice</strong><small>Train with real tools &amp; techniques</small></div></div>
+          <div class="benefit-item"><span class="benefit-icon">â™§</span><div><strong>Expert Mentorship</strong><small>Learn from industry professionals</small></div></div>
+          <div class="benefit-item"><span class="benefit-icon">âœ§</span><div><strong>Career Support</strong><small>Guidance to grow and get placed</small></div></div>
+        </div>
+        <img class="career-mentor" src="assets/career-mentor-folded-arms.png" alt="Smiling Amreen's Academy team member in the academy maroon uniform" loading="lazy">
+      </div>
+    </section>
+
+    <section class="academy-section light-section" id="academy" aria-labelledby="academy-title">
+      <div class="academy-row section-container">
+        <div class="academy-photo-wrap">
+          <img src="assets/academy-studio.jpg" alt="Amreen's Academy beauty training studio with illuminated makeup mirrors" loading="lazy">
+        </div>
+        <div class="academy-copy">
+          <span class="copy-accent" aria-hidden="true"></span>
+          <h2 id="academy-title">A Creative Space<br>for Beauty Education</h2>
+          <p>A professional learning environment designed to nurture your creativity, enhance your skills and prepare you for a successful career.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="why-section light-section" id="why-choose" aria-labelledby="why-title">
+  <div class="section-container">
+    <div class="why-heading" data-reveal="up">
+      <p class="eyebrow">THE AMREEN'S ACADEMY APPROACH <span></span></p>
+      <h2 id="why-title">Why Choose <em>Amreen's Academy?</em></h2>
+      <p>Learn with a focus on practical technique, thoughtful service and the four connected areas of the integrated Beauty &amp; Makeup program.</p>
+    </div>
+    <div class="why-grid">
+      <article class="why-item" data-reveal="up">
+        <span class="why-item-icon" aria-hidden="true">
+          <svg viewBox="0 0 48 48"><path d="M6 17 24 7l18 10-18 10L6 17Z M12 21v10c7 7 17 7 24 0V21 M42 18v14"/></svg>
+        </span>
+        <span class="why-item-number">01</span>
+        <h3>Practical, Hands-on Learning</h3>
+        <p>Build technique through guided practice and attention to preparation, application, detail and finish.</p>
+      </article>
+
+      <article class="why-item" data-reveal="up">
+        <span class="why-item-icon" aria-hidden="true">
+          <svg viewBox="0 0 48 48"><circle cx="24" cy="13" r="7"/><circle cx="9" cy="20" r="5"/><circle cx="39" cy="20" r="5"/><path d="M10 41v-4a14 14 0 0 1 28 0v4H10Z M2 40v-4a8 8 0 0 1 8-8 M46 40v-4a8 8 0 0 0-8-8"/></svg>
+        </span>
+        <span class="why-item-number">02</span>
+        <h3>Four Learning Areas Together</h3>
+        <p>Makeup Artistry, Skin &amp; Aesthetics, Hair Styling and Bridal Artistry are included in one 45-day program.</p>
+      </article>
+
+      <article class="why-item" data-reveal="up">
+        <span class="why-item-icon" aria-hidden="true">
+          <svg viewBox="0 0 48 48"><path d="M24 5 29 17l13 2-9.5 9.2 2.2 13L24 35l-10.7 6.2 2.2-13L6 19l13-2 5-12Z"/><path d="M17 24h14"/></svg>
+        </span>
+        <span class="why-item-number">03</span>
+        <h3>Trainer Guidance</h3>
+        <p>Get guidance as you develop technique, make product choices and build confidence in your work.</p>
+      </article>
+
+      <article class="why-item" data-reveal="up">
+        <span class="why-item-icon" aria-hidden="true">
+          <svg viewBox="0 0 48 48"><path d="M8 9h32v25H8z M14 39h20 M24 34v5 M16 17h16 M16 23h12 M16 29h8"/></svg>
+        </span>
+        <span class="why-item-number">04</span>
+        <h3>Care and Hygiene Fundamentals</h3>
+        <p>Explore skin preparation, product and tool awareness, treatment-room hygiene and thoughtful client care.</p>
+      </article>
+
+      <article class="why-item" data-reveal="up">
+        <span class="why-item-icon" aria-hidden="true">
+          <svg viewBox="0 0 48 48"><path d="M12 7h19l7 7v27H12z M31 7v8h7 M18 23h14 M18 29h14 M18 35h9"/></svg>
+        </span>
+        <span class="why-item-number">05</span>
+        <h3>Academy Certificate</h3>
+        <p>The integrated program includes an academy certificate on successful completion.</p>
+      </article>
+
+      <article class="why-item" data-reveal="up">
+        <span class="why-item-icon" aria-hidden="true">
+          <svg viewBox="0 0 48 48"><path d="M7 39V9 M7 39h35 M13 32l8-9 7 4 11-15 M34 12h5v5"/></svg>
+        </span>
+        <span class="why-item-number">06</span>
+        <h3>Career-focused Foundations</h3>
+        <p>Build a foundation across occasion looks, styling, finishing and professional presentation.</p>
+      </article>
+    </div>
+  </div>
+  <span class="why-motion-orb why-motion-orb-one" aria-hidden="true"></span>
+  <span class="why-motion-orb why-motion-orb-two" aria-hidden="true"></span>
+</section>
+
+    <section class="student-section light-section" id="student-work" aria-labelledby="student-title">
+      <div class="section-container">
+        <div class="student-heading">
+          <h2 id="student-title">Student Learning Moments <span></span></h2>
+          <a href="student-success.html">View More <b aria-hidden="true">â†’</b></a>
+        </div>
+        <div class="student-grid">
+          <figure><img src="assets/academy-frames/certificate-03.jpg" alt="Students celebrating at a certificate presentation" loading="lazy" decoding="async"><figcaption>Certificate celebrations</figcaption></figure>
+          <figure><img src="assets/academy-frames/certificate-06.jpg" alt="A group of students with their academy certificates" loading="lazy" decoding="async"><figcaption>Student milestones</figcaption></figure>
+          <figure><img src="assets/academy-frames/classroom-04.jpg" alt="Instructor guiding a classroom learning session" loading="lazy" decoding="async"><figcaption>Guided classroom learning</figcaption></figure>
+          <figure><img src="assets/academy-frames/classroom-08.jpg" alt="Students seated together during an academy session" loading="lazy" decoding="async"><figcaption>Learning together</figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+  
+<section class="review-strip" aria-labelledby="review-title">
+  <div class="review-strip__inner">
+    <div class="review-strip__lead" data-reveal="left">
+      <p class="mini-label">LOCAL GOOGLE LISTING</p>
+      <h2 id="review-title">A warm welcome, close to home.</h2>
+      <div class="google-score"><strong>5.0</strong><span>â˜…â˜…â˜…â˜…â˜…</span><small>3 public reviews Â· snapshot checked November 2026</small></div>
+    </div>
+    <div class="review-quote-grid" data-stagger>
+      <blockquote><span>â€œ</span><p>Very good beauty parlour</p><cite>Google Business review</cite></blockquote>
+      <blockquote><span>â€œ</span><p>Nice experience excellent service</p><cite>Google Business review</cite></blockquote>
+    </div>
+    <a class="review-map-link" href="https://www.google.com/maps/search/?api=1&query=Amreens%20academy%20%26%20makeover%20studio&query_place_id=ChIJb3bteaUXrjsRIJOmc2EQrmY" target="_blank" rel="noopener noreferrer">View live Google listing â†—</a>
+  </div>
+</section>
+
+  <section class="program-section" id="course-program" aria-labelledby="program-title">
+      <div class="program-banner">
+        <div class="program-copy">
+          <span class="program-mark" aria-hidden="true"></span>
+          <h2 id="program-title">Beauty &amp; Makeup<br>Professional Program</h2>
+          <p>One 45-day program bringing together Professional Makeup Artistry, Skin &amp; Aesthetics, Hair Styling and Bridal Artistry.</p>
+          <div class="program-facts"><span>âœ“ Four learning areas</span><span>âœ“ Certificate on completion</span></div>
+          <div class="program-price-line"><strong>â‚¹25,000</strong><span>Full course fee</span><span>3 instalments available</span></div>
+          <a class="button button-primary" href="45-day-course.html">Explore the 45-Day Course <span aria-hidden="true">â†’</span></a>
+        </div>
+        <div class="program-ribbon" aria-hidden="true"></div>
+        <div class="program-presenter-wrap">
+          <img class="program-presenter" src="assets/45-days-presenter.png" alt="Amreen's Academy team member holding the 45 Days sign" loading="lazy">
+          <button class="animated-number-panel" type="button" aria-label="Replay the 45-day number animation">
+            <span class="program-count" data-count-up="45" aria-live="off">0</span>
+          </button>
+          <span class="celebration-emoji" aria-hidden="true">ðŸŽ‰</span>
+        </div>
+        <div class="confetti-burst" aria-hidden="true"></div>
+      </div>
+    </section>
+  
+
+<section class="academy-films" id="inside-academy" aria-labelledby="films-title">
+  <div class="films-orb films-orb-one" aria-hidden="true"></div>
+  <div class="films-shell">
+    <div class="films-heading" data-reveal="up">
+      <p class="film-kicker">BEHIND THE SKILLS <span></span> INSIDE THE ACADEMY</p>
+      <h2 id="films-title">Real learning. <em>Real moments.</em></h2>
+      <p>A frame-by-frame look inside certificate celebrations and hands-on classroom learning at the academy.</p>
+    </div>
+    <div class="academy-scatter" aria-label="Scattered carousel of frames from academy videos">
+  <span class="scatter-motion-orbit scatter-motion-orbit-one" aria-hidden="true"></span>
+  <span class="scatter-motion-orbit scatter-motion-orbit-two" aria-hidden="true"></span>
+  <span class="scatter-motion-spark scatter-motion-spark-one" aria-hidden="true"></span>
+  <span class="scatter-motion-spark scatter-motion-spark-two" aria-hidden="true"></span>
+  <div class="academy-scatter-viewport">
+    <div class="academy-scatter-track">
+<div class="academy-scatter-group">
+  <a class="academy-scatter-frame frame-01" href="assets/academy-frames/certificate-01.jpg" target="_blank" rel="noopener noreferrer" aria-label="Open full-size image: Certificate presentation frame 1">
+    <img src="assets/academy-frames/certificate-01.jpg" alt="Certificate presentation frame 1" loading="eager" decoding="async">
+    <span class="academy-frame-glint" aria-hidden="true"></span>
+  </a>
+  <a class="academy-scatter-frame frame-02" href="assets/academy-frames/certificate-02.jpg" target="_blank" rel="noopener noreferrer" aria-label="Open full-size image: Certificate presentation frame 2">
+    <img src="assets/academy-frames/certificate-02.jpg" alt="Certificate presentation frame 2" loading="eager" decoding="async">
+    <span class="academy-frame-glint" aria-hidden="true"></span>
+  </a>
+  <a class="academy-scatter-frame frame-03" href="assets/academy-frames/certificate-03.jpg" target="_blank" rel="noopener noreferrer" aria-label="Open full-size image: Certificate presentation frame 3">
+    <img src="assets/academy-frames/certificate-03.jpg" alt="Certificate presentation frame 3" loading="eager" decoding="async">
+    <span class="academy-frame-glint" aria-hidden="true"></span>
+  </a>
+  <a class="academy-scatter-frame frame-04" href="assets/academy-frames/certificate-04.jpg" target="_blank" rel="noopener noreferrer" aria-label="Open full-size image: Certificate presentation frame 4">
+    <img src="assets/academy-frames/certificate-04.jpg" alt="Certificate presentation frame 4" loading="eager" decoding="async">
+    <span class="academy-frame-glint" aria-hidden="true"></span>
+  </a>
+  <a class="academy-scatter-frame frame-05" href="assets/academy-frames/certificate-05.jpg" target="_blank" rel="noopener noreferrer" aria-label="Open full-size image: Certificate presentation frame 5">
+    <img src="assets/academy-frames/certificate-05.jpg" alt="Certificate presentation frame 5" loading="eager" decoding="async">
+    <span class="academy-frame-glint" aria-hidden="true"></span>
+  </a>
+  <a class="academy-scatter-frame frame-06" href="assets/academy-frames/certificate-06.jpg" target="_blank" rel="noopener noreferrer" aria-label="Open full-size image: Certificate presentation frame 6">
+    <img src="assets/academy-frames/certificate-06.jpg" alt="Certificate presentation frame 6" loading="eager" decoding="async">
+    <span class="academy-frame-glint" aria-hidden="true"></span>
+  </a>
+  <a class="academy-scatter-frame frame-07" href="assets/academy-frames/certificate-07.jpg" target="_blank" rel="noopener noreferrer" aria-label="Open full-size image: Certificate presentation frame 7">
+    <img src="assets/academy-frames/certificate-07.jpg" alt="Certificate presentation frame 7" loading="eager" decoding="async">
+    <span class="academy-frame-glint" aria-hidden="true"></span>
+  </a>
+  <a class="academy-scatter-frame frame-08" href="assets/academy-frames/certificate-08.jpg" target="_blank" rel="noopener noreferrer" aria-label="Open full-size image: Certificate presentation frame 8">
+    <img src="assets/academy-frames/certificate-08.jpg" alt="Certificate presentation frame 8" loading="eager" decoding="async">
+    <span class="academy-frame-glint" aria-hidden="true"></span>
+  </a>
+  <a class="academy-scatter-frame frame-09" href="assets/academy-frames/classroom-01.jpg" target="_blank" rel="noopener noreferrer" aria-label="Open full-size image: Classroom training frame 1">
+    <img src="assets/academy-frames/classroom-01.jpg" alt="Classroom training frame 1" loading="eager" decoding="async">
+    <span class="academy-frame-glint" aria-hidden="true"></span>
+  </a>
+  <a class="academy-scatter-frame frame-10" href="assets/academy-frames/classroom-02.jpg" target="_blank" rel="noopener noreferrer" aria-label="Open full-size image: Classroom training frame 2">
+    <img src="assets/academy-frames/classroom-02.jpg" alt="Classroom training frame 2" loading="eager" decoding="async">
+    <span class="academy-frame-glint" aria-hidden="true"></span>
+  </a>
+  <a class="academy-scatter-frame frame-11" href="assets/academy-frames/classroom-03.jpg" target="_blank" rel="noopener noreferrer" aria-label="Open full-size image: Classroom training frame 3">
+    <img src="assets/academy-frames/classroom-03.jpg" alt="Classroom training frame 3" loading="eager" decoding="async">
+    <span class="academy-frame-glint" aria-hidden="true"></span>
+  </a>
+  <a class="academy-scatter-frame frame-12" href="assets/academy-frames/classroom-04.jpg" target="_blank" rel="noopener noreferrer" aria-label="Open full-size image: Classroom training frame 4">
+    <img src="assets/academy-frames/classroom-04.jpg" alt="Classroom training frame 4" loading="eager" decoding="async">
+    <span class="academy-frame-glint" aria-hidden="true"></span>
+  </a>
+  <a class="academy-scatter-frame frame-13" href="assets/academy-frames/classroom-05.jpg" target="_blank" rel="noopener noreferrer" aria-label="Open full-size image: Classroom training frame 5">
+    <img src="assets/academy-frames/classroom-05.jpg" alt="Classroom training frame 5" loading="eager" decoding="async">
+    <span class="academy-frame-glint" aria-hidden="true"></span>
+  </a>
+  <a class="academy-scatter-frame frame-14" href="assets/academy-frames/classroom-06.jpg" target="_blank" rel="noopener noreferrer" aria-label="Open full-size image: Classroom training frame 6">
+    <img src="assets/academy-frames/classroom-06.jpg" alt="Classroom training frame 6" loading="eager" decoding="async">
+    <span class="academy-frame-glint" aria-hidden="true"></span>
+  </a>
+  <a class="academy-scatter-frame frame-15" href="assets/academy-frames/classroom-07.jpg" target="_blank" rel="noopener noreferrer" aria-label="Open full-size image: Classroom training frame 7">
+    <img src="assets/academy-frames/classroom-07.jpg" alt="Classroom training frame 7" loading="eager" decoding="async">
+    <span class="academy-frame-glint" aria-hidden="true"></span>
+  </a>
+  <a class="academy-scatter-frame frame-16" href="assets/academy-frames/classroom-08.jpg" target="_blank" rel="noopener noreferrer" aria-label="Open full-size image: Classroom training frame 8">
+    <img src="assets/academy-frames/classroom-08.jpg" alt="Classroom training frame 8" loading="eager" decoding="async">
+    <span class="academy-frame-glint" aria-hidden="true"></span>
+  </a>
+  <a class="academy-scatter-frame frame-17" href="assets/academy-frames/classroom-09.jpg" target="_blank" rel="noopener noreferrer" aria-label="Open full-size image: Classroom training frame 9">
+    <img src="assets/academy-frames/classroom-09.jpg" alt="Classroom training frame 9" loading="eager" decoding="async">
+    <span class="academy-frame-glint" aria-hidden="true"></span>
+  </a>
+  <a class="academy-scatter-frame frame-18" href="assets/academy-frames/classroom-10.jpg" target="_blank" rel="noopener noreferrer" aria-label="Open full-size image: Classroom training frame 10">
+    <img src="assets/academy-frames/classroom-10.jpg" alt="Classroom training frame 10" loading="eager" decoding="async">
+    <span class="academy-frame-glint" aria-hidden="true"></span>
+  </a>
+</div>
+<div class="academy-scatter-group" aria-hidden="true">
+  <a class="academy-scatter-frame frame-01" href="assets/academy-frames/certificate-01.jpg" target="_blank" rel="noopener noreferrer" aria-label="Open full-size image: Certificate presentation frame 1" tabindex="-1">
+    <img src="assets/academy-frames/certificate-01.jpg" alt="Certificate presentation frame 1" loading="eager" decoding="async">
+    <span class="academy-frame-glint" aria-hidden="true"></span>
+  </a>
+  <a class="academy-scatter-frame frame-02" href="assets/academy-frames/certificate-02.jpg" target="_blank" rel="noopener noreferrer" aria-label="Open full-size image: Certificate presentation frame 2" tabindex="-1">
+    <img src="assets/academy-frames/certificate-02.jpg" alt="Certificate presentation frame 2" loading="eager" decoding="async">
+    <span class="academy-frame-glint" aria-hidden="true"></span>
+  </a>
+  <a class="academy-scatter-frame frame-03" href="assets/academy-frames/certificate-03.jpg" target="_blank" rel="noopener noreferrer" aria-label="Open full-size image: Certificate presentation frame 3" tabindex="-1">
+    <img src="assets/academy-frames/certificate-03.jpg" alt="Certificate presentation frame 3" loading="eager" decoding="async">
+    <span class="academy-frame-glint" aria-hidden="true"></span>
+  </a>
+  <a class="academy-scatter-frame frame-04" href="assets/academy-frames/certificate-04.jpg" target="_blank" rel="noopener noreferrer" aria-label="Open full-size image: Certificate presentation frame 4" tabindex="-1">
+    <img src="assets/academy-frames/certificate-04.jpg" alt="Certificate presentation frame 4" loading="eager" decoding="async">
+    <span class="academy-frame-glint" aria-hidden="true"></span>
+  </a>
+  <a class="academy-scatter-frame frame-05" href="assets/academy-frames/certificate-05.jpg" target="_blank" rel="noopener noreferrer" aria-label="Open full-size image: Certificate presentation frame 5" tabindex="-1">
+    <img src="assets/academy-frames/certificate-05.jpg" alt="Certificate presentation frame 5" loading="eager" decoding="async">
+    <span class="academy-frame-glint" aria-hidden="true"></span>
+  </a>
+  <a class="academy-scatter-frame frame-06" href="assets/academy-frames/certificate-06.jpg" target="_blank" rel="noopener noreferrer" aria-label="Open full-size image: Certificate presentation frame 6" tabindex="-1">
+    <img src="assets/academy-frames/certificate-06.jpg" alt="Certificate presentation frame 6" loading="eager" decoding="async">
+    <span class="academy-frame-glint" aria-hidden="true"></span>
+  </a>
+  <a class="academy-scatter-frame frame-07" href="assets/academy-frames/certificate-07.jpg" target="_blank" rel="noopener noreferrer" aria-label="Open full-size image: Certificate presentation frame 7" tabindex="-1">
+    <img src="assets/academy-frames/certificate-07.jpg" alt="Certificate presentation frame 7" loading="eager" decoding="async">
+    <span class="academy-frame-glint" aria-hidden="true"></span>
+  </a>
+  <a class="academy-scatter-frame frame-08" href="assets/academy-frames/certificate-08.jpg" target="_blank" rel="noopener noreferrer" aria-label="Open full-size image: Certificate presentation frame 8" tabindex="-1">
+    <img src="assets/academy-frames/certificate-08.jpg" alt="Certificate presentation frame 8" loading="eager" decoding="async">
+    <span class="academy-frame-glint" aria-hidden="true"></span>
+  </a>
+  <a class="academy-scatter-frame frame-09" href="assets/academy-frames/classroom-01.jpg" target="_blank" rel="noopener noreferrer" aria-label="Open full-size image: Classroom training frame 1" tabindex="-1">
+    <img src="assets/academy-frames/classroom-01.jpg" alt="Classroom training frame 1" loading="eager" decoding="async">
+    <span class="academy-frame-glint" aria-hidden="true"></span>
+  </a>
+  <a class="academy-scatter-frame frame-10" href="assets/academy-frames/classroom-02.jpg" target="_blank" rel="noopener noreferrer" aria-label="Open full-size image: Classroom training frame 2" tabindex="-1">
+    <img src="assets/academy-frames/classroom-02.jpg" alt="Classroom training frame 2" loading="eager" decoding="async">
+    <span class="academy-frame-glint" aria-hidden="true"></span>
+  </a>
+  <a class="academy-scatter-frame frame-11" href="assets/academy-frames/classroom-03.jpg" target="_blank" rel="noopener noreferrer" aria-label="Open full-size image: Classroom training frame 3" tabindex="-1">
+    <img src="assets/academy-frames/classroom-03.jpg" alt="Classroom training frame 3" loading="eager" decoding="async">
+    <span class="academy-frame-glint" aria-hidden="true"></span>
+  </a>
+  <a class="academy-scatter-frame frame-12" href="assets/academy-frames/classroom-04.jpg" target="_blank" rel="noopener noreferrer" aria-label="Open full-size image: Classroom training frame 4" tabindex="-1">
+    <img src="assets/academy-frames/classroom-04.jpg" alt="Classroom training frame 4" loading="eager" decoding="async">
+    <span class="academy-frame-glint" aria-hidden="true"></span>
+  </a>
+  <a class="academy-scatter-frame frame-13" href="assets/academy-frames/classroom-05.jpg" target="_blank" rel="noopener noreferrer" aria-label="Open full-size image: Classroom training frame 5" tabindex="-1">
+    <img src="assets/academy-frames/classroom-05.jpg" alt="Classroom training frame 5" loading="eager" decoding="async">
+    <span class="academy-frame-glint" aria-hidden="true"></span>
+  </a>
+  <a class="academy-scatter-frame frame-14" href="assets/academy-frames/classroom-06.jpg" target="_blank" rel="noopener noreferrer" aria-label="Open full-size image: Classroom training frame 6" tabindex="-1">
+    <img src="assets/academy-frames/classroom-06.jpg" alt="Classroom training frame 6" loading="eager" decoding="async">
+    <span class="academy-frame-glint" aria-hidden="true"></span>
+  </a>
+  <a class="academy-scatter-frame frame-15" href="assets/academy-frames/classroom-07.jpg" target="_blank" rel="noopener noreferrer" aria-label="Open full-size image: Classroom training frame 7" tabindex="-1">
+    <img src="assets/academy-frames/classroom-07.jpg" alt="Classroom training frame 7" loading="eager" decoding="async">
+    <span class="academy-frame-glint" aria-hidden="true"></span>
+  </a>
+  <a class="academy-scatter-frame frame-16" href="assets/academy-frames/classroom-08.jpg" target="_blank" rel="noopener noreferrer" aria-label="Open full-size image: Classroom training frame 8" tabindex="-1">
+    <img src="assets/academy-frames/classroom-08.jpg" alt="Classroom training frame 8" loading="eager" decoding="async">
+    <span class="academy-frame-glint" aria-hidden="true"></span>
+  </a>
+  <a class="academy-scatter-frame frame-17" href="assets/academy-frames/classroom-09.jpg" target="_blank" rel="noopener noreferrer" aria-label="Open full-size image: Classroom training frame 9" tabindex="-1">
+    <img src="assets/academy-frames/classroom-09.jpg" alt="Classroom training frame 9" loading="eager" decoding="async">
+    <span class="academy-frame-glint" aria-hidden="true"></span>
+  </a>
+  <a class="academy-scatter-frame frame-18" href="assets/academy-frames/classroom-10.jpg" target="_blank" rel="noopener noreferrer" aria-label="Open full-size image: Classroom training frame 10" tabindex="-1">
+    <img src="assets/academy-frames/classroom-10.jpg" alt="Classroom training frame 10" loading="eager" decoding="async">
+    <span class="academy-frame-glint" aria-hidden="true"></span>
+  </a>
+</div>
+    </div>
+  </div>
+</div>
+    <div class="films-footer"><span>MORE FROM THE STUDIO</span><a href="https://www.instagram.com/amreenkhanum60/" target="_blank" rel="noopener noreferrer">Follow @amreenkhanum60 <b>â†—</b></a></div>
+    <div class="instagram-reels-panel" id="instagram-reels">
+      <div class="instagram-reels-copy">
+        <span class="mini-label">LATEST FROM INSTAGRAM</span>
+        <h3>Recent Reels from Amreen.</h3>
+        <p>Amreen's latest Instagram videos, moving continuously from left to right. Click any video to open that Reel on Instagram.</p>
+        <a class="instagram-profile-link" href="https://www.instagram.com/amreenkhanum60/" target="_blank" rel="noopener noreferrer">Visit Instagram Profile ↗</a>
       </div>
     </div>
-    <p class="max-w-7xl mx-auto px-5 mt-10 text-xs text-white/50">&copy; 2026 Amreen Academy &amp; Makeover Studio. Photos are illustrative.</p>
+    <div class="instagram-marquee" role="region" aria-label="Continuously moving recent Instagram videos">
+      <div class="instagram-marquee-track">
+      <div class="instagram-marquee-group">
+        <a class="instagram-marquee-item" href="https://www.instagram.com/amreenkhanum60/reel/Dfug-TKSKzl/" target="_blank" rel="noopener noreferrer" aria-label="Open Amreen's Instagram Reel from 14 Nov 2026">
+          <iframe src="https://www.instagram.com/reel/Dfug-TKSKzl/embed/" title="Instagram Reel by Amreen, 14 Nov 2026" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" scrolling="no" tabindex="-1" aria-hidden="true"></iframe>
+        </a>
+        <a class="instagram-marquee-item" href="https://www.instagram.com/amreenkhanum60/reel/DftyC_7yDX4/" target="_blank" rel="noopener noreferrer" aria-label="Open Amreen's Instagram Reel from 14 Nov 2026">
+          <iframe src="https://www.instagram.com/reel/DftyC_7yDX4/embed/" title="Instagram Reel by Amreen, 14 Nov 2026" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" scrolling="no" tabindex="-1" aria-hidden="true"></iframe>
+        </a>
+        <a class="instagram-marquee-item" href="https://www.instagram.com/amreenkhanum60/reel/DfrbBDeSn0C/" target="_blank" rel="noopener noreferrer" aria-label="Open Amreen's Instagram Reel from 13 Nov 2026">
+          <iframe src="https://www.instagram.com/reel/DfrbBDeSn0C/embed/" title="Instagram Reel by Amreen, 13 Nov 2026" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" scrolling="no" tabindex="-1" aria-hidden="true"></iframe>
+        </a>
+        <a class="instagram-marquee-item" href="https://www.instagram.com/amreenkhanum60/reel/Dfp1GYazrM3/" target="_blank" rel="noopener noreferrer" aria-label="Open Amreen's Instagram Reel from 12 Nov 2026">
+          <iframe src="https://www.instagram.com/reel/Dfp1GYazrM3/embed/" title="Instagram Reel by Amreen, 12 Nov 2026" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" scrolling="no" tabindex="-1" aria-hidden="true"></iframe>
+        </a>
+        <a class="instagram-marquee-item" href="https://www.instagram.com/amreenkhanum60/reel/DfnHp2fSJzE/" target="_blank" rel="noopener noreferrer" aria-label="Open Amreen's Instagram Reel from 11 Nov 2026">
+          <iframe src="https://www.instagram.com/reel/DfnHp2fSJzE/embed/" title="Instagram Reel by Amreen, 11 Nov 2026" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" scrolling="no" tabindex="-1" aria-hidden="true"></iframe>
+        </a>
+        <a class="instagram-marquee-item" href="https://www.instagram.com/amreenkhanum60/reel/DfmtpI1S5w-/" target="_blank" rel="noopener noreferrer" aria-label="Open Amreen's Instagram Reel from 11 Nov 2026">
+          <iframe src="https://www.instagram.com/reel/DfmtpI1S5w-/embed/" title="Instagram Reel by Amreen, 11 Nov 2026" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" scrolling="no" tabindex="-1" aria-hidden="true"></iframe>
+        </a>
+        <a class="instagram-marquee-item" href="https://www.instagram.com/amreenkhanum60/reel/DfmsAc5yFhn/" target="_blank" rel="noopener noreferrer" aria-label="Open Amreen's Instagram Reel from 11 Nov 2026">
+          <iframe src="https://www.instagram.com/reel/DfmsAc5yFhn/embed/" title="Instagram Reel by Amreen, 11 Nov 2026" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" scrolling="no" tabindex="-1" aria-hidden="true"></iframe>
+        </a>
+        <a class="instagram-marquee-item" href="https://www.instagram.com/amreenkhanum60/reel/DfmgPhqyMxi/" target="_blank" rel="noopener noreferrer" aria-label="Open Amreen's Instagram Reel from 11 Nov 2026">
+          <iframe src="https://www.instagram.com/reel/DfmgPhqyMxi/embed/" title="Instagram Reel by Amreen, 11 Nov 2026" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" scrolling="no" tabindex="-1" aria-hidden="true"></iframe>
+        </a>
+        <a class="instagram-marquee-item" href="https://www.instagram.com/amreenkhanum60/reel/DfmUBMky2gW/" target="_blank" rel="noopener noreferrer" aria-label="Open Amreen's Instagram Reel from 11 Nov 2026">
+          <iframe src="https://www.instagram.com/reel/DfmUBMky2gW/embed/" title="Instagram Reel by Amreen, 11 Nov 2026" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" scrolling="no" tabindex="-1" aria-hidden="true"></iframe>
+        </a>
+      </div>
+      <div class="instagram-marquee-group" aria-hidden="true">
+        <a class="instagram-marquee-item" href="https://www.instagram.com/amreenkhanum60/reel/Dfug-TKSKzl/" target="_blank" rel="noopener noreferrer" aria-label="Open Amreen's Instagram Reel from 14 Nov 2026" tabindex="-1">
+          <iframe src="https://www.instagram.com/reel/Dfug-TKSKzl/embed/" title="Instagram Reel by Amreen, 14 Nov 2026" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" scrolling="no" tabindex="-1" aria-hidden="true"></iframe>
+        </a>
+        <a class="instagram-marquee-item" href="https://www.instagram.com/amreenkhanum60/reel/DftyC_7yDX4/" target="_blank" rel="noopener noreferrer" aria-label="Open Amreen's Instagram Reel from 14 Nov 2026" tabindex="-1">
+          <iframe src="https://www.instagram.com/reel/DftyC_7yDX4/embed/" title="Instagram Reel by Amreen, 14 Nov 2026" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" scrolling="no" tabindex="-1" aria-hidden="true"></iframe>
+        </a>
+        <a class="instagram-marquee-item" href="https://www.instagram.com/amreenkhanum60/reel/DfrbBDeSn0C/" target="_blank" rel="noopener noreferrer" aria-label="Open Amreen's Instagram Reel from 13 Nov 2026" tabindex="-1">
+          <iframe src="https://www.instagram.com/reel/DfrbBDeSn0C/embed/" title="Instagram Reel by Amreen, 13 Nov 2026" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" scrolling="no" tabindex="-1" aria-hidden="true"></iframe>
+        </a>
+        <a class="instagram-marquee-item" href="https://www.instagram.com/amreenkhanum60/reel/Dfp1GYazrM3/" target="_blank" rel="noopener noreferrer" aria-label="Open Amreen's Instagram Reel from 12 Nov 2026" tabindex="-1">
+          <iframe src="https://www.instagram.com/reel/Dfp1GYazrM3/embed/" title="Instagram Reel by Amreen, 12 Nov 2026" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" scrolling="no" tabindex="-1" aria-hidden="true"></iframe>
+        </a>
+        <a class="instagram-marquee-item" href="https://www.instagram.com/amreenkhanum60/reel/DfnHp2fSJzE/" target="_blank" rel="noopener noreferrer" aria-label="Open Amreen's Instagram Reel from 11 Nov 2026" tabindex="-1">
+          <iframe src="https://www.instagram.com/reel/DfnHp2fSJzE/embed/" title="Instagram Reel by Amreen, 11 Nov 2026" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" scrolling="no" tabindex="-1" aria-hidden="true"></iframe>
+        </a>
+        <a class="instagram-marquee-item" href="https://www.instagram.com/amreenkhanum60/reel/DfmtpI1S5w-/" target="_blank" rel="noopener noreferrer" aria-label="Open Amreen's Instagram Reel from 11 Nov 2026" tabindex="-1">
+          <iframe src="https://www.instagram.com/reel/DfmtpI1S5w-/embed/" title="Instagram Reel by Amreen, 11 Nov 2026" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" scrolling="no" tabindex="-1" aria-hidden="true"></iframe>
+        </a>
+        <a class="instagram-marquee-item" href="https://www.instagram.com/amreenkhanum60/reel/DfmsAc5yFhn/" target="_blank" rel="noopener noreferrer" aria-label="Open Amreen's Instagram Reel from 11 Nov 2026" tabindex="-1">
+          <iframe src="https://www.instagram.com/reel/DfmsAc5yFhn/embed/" title="Instagram Reel by Amreen, 11 Nov 2026" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" scrolling="no" tabindex="-1" aria-hidden="true"></iframe>
+        </a>
+        <a class="instagram-marquee-item" href="https://www.instagram.com/amreenkhanum60/reel/DfmgPhqyMxi/" target="_blank" rel="noopener noreferrer" aria-label="Open Amreen's Instagram Reel from 11 Nov 2026" tabindex="-1">
+          <iframe src="https://www.instagram.com/reel/DfmgPhqyMxi/embed/" title="Instagram Reel by Amreen, 11 Nov 2026" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" scrolling="no" tabindex="-1" aria-hidden="true"></iframe>
+        </a>
+        <a class="instagram-marquee-item" href="https://www.instagram.com/amreenkhanum60/reel/DfmUBMky2gW/" target="_blank" rel="noopener noreferrer" aria-label="Open Amreen's Instagram Reel from 11 Nov 2026" tabindex="-1">
+          <iframe src="https://www.instagram.com/reel/DfmUBMky2gW/embed/" title="Instagram Reel by Amreen, 11 Nov 2026" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" scrolling="no" tabindex="-1" aria-hidden="true"></iframe>
+        </a>
+      </div>
+      </div>
+    </div>
+    <p class="instagram-reels-note">Select any moving video to watch the original Reel on Instagram.</p>
+  </div>
+</section>
+
+  </main>
+
+  <footer class="site-footer" id="contact">
+    <div class="footer-inner">
+      <a class="brand footer-brand" href="#home" aria-label="Amreen's Academy home">
+        <span class="brand-word">AMREEN<span class="brand-plus">+</span></span>
+        <span class="brand-sub">A C A D E M Y</span>
+      </a>
+      <span class="footer-divider" aria-hidden="true"></span>
+      <p class="footer-tagline">PROFESSIONAL<br>BEAUTY &amp; MAKEUP<br>EDUCATION</p>
+      <div class="footer-links"><strong>Quick Links</strong><a href="index.html">Home</a><a href="about.html">About</a><a href="courses.html">Courses</a></div>
+      <div class="footer-links"><strong>&nbsp;</strong><a href="faculty.html">Faculty</a><a href="student-success.html">Student Success</a><a href="blog.html">Blog</a></div>
+      <div class="footer-links"><strong>&nbsp;</strong><a href="faqs.html">FAQs</a><a href="contact.html">Contact</a></div>
+      <div class="footer-social"><strong>Connect With Us</strong><div class="footer-social-icons"><a href="https://www.instagram.com/amreenkhanum60/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">â—Ž</a><a href="https://wa.me/918123410118" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">â—‰</a></div></div>
+    </div>
+    <div class="home-contact-strip"><span>Thanisandra Â· Bengaluru</span><a href="tel:8123410118">+91 81234 10118</a><a href="https://www.google.com/maps/search/?api=1&amp;query=Amreens%20academy%20%26%20makeover%20studio&amp;query_place_id=ChIJb3bteaUXrjsRIJOmc2EQrmY" target="_blank" rel="noopener noreferrer">Get directions â†—</a></div>
+    <p class="footer-bottom">Â© <span id="year"></span> Amreen's Academy. All rights reserved.</p>
   </footer>
 
-  <a data-wa href="#" target="_blank" rel="noopener" class="fixed bottom-5 right-5 z-40 w-14 h-14 rounded-full bg-brand-noir text-brand-goldLight grid place-items-center shadow-xl hover:bg-brand-gold hover:text-brand-noir transition-colors" aria-label="Chat on WhatsApp">
-    <i data-lucide="message-circle" class="w-6 h-6"></i>
-  </a>
+  <dialog class="enquiry-dialog" id="enquiry-dialog" aria-labelledby="dialog-title">
+    <form method="dialog" class="dialog-close-form"><button class="dialog-close" aria-label="Close enquiry form">Ã—</button></form>
+    <div class="dialog-content">
+      <p class="eyebrow">BEGIN YOUR NEXT CHAPTER</p>
+      <h2 id="dialog-title">Enquire Now</h2>
+      <p class="dialog-intro">Share your details and the course you are interested in.</p>
+      <form id="enquiry-form">
+        <label>Your name<input name="name" type="text" autocomplete="name" required placeholder="Full name"></label>
+        <label>Phone number<input name="phone" type="tel" autocomplete="tel" required placeholder="Mobile number"></label>
+        <label>Program<select name="course" required><option value="45-Day Integrated Beauty & Makeup Program">45-Day Integrated Beauty &amp; Makeup Program</option></select></label>
+        <label>Area you are most interested in<select name="interest"><option>All four learning areas</option><option>Professional Makeup Artistry</option><option>Skin &amp; Aesthetics</option><option>Hair Styling</option><option>Bridal Artistry</option></select></label>
+        <button class="button button-primary form-submit" type="submit">Continue to WhatsApp <span aria-hidden="true">â†’</span></button>
+      </form>
+      <p class="form-note" id="form-note" role="status">Submitting opens WhatsApp with your enquiry details prepared. Send the message there to contact the academy.</p>
+    </div>
+  </dialog>
 
-  <script>
-    /* ====== EDIT THESE ====== */
-    const CONFIG = {
-      whatsapp: '919876543210',          // digits only, with country code. REPLACE with the real academy number
-      phoneDisplay: '+91 98765 43210',   // REPLACE with the real academy number
-      instagram: ''                      // e.g. 'amreen_academy' (no @). Leave empty to hide Instagram links
-    };
-    /* ======================== */
-
-    window.addEventListener('DOMContentLoaded', init);
-    window.addEventListener('load', () => { if (window.ScrollTrigger) ScrollTrigger.refresh(); });
-
-    function keepHeroLooping() {
-      const v = document.getElementById('heroVideo');
-      if (!v) return;
-      v.muted = true; v.loop = true;
-      const play = () => { const p = v.play(); if (p && p.catch) p.catch(() => {}); };
-      play();
-      v.addEventListener('ended', () => { v.currentTime = 0; play(); });
-      document.addEventListener('visibilitychange', () => { if (!document.hidden) play(); });
-      ['touchstart', 'click', 'scroll'].forEach(ev => window.addEventListener(ev, play, { once: true, passive: true }));
-    }
-
-    function init() {
-      keepHeroLooping();
-      if (window.lucide) lucide.createIcons();
-      wireConfig();
-      wireUI();
-      if (window.gsap && window.ScrollTrigger) animate();
-    }
-
-    function waLink(text) {
-      return 'https://wa.me/' + CONFIG.whatsapp + (text ? '?text=' + encodeURIComponent(text) : '');
-    }
-
-    function wireConfig() {
-      document.querySelectorAll('[data-wa]').forEach(a => a.href = waLink('Hi Amreen Academy, I would like to know about your courses.'));
-      document.querySelectorAll('[data-phone-link]').forEach(a => a.href = 'tel:+' + CONFIG.whatsapp);
-      document.querySelectorAll('[data-phone-text]').forEach(s => s.textContent = CONFIG.phoneDisplay);
-      if (CONFIG.instagram) {
-        const url = 'https://www.instagram.com/' + CONFIG.instagram + '/';
-        document.querySelectorAll('[data-ig-link]').forEach(a => { a.href = url; a.hidden = false; });
-        document.querySelectorAll('[data-ig-handle]').forEach(s => s.textContent = '@' + CONFIG.instagram);
-        const sec = document.querySelector('[data-ig-section]');
-        if (sec) sec.hidden = false;
-      }
-    }
-
-    function wireUI() {
-      const menuBtn = document.getElementById('menuBtn');
-      const menu = document.getElementById('mobileMenu');
-      menuBtn.addEventListener('click', () => {
-        const open = menu.classList.toggle('hidden') === false;
-        menuBtn.setAttribute('aria-expanded', String(open));
-      });
-      menu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
-        menu.classList.add('hidden'); menuBtn.setAttribute('aria-expanded', 'false');
-      }));
-
-      // Fee estimator
-      const sel = document.getElementById('emiCourse');
-      const fmt = n => '₹' + Math.round(n).toLocaleString('en-IN');
-      const upd = () => {
-        const v = parseInt(sel.value, 10);
-        document.getElementById('emiTotal').textContent = fmt(v);
-        document.getElementById('emiMonthly').textContent = fmt(v / 3);
-      };
-      sel.addEventListener('change', upd); upd();
-
-      // Course buttons preselect the form
-      document.querySelectorAll('.pick-course').forEach(b => b.addEventListener('click', () => {
-        const c = b.dataset.course; const f = document.getElementById('fCourse');
-        for (const o of f.options) if (o.text === c) f.value = o.value || o.text;
-      }));
-
-      // Enquiry form -> WhatsApp
-      const form = document.getElementById('enquiryForm');
-      form.addEventListener('submit', e => {
-        e.preventDefault();
-        const name = document.getElementById('fName');
-        const err = form.querySelector('.err');
-        if (!name.value.trim()) { err.classList.remove('hidden'); name.focus(); return; }
-        err.classList.add('hidden');
-        const msg = 'Hi Amreen Academy, I am ' + name.value.trim() + '. I am interested in: ' + document.getElementById('fCourse').value + '.' +
-          (document.getElementById('fNote').value.trim() ? ' Note: ' + document.getElementById('fNote').value.trim() : '') +
-          ' Please share the next batch dates.';
-        window.open(waLink(msg), '_blank', 'noopener');
-      });
-    }
-
-    function splitWords(el) {
-      const text = el.textContent.trim();
-      el.setAttribute('aria-label', text);
-      el.innerHTML = text.split(/\s+/).map(w => '<span class="word" aria-hidden="true"><span>' + w + '</span></span>').join(' ');
-      return el.querySelectorAll('.word > span');
-    }
-
-    function animate() {
-      gsap.registerPlugin(ScrollTrigger);
-      const header = document.getElementById('header');
-
-      // Header hide/show (works regardless of motion preference, no animation of content)
-      let lastY = 0;
-      ScrollTrigger.create({
-        start: 0, end: 'max',
-        onUpdate: self => {
-          const y = self.scroll();
-          header.style.transform = (y > lastY && y > 200) ? 'translateY(-100%)' : 'translateY(0)';
-          lastY = y;
-        }
-      });
-
-      // Active nav link
-      document.querySelectorAll('nav a.nav-link').forEach(link => {
-        const target = document.querySelector(link.getAttribute('href'));
-        if (!target) return;
-        ScrollTrigger.create({
-          trigger: target, start: 'top 45%', end: 'bottom 45%',
-          onToggle: s => link.classList.toggle('is-active', s.isActive)
-        });
-      });
-
-      const mm = gsap.matchMedia();
-      mm.add({
-        motion: '(prefers-reduced-motion: no-preference)',
-        desktop: '(min-width: 768px)'
-      }, ctx => {
-        const { motion, desktop } = ctx.conditions;
-
-        // Scroll progress bar is a progress indicator, safe in all cases
-        gsap.to('#progress', { scaleX: 1, ease: 'none', scrollTrigger: { start: 0, end: 'max', scrub: 0.2 } });
-        if (!motion) return;
-
-        // HERO: word-by-word headline reveal, then fades, video parallax
-        const heroWords = splitWords(document.getElementById('heroTitle'));
-        gsap.from(heroWords, { yPercent: 110, duration: 1.1, ease: 'expo.out', stagger: 0.07, delay: 0.15 });
-        gsap.from('#heroScript', { y: 40, opacity: 0, duration: 1.2, ease: 'power3.out', delay: 0.6 });
-        gsap.from('.hero-fade', { y: 24, opacity: 0, duration: 0.9, ease: 'power3.out', stagger: 0.12, delay: 0.7 });
-        gsap.to('#heroVideo', { yPercent: 10, ease: 'none', scrollTrigger: { trigger: '#top', start: 'top top', end: 'bottom top', scrub: true } });
-
-        // Section headings: story-style word reveal on scroll
-        document.querySelectorAll('.split').forEach(h => {
-          const words = splitWords(h);
-          gsap.from(words, { yPercent: 110, duration: 0.9, ease: 'expo.out', stagger: 0.05, scrollTrigger: { trigger: h, start: 'top 85%', once: true } });
-        });
-
-        // STORY: pinned on desktop, crossfading chapters tied to scroll
-        const panels = gsap.utils.toArray('.story-panel');
-        if (desktop) {
-          gsap.set(panels.slice(1), { autoAlpha: 0, y: 70 });
-          const tl = gsap.timeline({
-            defaults: { ease: 'none' },
-            scrollTrigger: { trigger: '.story-pin', start: 'top top', end: '+=320%', pin: true, scrub: 0.7, anticipatePin: 1 }
-          });
-          panels.forEach((p, i) => {
-            if (i === 0) return;
-            const at = (i - 1) * 1.6 + 1;
-            tl.to(panels[i - 1], { autoAlpha: 0, y: -70, duration: 0.6 }, at)
-              .fromTo(p, { autoAlpha: 0, y: 70 }, { autoAlpha: 1, y: 0, duration: 0.6 }, at + 0.35);
-          });
-          tl.to('.story-bar', { scaleX: 1, duration: tl.duration() }, 0);
-        } else {
-          panels.forEach(p => gsap.from(p, { y: 50, opacity: 0, duration: 0.9, ease: 'power3.out', scrollTrigger: { trigger: p, start: 'top 85%', once: true } }));
-        }
-
-        // TRAINING cards: staggered reveal with clip-path wipe
-        gsap.from('.reveal-card', {
-          y: 50, opacity: 0, clipPath: 'inset(0 0 100% 0 round 24px)', duration: 1, ease: 'power3.out',
-          stagger: 0.09, scrollTrigger: { trigger: '#trackGrid', start: 'top 80%', once: true },
-          clearProps: 'clipPath'
-        });
-
-        // COURSES: image mask reveal + parallax, text slides in
-        gsap.utils.toArray('.course').forEach(c => {
-          const box = c.querySelector('.reveal-img');
-          const img = c.querySelector('.parallax-img');
-          const text = c.querySelector('.course-text');
-          gsap.from(box, { clipPath: 'inset(100% 0 0 0 round 32px)', duration: 1.3, ease: 'expo.out', scrollTrigger: { trigger: c, start: 'top 75%', once: true }, clearProps: 'clipPath' });
-          gsap.fromTo(img, { yPercent: -7 }, { yPercent: 7, ease: 'none', scrollTrigger: { trigger: box, start: 'top bottom', end: 'bottom top', scrub: true } });
-          gsap.from(text.children, { y: 36, opacity: 0, duration: 0.9, ease: 'power3.out', stagger: 0.1, scrollTrigger: { trigger: text, start: 'top 80%', once: true } });
-        });
-
-        // FEES
-        gsap.from('.fees-copy', { x: -40, opacity: 0, duration: 1, ease: 'power3.out', scrollTrigger: { trigger: '#fees', start: 'top 70%', once: true } });
-        gsap.from('.fees-card', { x: 40, opacity: 0, duration: 1, ease: 'power3.out', scrollTrigger: { trigger: '#fees', start: 'top 70%', once: true } });
-
-        // STUDIO rows
-        gsap.from('.service-row', { y: 30, opacity: 0, duration: 0.8, ease: 'power3.out', stagger: 0.1, scrollTrigger: { trigger: '#serviceList', start: 'top 80%', once: true } });
-      });
-    }
-  </script>
+  <a class="floating-contact" href="https://wa.me/918123410118" target="_blank" rel="noopener noreferrer" aria-label="Chat with Amreen's Academy on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.2 11.7a8.2 8.2 0 0 1-12.1 7.2L3 20l1.2-4.9a8.2 8.2 0 1 1 16-3.4Z"/><path d="M8.1 7.9c.2-.5.5-.5.8-.5h.5c.2 0 .4.1.5.4l.7 1.7c.1.2.1.4 0 .6l-.5.6c-.2.2-.2.4 0 .6.4.7 1 1.3 1.7 1.7.2.1.4.1.6-.1l.7-.8c.2-.2.4-.2.6-.1l1.6.8c.2.1.4.3.4.5 0 .4-.2 1.1-.6 1.4-.4.4-1 .6-1.6.5-1-.1-2.4-.7-3.7-1.9-1.1-1-2-2.3-2.2-3.3-.2-.8.1-1.5.5-2.1Z"/></svg></a>
+  <script src="js/main.js" defer></script>
+  <script src="js/motion.js" defer></script>
+  <script src="js/upgrade.js" defer></script>
 </body>
 </html>
+
+
+
+
