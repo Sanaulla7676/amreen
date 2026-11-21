@@ -6,7 +6,7 @@ c=(root/"css"/"upgrade.css").read_text(encoding="utf-8")
 j=(root/"js"/"upgrade.js").read_text(encoding="utf-8")
 section=h[h.find('id="inside-academy"'):]
 tests={
-"Inside Academy remains after the 45-day section":h.find('id="course-program"') < h.find('id="inside-academy"'),
+"Inside Academy remains after the 40-day section":h.find('id="course-program"') < h.find('id="inside-academy"'),
 "Inside Academy remains before footer":h.find('id="inside-academy"') < h.find('<footer class="site-footer"'),
 "Original two video players removed from homepage":'<video' not in section and 'academy-certificate-moment.mp4' not in section and 'academy-classroom-session.mp4' not in section,
 "Frame gallery inserted":'class="academy-scatter"' in section,

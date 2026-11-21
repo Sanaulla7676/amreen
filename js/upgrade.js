@@ -47,7 +47,7 @@
     }));
   });
 
-  // Count from 0 to 45 on the sign the presenter is holding.
+  // Count from 0 to 40 on the sign the presenter is holding.
   const banner = document.querySelector('.program-banner');
   const counter = document.querySelector('.program-count[data-count-up]');
   const burst = banner && banner.querySelector('.confetti-burst');
@@ -89,7 +89,7 @@
     if (!counter || !banner) return;
     if (hasRun && !replay) return;
     hasRun = true;
-    const target = Number(counter.dataset.countUp || 45);
+    const target = Number(counter.dataset.countUp || 40);
     if (reduce) {
       counter.textContent = String(target);
       return;
@@ -113,7 +113,7 @@
   }
 
   if (counter && banner) {
-    // A no-JS fallback is 45; JS changes it to 0 until the counter enters view.
+    // A no-JS fallback is 40; JS changes it to 0 until the counter enters view.
     counter.textContent = '0';
     if (reduce || !('IntersectionObserver' in window)) {
       countUp();

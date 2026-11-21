@@ -10,7 +10,7 @@ This is an editable, multi-page HTML/CSS/JavaScript website using the academy's 
 - `skin-aesthetics.html` — Skin & Aesthetics
 - `hair-styling.html` — Hair Styling
 - `bridal-artistry.html` — Bridal Artistry
-- `45-day-course.html` — Featured 45-Day Beauty & Makeup Course
+- `45-day-course.html` — Featured 40-Day Beauty & Makeup Course
 - `faculty.html` — Faculty and learning approach
 - `student-success.html` — Practice gallery
 - `blog.html` — Beauty learning notes
@@ -36,9 +36,9 @@ The public Instagram profile `@amreenkhanum60` identifies makeup, mehendi and be
 
 The Google Business Profile listing for **Amreens Academy & Makeover Studio** is in Thanisandra, Bengaluru. The public listing snapshot returned 5.0 from 3 reviews. Follow the live Google Maps link on the site for updated details.
 
-Course categories shown in the academy homepage: Professional Makeup Artistry, Skin & Aesthetics, Hair Styling and Bridal Artistry. The homepage also features a 45-Day Beauty & Makeup Course.
+Course categories shown in the academy homepage: Professional Makeup Artistry, Skin & Aesthetics, Hair Styling and Bridal Artistry. The homepage also features a 40-Day Beauty & Makeup Course.
 
-Fees, detailed syllabi, batch dates, individual faculty credentials, certificates and placement promises were not publicly confirmed, so they are not invented in the website copy. Course detail pages use an indicative overview and ask visitors to confirm the current syllabus with the academy.
+The featured Beauty & Makeup program is listed as 40 days with a ₹30,000 fee, based on the latest project update. Confirm the current fee, installment terms, syllabus, batch dates, certificate details, faculty credentials and any placement support with the academy before publishing.
 
 ## Run locally on Windows
 1. Extract the project ZIP.

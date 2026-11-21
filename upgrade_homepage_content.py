@@ -28,15 +28,15 @@ courses=r'''<section class="courses-section light-section" id="courses" aria-lab
   <div class="section-container">
     <div class="section-heading courses-heading" data-reveal="up">
       <div>
-        <p class="eyebrow">THE 45-DAY INTEGRATED PROGRAM <span></span></p>
+        <p class="eyebrow">THE 40-DAY INTEGRATED PROGRAM <span></span></p>
         <h2 id="courses-title">Explore Our <em>Beauty Courses</em></h2>
         <p class="courses-intro">Four connected learning areas, brought together in one Beauty &amp; Makeup program. Explore what each pathway focuses on.</p>
       </div>
-      <a class="courses-heading-link" href="45-day-course.html">View the 45-day program <span aria-hidden="true">↗</span></a>
+      <a class="courses-heading-link" href="45-day-course.html">View the 40-day program <span aria-hidden="true">↗</span></a>
     </div>
 
     <div class="course-grid course-grid-expanded" id="course-grid">
-      <a class="course-card course-card-expanded" href="professional-makeup.html" aria-label="Explore Professional Makeup Artistry, one learning area in the 45-day program">
+      <a class="course-card course-card-expanded" href="professional-makeup.html" aria-label="Explore Professional Makeup Artistry, one learning area in the 40-day program">
         <div class="course-card-media">
           <img src="assets/course-makeup.jpg" alt="Professional bridal makeup artistry" loading="lazy" decoding="async">
           <span class="course-card-index">01</span>
@@ -56,7 +56,7 @@ courses=r'''<section class="courses-section light-section" id="courses" aria-lab
         </div>
       </a>
 
-      <a class="course-card course-card-expanded" href="skin-aesthetics.html" aria-label="Explore Skin and Aesthetics, one learning area in the 45-day program">
+      <a class="course-card course-card-expanded" href="skin-aesthetics.html" aria-label="Explore Skin and Aesthetics, one learning area in the 40-day program">
         <div class="course-card-media">
           <img src="assets/course-skin.jpg" alt="Skin and aesthetics facial treatment practice" loading="lazy" decoding="async">
           <span class="course-card-index">02</span>
@@ -76,7 +76,7 @@ courses=r'''<section class="courses-section light-section" id="courses" aria-lab
         </div>
       </a>
 
-      <a class="course-card course-card-expanded" href="hair-styling.html" aria-label="Explore Hair Styling, one learning area in the 45-day program">
+      <a class="course-card course-card-expanded" href="hair-styling.html" aria-label="Explore Hair Styling, one learning area in the 40-day program">
         <div class="course-card-media">
           <img src="assets/course-hair.jpg" alt="Professional hair styling and bridal updo" loading="lazy" decoding="async">
           <span class="course-card-index">03</span>
@@ -96,7 +96,7 @@ courses=r'''<section class="courses-section light-section" id="courses" aria-lab
         </div>
       </a>
 
-      <a class="course-card course-card-expanded" href="bridal-artistry.html" aria-label="Explore Bridal Artistry, one learning area in the 45-day program">
+      <a class="course-card course-card-expanded" href="bridal-artistry.html" aria-label="Explore Bridal Artistry, one learning area in the 40-day program">
         <div class="course-card-media">
           <img src="assets/course-bridal.jpg" alt="Bridal eye makeup artistry" loading="lazy" decoding="async">
           <span class="course-card-index">04</span>
@@ -120,12 +120,12 @@ courses=r'''<section class="courses-section light-section" id="courses" aria-lab
     <div class="course-program-note" data-reveal="scale">
       <div class="course-program-note-copy">
         <span class="course-program-note-kicker">ONE INTEGRATED COURSE</span>
-        <h3>Four learning areas. One 45-day journey.</h3>
+        <h3>Four learning areas. One 40-day journey.</h3>
         <p>These are included learning areas within the same Beauty &amp; Makeup program, not four separate paid enrolments. The academy certificate is provided on successful completion.</p>
       </div>
       <div class="course-program-note-metrics">
-        <div><strong>45</strong><span>DAYS</span></div>
-        <div><strong>₹25,000</strong><span>FULL PROGRAM FEE</span></div>
+        <div><strong>40</strong><span>DAYS</span></div>
+        <div><strong>₹30,000</strong><span>FULL PROGRAM FEE</span></div>
         <div><strong>3</strong><span>INSTALMENTS AVAILABLE</span></div>
       </div>
       <a class="button button-primary course-program-note-cta" href="45-day-course.html">Explore the full program <span aria-hidden="true">→</span></a>
@@ -157,7 +157,7 @@ why=r'''<section class="why-section light-section" id="why-choose" aria-labelled
         </span>
         <span class="why-item-number">02</span>
         <h3>Four Learning Areas Together</h3>
-        <p>Makeup Artistry, Skin &amp; Aesthetics, Hair Styling and Bridal Artistry are included in one 45-day program.</p>
+        <p>Makeup Artistry, Skin &amp; Aesthetics, Hair Styling and Bridal Artistry are included in one 40-day program.</p>
       </article>
 
       <article class="why-item" data-reveal="up">

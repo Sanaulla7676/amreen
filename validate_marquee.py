@@ -5,7 +5,7 @@ h=(root/"index.html").read_text(encoding="utf-8-sig")
 c=(root/"css"/"upgrade.css").read_text(encoding="utf-8")
 j=(root/"js"/"upgrade.js").read_text(encoding="utf-8")
 tests={
-"Inside Academy remains after the 45-day program":h.find('id="course-program"') < h.find('id="inside-academy"'),
+"Inside Academy remains after the 40-day program":h.find('id="course-program"') < h.find('id="inside-academy"'),
 "Inside Academy remains immediately before footer":h.find('id="inside-academy"') < h.find('<footer class="site-footer"'),
 "Nine source Instagram Reels retained":h.count('class="instagram-marquee-item"')==18,
 "One visible group and one loop duplicate":h.count('class="instagram-marquee-group"')==2,
