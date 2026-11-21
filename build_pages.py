@@ -135,13 +135,13 @@ course_grid = '<div class="page-course-grid" data-stagger>' + "".join(
     f'''<a class="page-course-card" href="{url}"><div class="page-course-card__image"><img src="{img}" alt="{name}"><span>{num}</span></div><div class="page-course-card__copy"><h3>{name}</h3><p>{desc}</p><b>Explore pathway <span>→</span></b></div></a>'''
     for name,desc,img,url,num in course_cards) + '</div>'
 courses_body = section("Choose the direction that inspires you", "COURSE PATHWAYS", f'''<p class="section-lead">The academy homepage highlights four core beauty pathways. Course details, current batches, fees and the latest syllabus should be confirmed directly with the academy.</p>{course_grid}''')
-courses_body += section("A focused 45-day learning option", "FEATURED PROGRAM", f'''
+courses_body += section("A focused 40-day learning option", "FEATURED PROGRAM", f'''
 <div class="featured-course">
-  <div class="featured-course__copy"><span class="mini-label">45-DAY PROGRAM</span><h3>Beauty &amp; Makeup Course</h3><p>A focused, practical program designed to build your skills and confidence in the beauty industry. Ask the academy for the current syllabus, batch dates and fee details.</p><a class="button button-primary" href="45-day-course.html">View 45-day course <span>→</span></a></div>
-  <img src="assets/45-days-presenter.png" alt="Amreen's Academy presenter holding the 45 Days sign">
+  <div class="featured-course__copy"><span class="mini-label">40-DAY PROGRAM</span><h3>Beauty &amp; Makeup Course</h3><p>A focused, practical program designed to build your skills and confidence in the beauty industry. Ask the academy for the current syllabus, batch dates and fee details.</p><a class="button button-primary" href="45-day-course.html">View 40-day course <span>→</span></a></div>
+  <img src="assets/45-days-presenter.png" alt="Amreen's Academy presenter holding the 40 Days sign">
 </div>''', "surface-dark")
 courses_body += cta("Find the course that fits your goals.", "Share what you want to learn and the academy can guide you through available options.")
-pages["courses.html"] = page("Beauty Courses | Amreen's Academy Bengaluru", "Explore professional makeup artistry, skin and aesthetics, hair styling, bridal artistry and the 45-day beauty and makeup course at Amreen's Academy.", "OUR COURSES", "Choose your craft. Shape your next chapter.", "Beauty and makeup learning pathways for curious beginners, working professionals and aspiring artists.", "assets/course-makeup.jpg", courses_body, "courses")
+pages["courses.html"] = page("Beauty Courses | Amreen's Academy Bengaluru", "Explore professional makeup artistry, skin and aesthetics, hair styling, bridal artistry and the 40-day beauty and makeup course at Amreen's Academy.", "OUR COURSES", "Choose your craft. Shape your next chapter.", "Beauty and makeup learning pathways for curious beginners, working professionals and aspiring artists.", "assets/course-makeup.jpg", courses_body, "courses")
 
 # Faculty
 faculty_body = section("A learning experience built around demonstration and practice", "HOW WE TEACH", f'''
@@ -186,9 +186,9 @@ pages["blog.html"] = page("Beauty Journal | Amreen's Academy", "Read practical b
 # FAQs
 faq_items = [
     ("What training areas are associated with Amreen's Academy?","The academy's Instagram bio describes makeup, mehendi and beautician services. Its homepage also presents Professional Makeup Artistry, Skin & Aesthetics, Hair Styling and Bridal Artistry."),
-    ("Does the academy offer a 45-day course?","The academy homepage features a 45-Day Beauty & Makeup Course. Contact the academy to confirm the current batch, syllabus, schedule and availability."),
+    ("Does the academy offer a 40-day course?","The academy homepage features a 40-Day Beauty & Makeup Course. Contact the academy to confirm the current batch, syllabus, schedule and availability."),
     ("What are the fees and batch dates?","Current fees, batch dates and course-specific schedules were not publicly confirmed in the information reviewed. Contact the academy for the latest details."),
-    ("Do all courses run for 45 days?","No such claim is published in the material reviewed. The 45-day duration belongs to the featured Beauty & Makeup Course; ask about the duration of each other pathway."),
+    ("Do all courses run for 40 days?","No such claim is published in the material reviewed. The 40-day duration belongs to the featured Beauty & Makeup Course; ask about the duration of each other pathway."),
     ("Is a certificate included?","Certificate details were not confirmed in the public information reviewed. Ask the academy what certificate, if any, is provided for your selected course."),
     ("Where is the academy located?","The Instagram profile lists #23, Bharath Nagar, Ashwath Nagar, 2nd Stage, Thanisandra Main Road, Bengaluru 560077. Open the Google Business listing for directions."),
     ("How can I contact the academy?","Call or WhatsApp +91 81234 10118, or send a message through the Instagram profile."),
@@ -197,7 +197,7 @@ faq_items = [
 faq_markup = '<div class="faq-list">' + "".join(f'<details class="faq-item" data-reveal="up"><summary>{q}<span>＋</span></summary><div><p>{a}</p></div></details>' for q,a in faq_items) + '</div>'
 faq_body = section("Clear answers before you take the next step", "FREQUENTLY ASKED QUESTIONS", faq_markup)
 faq_body += cta("Still deciding? Let's talk.", "Ask directly about the latest course details and what to expect before joining.")
-pages["faqs.html"] = page("FAQs | Amreen's Academy Bengaluru", "Answers about course categories, the 45-day beauty and makeup course, fees, batches, contact details and academy location.", "HELP & GUIDANCE", "Questions are part of a good beginning.", "Here are the details that are publicly available, plus the questions worth confirming directly.", "assets/academy-studio.jpg", faq_body, "faqs")
+pages["faqs.html"] = page("FAQs | Amreen's Academy Bengaluru", "Answers about course categories, the 40-day beauty and makeup course, fees, batches, contact details and academy location.", "HELP & GUIDANCE", "Questions are part of a good beginning.", "Here are the details that are publicly available, plus the questions worth confirming directly.", "assets/academy-studio.jpg", faq_body, "faqs")
 
 # Contact
 contact_body = section("Reach the academy directly", "CONTACT & VISIT", f'''
@@ -214,21 +214,21 @@ contact_body += f'''<section class="content-section surface-light" id="enquiry">
 <form class="enquiry-form" data-whatsapp-form>
 <label>Your name<input name="name" autocomplete="name" required placeholder="Full name"></label>
 <label>Phone number<input name="phone" autocomplete="tel" inputmode="tel" required placeholder="Mobile number"></label>
-<label>Course of interest<select name="course" required><option value="">Select a course</option><option>Professional Makeup Artistry</option><option>Skin &amp; Aesthetics</option><option>Hair Styling</option><option>Bridal Artistry</option><option>Mehendi</option><option>Beautician Training</option><option>45-Day Beauty &amp; Makeup Course</option><option>Not sure yet</option></select></label>
+<label>Course of interest<select name="course" required><option value="">Select a course</option><option>Professional Makeup Artistry</option><option>Skin &amp; Aesthetics</option><option>Hair Styling</option><option>Bridal Artistry</option><option>Mehendi</option><option>Beautician Training</option><option>40-Day Beauty &amp; Makeup Course</option><option>Not sure yet</option></select></label>
 <label>Message<textarea name="message" rows="4" placeholder="Tell us what you want to know"></textarea></label>
 <button class="button button-primary" type="submit">Continue to WhatsApp <span>→</span></button>
 <p class="form-status" role="status"></p></form></div></section>'''
 pages["contact.html"] = page("Contact Amreen's Academy | Thanisandra, Bengaluru", "Contact Amreen's Academy in Thanisandra, Bengaluru by phone, WhatsApp or Instagram. View the Google Maps listing and send a course enquiry.", "GET IN TOUCH", "Let's start a conversation.", "Ask about courses, current batches or arranging a visit to the academy in Thanisandra.", "assets/academy-studio.jpg", contact_body, "contact")
 
-# 45-day program
-day_body = section("A focused program for your next step", "45-DAY BEAUTY & MAKEUP COURSE", f'''
+# 40-day program
+day_body = section("A focused program for your next step", "40-DAY BEAUTY & MAKEUP COURSE", f'''
 <div class="program-detail">
-  <div class="program-detail__copy"><span class="mini-label">45 DAYS · BEAUTY &amp; MAKEUP</span><h3>Learn with focus. Practise with purpose.</h3><p>The academy homepage describes this as a focused, practical program designed to build skills and confidence in the beauty industry.</p><p>For the latest course outline, class schedule, eligibility, fee and materials list, contact the academy directly before enrolling.</p><a class="button button-primary" href="contact.html#enquiry">Ask about this course <span>→</span></a></div>
-  <img src="assets/45-days-presenter.png" alt="Amreen's Academy 45 Days course presenter">
+  <div class="program-detail__copy"><span class="mini-label">40 DAYS · BEAUTY &amp; MAKEUP</span><h3>Learn with focus. Practise with purpose.</h3><p>The academy homepage describes this as a focused, practical program designed to build skills and confidence in the beauty industry.</p><p>The full course fee is ₹30,000. For the latest course outline, class schedule, eligibility, installment terms and materials list, contact the academy directly before enrolling.</p><a class="button button-primary" href="contact.html#enquiry">Ask about this course <span>→</span></a></div>
+  <img src="assets/45-days-presenter.png" alt="Amreen's Academy 40 Days course presenter">
 </div>
 <div class="three-points" data-stagger><div><span>01</span><h4>Request the syllabus</h4><p>Ask for the current module list and practical learning plan.</p></div><div><span>02</span><h4>Confirm the batch</h4><p>Check upcoming dates, class timings and available seats.</p></div><div><span>03</span><h4>Prepare to begin</h4><p>Confirm the kit, materials and anything to bring to class.</p></div></div>''')
-day_body += cta("Ready to ask about the 45-day course?")
-pages["45-day-course.html"] = page("45-Day Beauty & Makeup Course | Amreen's Academy", "Details for Amreen's Academy 45-Day Beauty & Makeup Course. Contact the academy to confirm the current syllabus, fee and batch dates.", "FEATURED PROGRAM", "45 days to explore your beauty craft.", "A practical Beauty & Makeup program designed to build skills and confidence.", "assets/45-days-presenter.png", day_body, "courses")
+day_body += cta("Ready to ask about the 40-day course?")
+pages["45-day-course.html"] = page("40-Day Beauty & Makeup Course | Amreen's Academy", "Details for Amreen's Academy 40-Day Beauty & Makeup Course. Contact the academy to confirm the current syllabus, fee and batch dates.", "FEATURED PROGRAM", "40 days to explore your beauty craft.", "A practical Beauty & Makeup program designed to build skills and confidence.", "assets/45-days-presenter.png", day_body, "courses")
 
 # Course detail pages
 detail_data = [

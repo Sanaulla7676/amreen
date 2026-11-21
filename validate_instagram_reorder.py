@@ -6,7 +6,7 @@ css=(root/"css"/"upgrade.css").read_text(encoding="utf-8")
 js=(root/"js"/"upgrade.js").read_text(encoding="utf-8")
 checks={}
 checks["hero remains first"]=html.find('id="home"') < html.find('id="courses"')
-checks["Inside Academy follows the 45-Day program"]=html.find('id="course-program"') < html.find('id="inside-academy"')
+checks["Inside Academy follows the 40-Day program"]=html.find('id="course-program"') < html.find('id="inside-academy"')
 checks["Inside Academy is immediately before footer"]=html.find('id="inside-academy"') < html.find('<footer class="site-footer"')
 checks["certificate video preserved"]="academy-certificate-moment.mp4" in html
 checks["classroom video preserved"]="academy-classroom-session.mp4" in html
