@@ -784,3 +784,203 @@
     right:2.5% !important;
   }
 }
+
+/* Mobile hero layers: background first, readable copy second, portrait in front. */
+@media (max-width:650px) {
+  #home.hero {
+    display:block !important;
+    height:auto !important;
+    min-height:0 !important;
+    overflow:hidden !important;
+    isolation:isolate !important;
+    background:
+      radial-gradient(ellipse at 16% 90%,rgba(42,94,151,.42),transparent 38%),
+      radial-gradient(ellipse at 78% 44%,rgba(18,48,89,.74),transparent 48%),
+      linear-gradient(117deg,#06162f 0%,#0a1d3c 48%,#06152d 100%) !important;
+  }
+  #home.hero::before {
+    z-index:0 !important;
+    pointer-events:none !important;
+  }
+  #home .hero-inner {
+    position:relative !important;
+    z-index:2 !important;
+    display:flex !important;
+    flex-direction:column !important;
+    align-items:stretch !important;
+    gap:0 !important;
+    width:100% !important;
+    height:auto !important;
+    min-height:0 !important;
+    margin:0 !important;
+    padding:26px 22px 18px !important;
+    box-sizing:border-box !important;
+  }
+  #home .hero-kicker {
+    position:relative !important;
+    order:1 !important;
+    inset:auto !important;
+    width:100% !important;
+    margin:0 0 10px !important;
+    color:rgba(255,255,255,.74) !important;
+    font-size:7px !important;
+    letter-spacing:2px !important;
+    text-align:left !important;
+  }
+  #home h1 {
+    position:relative !important;
+    order:2 !important;
+    inset:auto !important;
+    display:flex !important;
+    flex-direction:column !important;
+    align-items:flex-start !important;
+    width:100% !important;
+    margin:0 !important;
+    padding:0 !important;
+    overflow:visible !important;
+    color:#f8f9fc !important;
+    text-align:left !important;
+    z-index:2 !important;
+  }
+  #home .hero-title-mask {
+    display:block !important;
+    overflow:visible !important;
+    padding:0 !important;
+    line-height:.91 !important;
+  }
+  #home .hero-title-word {
+    display:inline-block !important;
+    color:#f8f9fc !important;
+    font-size:clamp(40px,10.8vw,48px) !important;
+    line-height:.91 !important;
+    letter-spacing:-.075em !important;
+    opacity:1 !important;
+    transform:none !important;
+    animation:none !important;
+  }
+  #home h1 > .hero-title-academy {
+    position:relative !important;
+    left:auto !important;
+    align-self:flex-start !important;
+    margin:0 !important;
+    padding:0 !important;
+    color:#f8f9fc !important;
+    font-size:clamp(35px,9.7vw,43px) !important;
+    line-height:.96 !important;
+    letter-spacing:-.07em !important;
+    text-shadow:0 3px 12px rgba(0,0,0,.25) !important;
+    transform:none !important;
+    animation:none !important;
+  }
+  #home .hero-copy {
+    position:relative !important;
+    order:3 !important;
+    inset:auto !important;
+    width:100% !important;
+    max-width:440px !important;
+    margin:13px 0 0 !important;
+    padding:0 !important;
+    border:0 !important;
+    border-radius:0 !important;
+    color:#fff !important;
+    background:transparent !important;
+    box-shadow:none !important;
+    backdrop-filter:none !important;
+    text-align:left !important;
+    transform:none !important;
+    animation:none !important;
+    z-index:2 !important;
+  }
+  #home .hero-copy .copy-rule {
+    width:34px !important;
+    height:2px !important;
+    margin:0 0 9px !important;
+    background:#f16a91 !important;
+  }
+  #home .hero-copy h2 {
+    max-width:340px !important;
+    margin:0 0 7px !important;
+    color:#fff !important;
+    font-size:15px !important;
+    line-height:1.2 !important;
+    letter-spacing:.15px !important;
+    text-align:left !important;
+  }
+  #home .hero-copy > p:not(.hero-signoff) {
+    max-width:340px !important;
+    margin:0 !important;
+    color:rgba(255,255,255,.82) !important;
+    font-size:12px !important;
+    line-height:1.45 !important;
+    text-align:left !important;
+  }
+  #home .hero-stats,
+  #home .hero-signoff { display:none !important; }
+  #home .mobile-hero-phrase {
+    position:relative !important;
+    order:4 !important;
+    inset:auto !important;
+    align-self:flex-start !important;
+    width:auto !important;
+    max-width:100% !important;
+    min-height:0 !important;
+    margin:14px 0 0 !important;
+    padding:7px 10px !important;
+    border:1px solid rgba(255,255,255,.34) !important;
+    border-radius:999px !important;
+    color:rgba(255,255,255,.94) !important;
+    background:rgba(255,255,255,.08) !important;
+    box-shadow:none !important;
+    backdrop-filter:blur(8px) !important;
+    font-size:9px !important;
+    line-height:1.2 !important;
+    white-space:normal !important;
+    text-align:left !important;
+  }
+  #home .mobile-hero-phrase .pill-endpoint { display:none !important; }
+  #home .mobile-hero-quote {
+    position:relative !important;
+    order:5 !important;
+    inset:auto !important;
+    width:auto !important;
+    margin:9px 0 0 !important;
+    color:rgba(255,255,255,.72) !important;
+    font-size:10px !important;
+    line-height:1.35 !important;
+    text-align:left !important;
+  }
+  #home .hero-figure {
+    position:relative !important;
+    order:6 !important;
+    z-index:3 !important;
+    inset:auto !important;
+    align-self:center !important;
+    display:block !important;
+    width:min(88vw,360px) !important;
+    max-width:100% !important;
+    height:clamp(265px,82vw,350px) !important;
+    max-height:none !important;
+    margin:8px auto -8px !important;
+    object-fit:contain !important;
+    object-position:center bottom !important;
+    filter:drop-shadow(0 16px 22px rgba(0,0,0,.28)) !important;
+  }
+  #home .mobile-hero-pagination {
+    position:relative !important;
+    order:7 !important;
+    inset:auto !important;
+    align-self:center !important;
+    margin:8px auto 0 !important;
+    transform:none !important;
+    z-index:3 !important;
+  }
+  #home .hero-bottom-swoosh { bottom:-14px !important; z-index:1 !important; }
+}
+
+@media (max-width:420px) {
+  #home .hero-inner { padding:23px 18px 16px !important; }
+  #home .hero-copy { margin-top:11px !important; }
+  #home .hero-copy h2 { font-size:14px !important; }
+  #home .hero-copy > p:not(.hero-signoff) { font-size:11px !important; }
+  #home .hero-figure { width:min(88vw,330px) !important; height:clamp(245px,78vw,320px) !important; }
+}
