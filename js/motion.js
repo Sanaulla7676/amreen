@@ -2,7 +2,7 @@
   const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   const progress = document.querySelector('.scroll-progress span');
   const header = document.querySelector('.site-header');
-  const revealTargets = document.querySelectorAll('.section-heading,.course-card,.career-heading,.career-description,.benefit-item,.academy-row,.why-item,.student-grid figure,.program-banner');
+  const revealTargets = document.querySelectorAll('.section-heading,.course-card,.career-heading,.career-description,.benefit-item,.academy-row,.why-item,.student-grid figure,.program-banner,.page-hero__copy,.page-hero__visual,.section-intro,.split-feature__image,.split-feature__copy,.value-card,.page-course-card,.featured-course,.program-detail,.teaching-card,.mentor-feature,.question-grid>div,.portfolio-item,.article-card,.contact-panel,.map-panel,.contact-ribbon,.social-follow,.page-cta');
   revealTargets.forEach((node, i) => {
     if (!node.hasAttribute('data-reveal') && !node.hasAttribute('data-stagger')) {
       node.setAttribute('data-reveal', i % 5 === 0 ? 'left' : 'up');
