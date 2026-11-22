@@ -984,3 +984,5 @@
   #home .hero-copy > p:not(.hero-signoff) { font-size:11px !important; }
   #home .hero-figure { width:min(88vw,330px) !important; height:clamp(245px,78vw,320px) !important; }
 }
+
+#home .hero-figure { z-index:20 !important; }
