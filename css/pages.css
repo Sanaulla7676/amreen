@@ -127,7 +127,9 @@
 .review-snapshot p{color:rgba(255,255,255,.7);font-size:13px;line-height:1.65}
 .enquiry-form{display:grid;grid-template-columns:1fr 1fr;gap:16px;max-width:900px;margin:0 auto;padding:30px;border:1px solid rgba(8,27,56,.1);border-radius:20px;background:#fff;box-shadow:0 16px 36px rgba(8,27,56,.08)}
 .enquiry-form label{display:grid;gap:7px;color:#0b1d3a;font-size:12px;font-weight:800}
-.enquiry-form label:nth-child(3),.enquiry-form label:nth-child(4){grid-column:1/-1}
+.enquiry-form label:nth-child(3),.enquiry-form label:nth-child(4),.enquiry-form label:nth-child(5){grid-column:1/-1}
+.enquiry-form .consent-check{grid-column:1/-1;display:flex;align-items:flex-start;gap:9px;color:#39475c;font-size:11px;font-weight:600;line-height:1.5}
+.enquiry-form .consent-check input{width:16px;min-height:16px;flex:0 0 auto;margin:1px 0 0;padding:0;border-radius:4px;background:#fff;accent-color:#8c1539}
 .enquiry-form input,.enquiry-form select,.enquiry-form textarea{width:100%;padding:13px 14px;border:1px solid #d8dce4;border-radius:10px;background:#fbfcfe;color:#0b1d3a;font:500 14px var(--body);outline:0}
 .enquiry-form input:focus,.enquiry-form select:focus,.enquiry-form textarea:focus{border-color:#b20f42;box-shadow:0 0 0 3px rgba(178,15,66,.09)}
 .enquiry-form button{grid-column:1/-1;width:max-content}

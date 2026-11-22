@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#081a34">
+  <meta name="description" content="Private enquiry and follow-up workspace for Amreen's Academy staff.">
+  <title>Academy CRM | Amreen's Academy</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/crm.css">
+</head>
+<body>
+  <a class="skip-link" href="#crm-main">Skip to CRM content</a>
+  <div class="crm-layout">
+    <aside class="crm-sidebar" aria-label="CRM navigation">
+      <a class="crm-brand" href="index.html" aria-label="Amreen's Academy home">
+        <span class="brand-mark" aria-hidden="true">A</span>
+        <span><strong>AMREEN&apos;S</strong><small>ACADEMY CRM</small></span>
+      </a>
+      <div class="sidebar-section-label">WORKSPACE</div>
+      <nav class="crm-nav" aria-label="Workspace">
+        <a class="nav-item is-active" href="#overview" aria-current="page"><span class="nav-icon" aria-hidden="true">▦</span>Overview</a>
+        <a class="nav-item" href="#leads"><span class="nav-icon" aria-hidden="true">◎</span>Enquiries<span class="nav-count" id="sidebar-lead-count">0</span></a>
+        <a class="nav-item" href="#follow-ups"><span class="nav-icon" aria-hidden="true">↗</span>Follow-ups</a>
+      </nav>
+      <div class="sidebar-bottom">
+        <span class="secure-dot" aria-hidden="true"></span>
+        <div><strong>Private workspace</strong><small>Access by invitation only</small></div>
+      </div>
+    </aside>
+
+    <main id="crm-main" class="crm-main">
+      <header class="topbar">
+        <div class="topbar-context"><span>AMREEN&apos;S ACADEMY</span><span aria-hidden="true">/</span><strong>Enquiry CRM</strong></div>
+        <a class="back-link" href="index.html">Back to website <span aria-hidden="true">↗</span></a>
+      </header>
+
+      <section class="auth-screen" id="auth-screen" aria-labelledby="auth-title">
+        <div class="auth-card">
+          <a class="auth-back" href="index.html">← Academy website</a>
+          <div class="auth-emblem" aria-hidden="true">A</div>
+          <p class="eyebrow">STAFF WORKSPACE</p>
+          <h1 id="auth-title">Welcome back.</h1>
+          <p class="auth-intro">Sign in with an invited academy email to manage course enquiries and follow-ups.</p>
+          <form id="auth-form" novalidate>
+            <label for="auth-email">Email address</label>
+            <input id="auth-email" name="email" type="email" autocomplete="username" required maxlength="254" placeholder="you@academy.com">
+            <label for="auth-password">Password</label>
+            <input id="auth-password" name="password" type="password" autocomplete="current-password" required minlength="8" maxlength="128" placeholder="At least 8 characters">
+            <button class="button button-primary" id="auth-submit" type="submit">Sign in <span aria-hidden="true">→</span></button>
+            <button class="auth-switch" id="auth-mode" type="button" aria-pressed="false">Need an account? Create one</button>
+            <p class="auth-message" id="auth-message" role="status" aria-live="polite"></p>
+          </form>
+          <p class="auth-footnote">Only an email added to the academy admin list can view lead details. Admin access is not configured yet.</p>
+        </div>
+      </section>
+
+      <section class="dashboard" id="dashboard" hidden>
+        <div class="page-heading" id="overview">
+          <div><p class="eyebrow">ACADEMY OPERATIONS</p><h1>Enquiry overview</h1><p class="page-subtitle">Keep every course conversation moving forward.</p></div>
+          <button class="button button-quiet" id="sign-out" type="button">Sign out</button>
+        </div>
+
+        <div class="stats-grid" aria-label="Enquiry summary">
+          <article class="stat-card"><div class="stat-label">All enquiries</div><div class="stat-value" id="stat-total">—</div><div class="stat-note">Recent leads</div></article>
+          <article class="stat-card"><div class="stat-label">New</div><div class="stat-value" id="stat-new">—</div><div class="stat-note"><span class="status-dot status-dot-new"></span>Needs a first reply</div></article>
+          <article class="stat-card"><div class="stat-label">Follow-up</div><div class="stat-value" id="stat-follow-up">—</div><div class="stat-note">Open conversations</div></article>
+          <article class="stat-card"><div class="stat-label">Enrolled</div><div class="stat-value" id="stat-enrolled">—</div><div class="stat-note">Course conversions</div></article>
+        </div>
+
+        <section class="lead-panel" id="leads" aria-labelledby="leads-title">
+          <div class="panel-heading">
+            <div><p class="eyebrow">FOLLOW THROUGH</p><h2 id="leads-title">Course enquiries</h2></div>
+            <button class="button button-outline" id="export-csv" type="button">Export CSV <span aria-hidden="true">↓</span></button>
+          </div>
+          <div class="toolbar">
+            <label class="search-box"><span class="sr-only">Search enquiries</span><span aria-hidden="true">⌕</span><input id="lead-search" type="search" placeholder="Search name, phone or course" autocomplete="off"></label>
+            <label class="filter-label" for="status-filter">Status</label>
+            <select id="status-filter" aria-label="Filter enquiries by status">
+              <option value="all">All statuses</option>
+              <option value="new">New</option>
+              <option value="contacted">Contacted</option>
+              <option value="interested">Interested</option>
+              <option value="follow_up">Follow-up</option>
+              <option value="enrolled">Enrolled</option>
+              <option value="not_interested">Not interested</option>
+            </select>
+          </div>
+          <div class="table-scroll">
+            <table class="leads-table">
+              <thead><tr><th scope="col">Prospect</th><th scope="col">Course interest</th><th scope="col">Status</th><th scope="col">Source</th><th scope="col">Received</th><th scope="col"><span class="sr-only">Actions</span></th></tr></thead>
+              <tbody id="leads-body"><tr><td class="table-message" colspan="6">Sign in to view enquiries.</td></tr></tbody>
+            </table>
+          </div>
+          <div class="panel-footer"><span id="results-count">Recent enquiries</span><span id="follow-up-summary">Follow-up dates are shown in Bengaluru time.</span></div>
+        </section>
+        <div class="dashboard-message" id="dashboard-message" role="status" aria-live="polite"></div>
+      </section>
+
+      <dialog class="lead-dialog" id="lead-dialog" aria-labelledby="dialog-title">
+        <form id="lead-edit-form">
+          <div class="dialog-top"><div><p class="eyebrow">ENQUIRY DETAILS</p><h2 id="dialog-title">Update enquiry</h2></div><button class="icon-button" id="dialog-close" type="button" aria-label="Close enquiry details">×</button></div>
+          <p class="dialog-prospect" id="dialog-prospect"></p>
+          <div class="dialog-fields">
+            <label>Status<select id="edit-status" name="status" required><option value="new">New</option><option value="contacted">Contacted</option><option value="interested">Interested</option><option value="follow_up">Follow-up</option><option value="enrolled">Enrolled</option><option value="not_interested">Not interested</option></select></label>
+            <label>Source<select id="edit-source" name="source" required><option value="website">Website</option><option value="phone">Phone</option><option value="walk-in">Walk-in</option><option value="social">Social</option><option value="referral">Referral</option><option value="other">Other</option></select></label>
+            <label class="field-wide">Next follow-up<input id="edit-follow-up" name="follow_up_at" type="datetime-local"></label>
+            <label class="field-wide">Private notes<textarea id="edit-notes" name="notes" rows="4" maxlength="4000" placeholder="Add context for the next conversation"></textarea></label>
+          </div>
+          <p class="dialog-message" id="dialog-message" role="status" aria-live="polite"></p>
+          <div class="dialog-actions"><button class="button button-quiet" id="dialog-cancel" type="button">Cancel</button><button class="button button-primary" id="save-lead" type="submit">Save updates</button></div>
+        </form>
+      </dialog>
+    </main>
+  </div>
+  <script src="js/crm-config.js"></script>
+  <script type="module" src="js/crm.js"></script>
+</body>
+</html>
